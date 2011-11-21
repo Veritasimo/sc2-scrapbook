@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SC2Scrapbook</RootNamespace>
-    <AssemblyName>SC2Scrapbook</AssemblyName>
+    <AssemblyName>SC2Scrapbook15</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -169,6 +169,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="random.ico" />
+    <None Include="Resources\icons\terran\time.gif" />
+    <None Include="Resources\icons\terran\supply.gif" />
+    <None Include="Resources\icons\terran\minerals.gif" />
+    <None Include="Resources\icons\terran\gas.gif" />
+    <None Include="Resources\icons\zerg\time.gif" />
+    <None Include="Resources\icons\zerg\supply.gif" />
+    <None Include="Resources\icons\zerg\minerals.gif" />
+    <None Include="Resources\icons\zerg\gas.gif" />
+    <None Include="Resources\icons\protoss\time.gif" />
+    <None Include="Resources\icons\protoss\supply.gif" />
+    <None Include="Resources\icons\protoss\minerals.gif" />
+    <None Include="Resources\icons\protoss\gas.gif" />
     <None Include="Resources\Changelog.txt" />
     <None Include="Resources\version.txt" />
     <None Include="Resources\patch.xml" />

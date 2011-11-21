@@ -47,6 +47,8 @@ namespace SC2Scrapbook
         public System.Windows.Forms.Keys ToggleOverlayKey { get; set; }
         public System.Windows.Forms.Keys ToggleOverlayModifier { get; set; }
 
+        public bool SeenMinimizeNotification { get; set; }
+
         #region IXmlSerializable Members
 
         public System.Xml.Schema.XmlSchema GetSchema()
@@ -139,6 +141,9 @@ namespace SC2Scrapbook
                     case "opponentinfooverlaytimeout":
                         OpponentInfoOverlayTimeout = (int)intSerializer.Deserialize(reader);
                         break;
+                    case "seenminimizenotification":
+                        SeenMinimizeNotification = (bool)boolSerializer.Deserialize(reader);
+                        break;
                     default:
                         reader.ReadInnerXml();
                         break;
@@ -216,6 +221,10 @@ namespace SC2Scrapbook
 
             writer.WriteStartElement("UseAdvancedOptions");
             boolSerializer.Serialize(writer, UseAdvancedOptions);
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("SeenMinimizeNotification");
+            boolSerializer.Serialize(writer, SeenMinimizeNotification);
             writer.WriteEndElement();
 
             writer.WriteStartElement("OpponentInfoOverlay");

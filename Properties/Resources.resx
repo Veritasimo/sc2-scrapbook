@@ -196,4 +196,40 @@
   <data name="version" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\version.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
+  <data name="protoss_gas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\protoss\gas.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="protoss_minerals" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\protoss\minerals.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="protoss_supply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\protoss\supply.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="protoss_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\protoss\time.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terran_gas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\terran\gas.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terran_minerals" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\terran\minerals.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terran_supply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\terran\supply.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terran_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\terran\time.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zerg_gas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\zerg\gas.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zerg_minerals" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\zerg\minerals.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zerg_supply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\zerg\supply.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zerg_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\zerg\time.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

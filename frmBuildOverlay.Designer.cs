@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBuildOverlay));
             this.lblFakeTitle = new System.Windows.Forms.Label();
+            this.lblContent = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblFakeTitle
@@ -38,23 +39,35 @@
             this.lblFakeTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblFakeTitle.Location = new System.Drawing.Point(0, 0);
             this.lblFakeTitle.Name = "lblFakeTitle";
-            this.lblFakeTitle.Size = new System.Drawing.Size(453, 31);
+            this.lblFakeTitle.Size = new System.Drawing.Size(383, 31);
             this.lblFakeTitle.TabIndex = 0;
             this.lblFakeTitle.DoubleClick += new System.EventHandler(this.frmOverlay_DoubleClick);
             this.lblFakeTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblFakeTitle_MouseDown);
             this.lblFakeTitle.MouseUp += new System.Windows.Forms.MouseEventHandler(this.frmOverlay_MouseUp);
             // 
-            // frmOverlay
+            // lblContent
+            // 
+            this.lblContent.BackColor = System.Drawing.Color.Transparent;
+            this.lblContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblContent.Location = new System.Drawing.Point(0, 31);
+            this.lblContent.Name = "lblContent";
+            this.lblContent.Size = new System.Drawing.Size(383, 280);
+            this.lblContent.TabIndex = 1;
+            this.lblContent.DoubleClick += new System.EventHandler(this.frmOverlay_DoubleClick);
+            // 
+            // frmBuildOverlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(453, 341);
+            this.ClientSize = new System.Drawing.Size(383, 311);
+            this.Controls.Add(this.lblContent);
             this.Controls.Add(this.lblFakeTitle);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmOverlay";
-            this.Opacity = 0.5D;
+            this.Name = "frmBuildOverlay";
+            this.Opacity = 0.7D;
             this.ShowInTaskbar = false;
             this.Text = "Build Order Overlay";
             this.TopMost = true;
@@ -73,6 +86,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblFakeTitle;
+        private System.Windows.Forms.Label lblContent;
 
     }
 }

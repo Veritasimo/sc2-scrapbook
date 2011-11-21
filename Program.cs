@@ -116,7 +116,8 @@ namespace SC2Scrapbook
 
         internal static void KillSC2InteractionThread()
         {
-            _sc2InteractionThread.Abort();
+            if (_sc2InteractionThread != null)
+                _sc2InteractionThread.Abort();
         }
 
         internal static void ShowPlayerInfo(Models.Player player)

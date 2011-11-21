@@ -133,6 +133,25 @@ namespace SC2Scrapbook.Models
             return ret;
         }
 
+
+        public static string StringFromRace(Races race)
+        {
+            switch (race)
+            {
+                case Races.Random:
+                    return "Random";
+                case Races.Terran:
+                    return "Terran";
+                case Races.Protoss:
+                    return "Protoss";
+                case Races.Zerg:
+                    return "Zerg";
+                default:
+                    return "Random";
+            }
+        }
+
+
         private void FromString(string matchup)
         {
             if ((matchup.Length == 3) && (matchup[1] == 'v')) // XvX

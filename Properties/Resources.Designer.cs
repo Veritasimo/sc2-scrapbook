@@ -194,6 +194,34 @@ namespace SC2Scrapbook.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap protoss_gas {
+            get {
+                object obj = ResourceManager.GetObject("protoss_gas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap protoss_minerals {
+            get {
+                object obj = ResourceManager.GetObject("protoss_minerals", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap protoss_supply {
+            get {
+                object obj = ResourceManager.GetObject("protoss_supply", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap protoss_time {
+            get {
+                object obj = ResourceManager.GetObject("protoss_time", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap ProtossIcon {
             get {
                 object obj = ResourceManager.GetObject("ProtossIcon", resourceCulture);
@@ -257,6 +285,34 @@ namespace SC2Scrapbook.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap terran_gas {
+            get {
+                object obj = ResourceManager.GetObject("terran_gas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap terran_minerals {
+            get {
+                object obj = ResourceManager.GetObject("terran_minerals", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap terran_supply {
+            get {
+                object obj = ResourceManager.GetObject("terran_supply", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap terran_time {
+            get {
+                object obj = ResourceManager.GetObject("terran_time", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap TerranIcon {
             get {
                 object obj = ResourceManager.GetObject("TerranIcon", resourceCulture);
@@ -276,6 +332,34 @@ namespace SC2Scrapbook.Properties {
         internal static System.Drawing.Bitmap zerg {
             get {
                 object obj = ResourceManager.GetObject("zerg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap zerg_gas {
+            get {
+                object obj = ResourceManager.GetObject("zerg_gas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap zerg_minerals {
+            get {
+                object obj = ResourceManager.GetObject("zerg_minerals", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap zerg_supply {
+            get {
+                object obj = ResourceManager.GetObject("zerg_supply", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap zerg_time {
+            get {
+                object obj = ResourceManager.GetObject("zerg_time", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -32,9 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tmrNameChanged = new System.Windows.Forms.Timer(this.components);
             this.gbFilter = new System.Windows.Forms.GroupBox();
-            this.cbVsRace = new EXControls.EXComboBox();
             this.lblVsRace = new System.Windows.Forms.Label();
-            this.cbRace = new EXControls.EXComboBox();
             this.lblPlayerRace = new System.Windows.Forms.Label();
             this.txtBuildName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
@@ -59,15 +57,48 @@
             this.copySharecodeHTMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copySharecodeBBCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copySharecodeRedditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbUpdate = new System.Windows.Forms.LinkLabel();
+            this.llChangelog = new System.Windows.Forms.LinkLabel();
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.pbIconSelect = new System.Windows.Forms.PictureBox();
+            this.cmIconSelect = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.racesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resourcesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.terranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zergToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.protossToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.randomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mineralsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mineralsTerranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mineralsProtossToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mineralsZergToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mineralsAutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.supplyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gasAutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gasTerranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gasZergToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gasProtossToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.terranToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.zergToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.protossToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.autoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.terranToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.zergToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.protossToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cbPatch = new EXControls.EXComboBox();
             this.cbMatchup = new EXControls.EXComboBox();
             this.lvBuilds = new EXControls.EXListView();
             this.lvchBuild = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvchMatchup = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lbUpdate = new System.Windows.Forms.LinkLabel();
-            this.llChangelog = new System.Windows.Forms.LinkLabel();
+            this.cbVsRace = new EXControls.EXComboBox();
+            this.cbRace = new EXControls.EXComboBox();
             this.gbFilter.SuspendLayout();
             this.cmenuBuilds.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIconSelect)).BeginInit();
+            this.cmIconSelect.SuspendLayout();
             this.SuspendLayout();
             // 
             // tmrNameChanged
@@ -92,17 +123,6 @@
             this.gbFilter.TabStop = false;
             this.gbFilter.Text = "Filter";
             // 
-            // cbVsRace
-            // 
-            this.cbVsRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbVsRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbVsRace.FormattingEnabled = true;
-            this.cbVsRace.Location = new System.Drawing.Point(285, 35);
-            this.cbVsRace.Name = "cbVsRace";
-            this.cbVsRace.Size = new System.Drawing.Size(131, 21);
-            this.cbVsRace.TabIndex = 2;
-            this.cbVsRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
-            // 
             // lblVsRace
             // 
             this.lblVsRace.AutoSize = true;
@@ -111,17 +131,6 @@
             this.lblVsRace.Size = new System.Drawing.Size(18, 13);
             this.lblVsRace.TabIndex = 4;
             this.lblVsRace.Text = "vs";
-            // 
-            // cbRace
-            // 
-            this.cbRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbRace.FormattingEnabled = true;
-            this.cbRace.Location = new System.Drawing.Point(148, 35);
-            this.cbRace.Name = "cbRace";
-            this.cbRace.Size = new System.Drawing.Size(131, 21);
-            this.cbRace.TabIndex = 1;
-            this.cbRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
             // 
             // lblPlayerRace
             // 
@@ -289,7 +298,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(763, 36);
+            this.button1.Location = new System.Drawing.Point(628, 19);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(63, 29);
             this.button1.TabIndex = 17;
@@ -351,6 +360,315 @@
             this.copySharecodeRedditToolStripMenuItem.Text = "Copy Sharecode (Reddit)";
             this.copySharecodeRedditToolStripMenuItem.Click += new System.EventHandler(this.copySharecodeRedditToolStripMenuItem_Click);
             // 
+            // lbUpdate
+            // 
+            this.lbUpdate.AutoSize = true;
+            this.lbUpdate.Location = new System.Drawing.Point(436, 351);
+            this.lbUpdate.Name = "lbUpdate";
+            this.lbUpdate.Size = new System.Drawing.Size(190, 13);
+            this.lbUpdate.TabIndex = 18;
+            this.lbUpdate.TabStop = true;
+            this.lbUpdate.Text = "Update Available (SC2 Scrapbook 2.0)";
+            this.lbUpdate.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbUpdate.Visible = false;
+            this.lbUpdate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.cmdUpdate_LinkClicked);
+            // 
+            // llChangelog
+            // 
+            this.llChangelog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.llChangelog.AutoSize = true;
+            this.llChangelog.Location = new System.Drawing.Point(642, 351);
+            this.llChangelog.Name = "llChangelog";
+            this.llChangelog.Size = new System.Drawing.Size(84, 13);
+            this.llChangelog.TabIndex = 19;
+            this.llChangelog.TabStop = true;
+            this.llChangelog.Text = "View Changelog";
+            this.llChangelog.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llChangelog_LinkClicked);
+            // 
+            // notifyIcon
+            // 
+            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
+            this.notifyIcon.Text = "SC2 Scrapbook";
+            this.notifyIcon.BalloonTipClicked += new System.EventHandler(this.notifyIcon_BalloonTipClicked);
+            this.notifyIcon.DoubleClick += new System.EventHandler(this.notifyIcon_DoubleClick);
+            // 
+            // pbIconSelect
+            // 
+            this.pbIconSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbIconSelect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbIconSelect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbIconSelect.Image = global::SC2Scrapbook.Properties.Resources.protoss_minerals;
+            this.pbIconSelect.Location = new System.Drawing.Point(817, 52);
+            this.pbIconSelect.Name = "pbIconSelect";
+            this.pbIconSelect.Size = new System.Drawing.Size(14, 14);
+            this.pbIconSelect.TabIndex = 20;
+            this.pbIconSelect.TabStop = false;
+            this.pbIconSelect.Click += new System.EventHandler(this.pbIconSelect_Click);
+            // 
+            // cmIconSelect
+            // 
+            this.cmIconSelect.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.racesToolStripMenuItem,
+            this.resourcesToolStripMenuItem});
+            this.cmIconSelect.Name = "cmIconSelect";
+            this.cmIconSelect.Size = new System.Drawing.Size(128, 48);
+            // 
+            // racesToolStripMenuItem
+            // 
+            this.racesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.terranToolStripMenuItem,
+            this.zergToolStripMenuItem,
+            this.protossToolStripMenuItem,
+            this.randomToolStripMenuItem});
+            this.racesToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.random;
+            this.racesToolStripMenuItem.Name = "racesToolStripMenuItem";
+            this.racesToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.racesToolStripMenuItem.Text = "Races";
+            // 
+            // resourcesToolStripMenuItem
+            // 
+            this.resourcesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mineralsToolStripMenuItem,
+            this.gasToolStripMenuItem,
+            this.supplyToolStripMenuItem,
+            this.timeToolStripMenuItem});
+            this.resourcesToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran_minerals;
+            this.resourcesToolStripMenuItem.Name = "resourcesToolStripMenuItem";
+            this.resourcesToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.resourcesToolStripMenuItem.Text = "Resources";
+            // 
+            // terranToolStripMenuItem
+            // 
+            this.terranToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran;
+            this.terranToolStripMenuItem.Name = "terranToolStripMenuItem";
+            this.terranToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.terranToolStripMenuItem.Tag = "terran";
+            this.terranToolStripMenuItem.Text = "Terran";
+            this.terranToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // zergToolStripMenuItem
+            // 
+            this.zergToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.zerg;
+            this.zergToolStripMenuItem.Name = "zergToolStripMenuItem";
+            this.zergToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.zergToolStripMenuItem.Tag = "zerg";
+            this.zergToolStripMenuItem.Text = "Zerg";
+            this.zergToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // protossToolStripMenuItem
+            // 
+            this.protossToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.protoss;
+            this.protossToolStripMenuItem.Name = "protossToolStripMenuItem";
+            this.protossToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.protossToolStripMenuItem.Tag = "protoss";
+            this.protossToolStripMenuItem.Text = "Protoss";
+            this.protossToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // randomToolStripMenuItem
+            // 
+            this.randomToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.random;
+            this.randomToolStripMenuItem.Name = "randomToolStripMenuItem";
+            this.randomToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.randomToolStripMenuItem.Tag = "random";
+            this.randomToolStripMenuItem.Text = "Random";
+            this.randomToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // mineralsToolStripMenuItem
+            // 
+            this.mineralsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mineralsAutoToolStripMenuItem,
+            this.mineralsTerranToolStripMenuItem,
+            this.mineralsZergToolStripMenuItem,
+            this.mineralsProtossToolStripMenuItem});
+            this.mineralsToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran_minerals;
+            this.mineralsToolStripMenuItem.Name = "mineralsToolStripMenuItem";
+            this.mineralsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mineralsToolStripMenuItem.Tag = "minerals";
+            this.mineralsToolStripMenuItem.Text = "Minerals";
+            // 
+            // mineralsTerranToolStripMenuItem
+            // 
+            this.mineralsTerranToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran_minerals;
+            this.mineralsTerranToolStripMenuItem.Name = "mineralsTerranToolStripMenuItem";
+            this.mineralsTerranToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mineralsTerranToolStripMenuItem.Tag = "terran_minerals";
+            this.mineralsTerranToolStripMenuItem.Text = "Terran";
+            this.mineralsTerranToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // mineralsProtossToolStripMenuItem
+            // 
+            this.mineralsProtossToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.protoss_minerals;
+            this.mineralsProtossToolStripMenuItem.Name = "mineralsProtossToolStripMenuItem";
+            this.mineralsProtossToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mineralsProtossToolStripMenuItem.Tag = "protoss_minerals";
+            this.mineralsProtossToolStripMenuItem.Text = "Protoss";
+            this.mineralsProtossToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // mineralsZergToolStripMenuItem
+            // 
+            this.mineralsZergToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.zerg_minerals;
+            this.mineralsZergToolStripMenuItem.Name = "mineralsZergToolStripMenuItem";
+            this.mineralsZergToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mineralsZergToolStripMenuItem.Tag = "zerg_minerals";
+            this.mineralsZergToolStripMenuItem.Text = "Zerg";
+            this.mineralsZergToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // mineralsAutoToolStripMenuItem
+            // 
+            this.mineralsAutoToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran_minerals;
+            this.mineralsAutoToolStripMenuItem.Name = "mineralsAutoToolStripMenuItem";
+            this.mineralsAutoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mineralsAutoToolStripMenuItem.Tag = "minerals";
+            this.mineralsAutoToolStripMenuItem.Text = "Auto";
+            this.mineralsAutoToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // gasToolStripMenuItem
+            // 
+            this.gasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gasAutoToolStripMenuItem,
+            this.gasTerranToolStripMenuItem,
+            this.gasZergToolStripMenuItem,
+            this.gasProtossToolStripMenuItem});
+            this.gasToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran_gas;
+            this.gasToolStripMenuItem.Name = "gasToolStripMenuItem";
+            this.gasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gasToolStripMenuItem.Tag = "gas";
+            this.gasToolStripMenuItem.Text = "Gas";
+            // 
+            // supplyToolStripMenuItem
+            // 
+            this.supplyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.autoToolStripMenuItem,
+            this.terranToolStripMenuItem1,
+            this.zergToolStripMenuItem1,
+            this.protossToolStripMenuItem1});
+            this.supplyToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran_supply;
+            this.supplyToolStripMenuItem.Name = "supplyToolStripMenuItem";
+            this.supplyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.supplyToolStripMenuItem.Tag = "supply";
+            this.supplyToolStripMenuItem.Text = "Supply";
+            // 
+            // timeToolStripMenuItem
+            // 
+            this.timeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.autoToolStripMenuItem1,
+            this.terranToolStripMenuItem2,
+            this.zergToolStripMenuItem2,
+            this.protossToolStripMenuItem2});
+            this.timeToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran_time;
+            this.timeToolStripMenuItem.Name = "timeToolStripMenuItem";
+            this.timeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.timeToolStripMenuItem.Tag = "time";
+            this.timeToolStripMenuItem.Text = "Time";
+            // 
+            // gasAutoToolStripMenuItem
+            // 
+            this.gasAutoToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran_gas;
+            this.gasAutoToolStripMenuItem.Name = "gasAutoToolStripMenuItem";
+            this.gasAutoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gasAutoToolStripMenuItem.Tag = "gas";
+            this.gasAutoToolStripMenuItem.Text = "Auto";
+            this.gasAutoToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // gasTerranToolStripMenuItem
+            // 
+            this.gasTerranToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran_gas;
+            this.gasTerranToolStripMenuItem.Name = "gasTerranToolStripMenuItem";
+            this.gasTerranToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gasTerranToolStripMenuItem.Tag = "terran_gas";
+            this.gasTerranToolStripMenuItem.Text = "Terran";
+            this.gasTerranToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // gasZergToolStripMenuItem
+            // 
+            this.gasZergToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.zerg_gas;
+            this.gasZergToolStripMenuItem.Name = "gasZergToolStripMenuItem";
+            this.gasZergToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gasZergToolStripMenuItem.Tag = "zerg_gas";
+            this.gasZergToolStripMenuItem.Text = "Zerg";
+            this.gasZergToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // gasProtossToolStripMenuItem
+            // 
+            this.gasProtossToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.protoss_gas;
+            this.gasProtossToolStripMenuItem.Name = "gasProtossToolStripMenuItem";
+            this.gasProtossToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gasProtossToolStripMenuItem.Tag = "protoss_gas";
+            this.gasProtossToolStripMenuItem.Text = "Protoss";
+            this.gasProtossToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // autoToolStripMenuItem
+            // 
+            this.autoToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran_supply;
+            this.autoToolStripMenuItem.Name = "autoToolStripMenuItem";
+            this.autoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.autoToolStripMenuItem.Tag = "supply";
+            this.autoToolStripMenuItem.Text = "Auto";
+            this.autoToolStripMenuItem.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // terranToolStripMenuItem1
+            // 
+            this.terranToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.terran_supply;
+            this.terranToolStripMenuItem1.Name = "terranToolStripMenuItem1";
+            this.terranToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.terranToolStripMenuItem1.Tag = "terran_supply";
+            this.terranToolStripMenuItem1.Text = "Terran";
+            this.terranToolStripMenuItem1.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // zergToolStripMenuItem1
+            // 
+            this.zergToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.zerg_supply;
+            this.zergToolStripMenuItem1.Name = "zergToolStripMenuItem1";
+            this.zergToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.zergToolStripMenuItem1.Tag = "zerg_supply";
+            this.zergToolStripMenuItem1.Text = "Zerg";
+            this.zergToolStripMenuItem1.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // protossToolStripMenuItem1
+            // 
+            this.protossToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.protoss_supply;
+            this.protossToolStripMenuItem1.Name = "protossToolStripMenuItem1";
+            this.protossToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.protossToolStripMenuItem1.Tag = "protoss_supply";
+            this.protossToolStripMenuItem1.Text = "Protoss";
+            this.protossToolStripMenuItem1.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // autoToolStripMenuItem1
+            // 
+            this.autoToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.terran_time;
+            this.autoToolStripMenuItem1.Name = "autoToolStripMenuItem1";
+            this.autoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.autoToolStripMenuItem1.Tag = "time";
+            this.autoToolStripMenuItem1.Text = "Auto";
+            this.autoToolStripMenuItem1.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // terranToolStripMenuItem2
+            // 
+            this.terranToolStripMenuItem2.Image = global::SC2Scrapbook.Properties.Resources.terran_time;
+            this.terranToolStripMenuItem2.Name = "terranToolStripMenuItem2";
+            this.terranToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.terranToolStripMenuItem2.Tag = "terran_time";
+            this.terranToolStripMenuItem2.Text = "Terran";
+            this.terranToolStripMenuItem2.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // zergToolStripMenuItem2
+            // 
+            this.zergToolStripMenuItem2.Image = global::SC2Scrapbook.Properties.Resources.zerg_time;
+            this.zergToolStripMenuItem2.Name = "zergToolStripMenuItem2";
+            this.zergToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.zergToolStripMenuItem2.Tag = "zerg_time";
+            this.zergToolStripMenuItem2.Text = "Zerg";
+            this.zergToolStripMenuItem2.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
+            // protossToolStripMenuItem2
+            // 
+            this.protossToolStripMenuItem2.Image = global::SC2Scrapbook.Properties.Resources.protoss_time;
+            this.protossToolStripMenuItem2.Name = "protossToolStripMenuItem2";
+            this.protossToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.protossToolStripMenuItem2.Tag = "protoss_time";
+            this.protossToolStripMenuItem2.Text = "Protoss";
+            this.protossToolStripMenuItem2.Click += new System.EventHandler(this.insertIconMenuClick);
+            // 
             // cbPatch
             // 
             this.cbPatch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -365,7 +683,7 @@
             // 
             // cbMatchup
             // 
-            this.cbMatchup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbMatchup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbMatchup.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbMatchup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMatchup.FormattingEnabled = true;
@@ -407,30 +725,27 @@
             this.lvchMatchup.Text = "Matchup";
             this.lvchMatchup.Width = 87;
             // 
-            // lbUpdate
+            // cbVsRace
             // 
-            this.lbUpdate.AutoSize = true;
-            this.lbUpdate.Location = new System.Drawing.Point(436, 351);
-            this.lbUpdate.Name = "lbUpdate";
-            this.lbUpdate.Size = new System.Drawing.Size(190, 13);
-            this.lbUpdate.TabIndex = 18;
-            this.lbUpdate.TabStop = true;
-            this.lbUpdate.Text = "Update Available (SC2 Scrapbook 2.0)";
-            this.lbUpdate.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lbUpdate.Visible = false;
-            this.lbUpdate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.cmdUpdate_LinkClicked);
+            this.cbVsRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbVsRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbVsRace.FormattingEnabled = true;
+            this.cbVsRace.Location = new System.Drawing.Point(285, 35);
+            this.cbVsRace.Name = "cbVsRace";
+            this.cbVsRace.Size = new System.Drawing.Size(131, 21);
+            this.cbVsRace.TabIndex = 2;
+            this.cbVsRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
             // 
-            // llChangelog
+            // cbRace
             // 
-            this.llChangelog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.llChangelog.AutoSize = true;
-            this.llChangelog.Location = new System.Drawing.Point(642, 351);
-            this.llChangelog.Name = "llChangelog";
-            this.llChangelog.Size = new System.Drawing.Size(84, 13);
-            this.llChangelog.TabIndex = 19;
-            this.llChangelog.TabStop = true;
-            this.llChangelog.Text = "View Changelog";
-            this.llChangelog.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llChangelog_LinkClicked);
+            this.cbRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbRace.FormattingEnabled = true;
+            this.cbRace.Location = new System.Drawing.Point(148, 35);
+            this.cbRace.Name = "cbRace";
+            this.cbRace.Size = new System.Drawing.Size(131, 21);
+            this.cbRace.TabIndex = 1;
+            this.cbRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
             // 
             // frmMain
             // 
@@ -438,6 +753,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(834, 407);
+            this.Controls.Add(this.pbIconSelect);
             this.Controls.Add(this.llChangelog);
             this.Controls.Add(this.lbUpdate);
             this.Controls.Add(this.cbPatch);
@@ -465,9 +781,12 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.Move += new System.EventHandler(this.frmMain_Move);
+            this.Resize += new System.EventHandler(this.frmMain_Resize);
             this.gbFilter.ResumeLayout(false);
             this.gbFilter.PerformLayout();
             this.cmenuBuilds.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbIconSelect)).EndInit();
+            this.cmIconSelect.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -511,6 +830,35 @@
         private System.Windows.Forms.ToolStripMenuItem copySharecodeRedditToolStripMenuItem;
         private System.Windows.Forms.LinkLabel lbUpdate;
         private System.Windows.Forms.LinkLabel llChangelog;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
+        private System.Windows.Forms.PictureBox pbIconSelect;
+        private System.Windows.Forms.ContextMenuStrip cmIconSelect;
+        private System.Windows.Forms.ToolStripMenuItem racesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem terranToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zergToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem protossToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem randomToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem resourcesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mineralsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mineralsAutoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mineralsTerranToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mineralsZergToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mineralsProtossToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gasAutoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gasTerranToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gasZergToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gasProtossToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem supplyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem autoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem terranToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem zergToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem protossToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem timeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem autoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem terranToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem zergToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem protossToolStripMenuItem2;
     }
 }
 

@@ -127,6 +127,7 @@ namespace SC2Scrapbook
 
         public void PopulateBuilds()
         {
+
             lvBuilds.Items.Clear();
             var builds = from x in Program.BuildsDB
                          select x;
@@ -161,6 +162,8 @@ namespace SC2Scrapbook
             }
 
             lvBuilds.Sort();
+
+            lvBuilds.Invalidate();
 
         }
 
@@ -319,6 +322,7 @@ namespace SC2Scrapbook
                             {
                                 subitem.BackColor = SystemColors.Highlight;
                             }
+                            newItem.EnsureVisible();
                             break;
                         }
                     }
@@ -409,7 +413,24 @@ namespace SC2Scrapbook
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Program.ShowBuildSelection();
+            //Program.ShowBuildSelection();
+
+
+            IntPtr dc = Win32.GetDC(IntPtr.Zero);
+
+            double vrefresh = Win32.GetDeviceCaps(dc, (int)Win32.DeviceCap.VREFRESH);
+            int sleep = (int)Math.Floor(500 / vrefresh);
+            Graphics g = Graphics.FromHdc(dc);
+
+            while (true)
+            {
+                // Doesn't work. There's still flicker.
+                g.DrawString("Hello", new Font("Arial", 50, FontStyle.Bold, GraphicsUnit.Pixel), new SolidBrush(Color.Red), 50, 50);
+                System.Threading.Thread.Sleep(sleep);
+            }
+
+
+            //Win32.ReleaseDC(IntPtr.Zero, dc);
         }
 
         private void lvBuilds_Move(object sender, EventArgs e)
@@ -577,6 +598,65 @@ namespace SC2Scrapbook
             psi.FileName = tempFile as string;
             System.Diagnostics.Process.Start(psi);
 
+        }
+
+        private void frmMain_Resize(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Minimized)
+            {
+                Hide();
+                notifyIcon.Visible = true;
+                if (!Configuration.Instance.SeenMinimizeNotification)
+                {
+                    notifyIcon.ShowBalloonTip(2500, "Down Here, Brohan!", "I'm still running! Double click my icon to show me :). Click this alert to not show this message again.", ToolTipIcon.Info);
+                }
+            }
+            else if (WindowState == FormWindowState.Normal)
+            {
+                notifyIcon.Visible = false;
+            }
+        }
+
+        private void notifyIcon_BalloonTipClicked(object sender, EventArgs e)
+        {
+            Configuration.Instance.SeenMinimizeNotification = true;
+        }
+
+        private void notifyIcon_DoubleClick(object sender, EventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Normal;
+        }
+
+        private void pbIconSelect_Click(object sender, EventArgs e)
+        {
+            cmIconSelect.Show(Cursor.Position);
+        }
+
+        private void insertIconMenuClick(object sender, EventArgs e)
+        {
+            if (sender is ToolStripMenuItem)
+            {
+                var item = sender as ToolStripMenuItem;
+
+                if (item.Tag != null)
+                {
+                    if (item.Tag is string)
+                    {
+                        int start = txtScript.SelectionStart;
+                        if (txtScript.SelectionLength > 0)
+                        {
+                            txtScript.Text = txtScript.Text.Remove(txtScript.SelectionStart, txtScript.SelectionLength);
+                        }
+
+                        txtScript.Text = txtScript.Text.Insert(start, string.Format(@"{{{0}}}", item.Tag));
+
+
+                        txtScript.SelectionStart = start + ((string)item.Tag).Length + 2;
+                        
+                    }
+                }                
+            }
         }
         
     }
