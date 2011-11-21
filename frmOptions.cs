@@ -240,5 +240,6 @@ Do you want to continue?", "Advanced Goodness.", MessageBoxButtons.YesNo, Messag
         {
             Configuration.Instance.OpponentInfoOverlayTimeout = (int)numOverlayClose.Value;
         }
+
     }
 }

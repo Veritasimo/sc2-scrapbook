@@ -45,6 +45,9 @@
             this.cmdEditContentFont = new System.Windows.Forms.Button();
             this.cmdEditTitle = new System.Windows.Forms.Button();
             this.grpAdvancedOpponentInfo = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.numOverlayClose = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
             this.llNameHelp = new System.Windows.Forms.LinkLabel();
             this.chkAllowVsX = new System.Windows.Forms.CheckBox();
             this.chkUseRandomBuild = new System.Windows.Forms.CheckBox();
@@ -53,9 +56,6 @@
             this.chkIngameBOSelector = new System.Windows.Forms.CheckBox();
             this.chkOpponentInfoOverlay = new System.Windows.Forms.CheckBox();
             this.chkAdvancedEnabled = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.numOverlayClose = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
             this.grpOverlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numOutlineSize)).BeginInit();
             this.grpAdvancedOpponentInfo.SuspendLayout();
@@ -128,6 +128,7 @@
             this.pnlTextColour.Name = "pnlTextColour";
             this.pnlTextColour.Size = new System.Drawing.Size(90, 19);
             this.pnlTextColour.TabIndex = 19;
+            this.pnlTextColour.Click += new System.EventHandler(this.pnlTextColour_Click);
             // 
             // lblTextColour
             // 
@@ -145,6 +146,7 @@
             this.pnlOutlineColour.Name = "pnlOutlineColour";
             this.pnlOutlineColour.Size = new System.Drawing.Size(90, 19);
             this.pnlOutlineColour.TabIndex = 17;
+            this.pnlOutlineColour.Click += new System.EventHandler(this.pnlOutlineColour_Click);
             // 
             // lblOutlineColour
             // 
@@ -184,6 +186,7 @@
             this.cmdEditContentFont.TabIndex = 13;
             this.cmdEditContentFont.Text = "Edit Content Font";
             this.cmdEditContentFont.UseVisualStyleBackColor = true;
+            this.cmdEditContentFont.Click += new System.EventHandler(this.cmdEditContentFont_Click);
             // 
             // cmdEditTitle
             // 
@@ -193,6 +196,7 @@
             this.cmdEditTitle.TabIndex = 12;
             this.cmdEditTitle.Text = "Edit Title Font";
             this.cmdEditTitle.UseVisualStyleBackColor = true;
+            this.cmdEditTitle.Click += new System.EventHandler(this.cmdEditTitle_Click);
             // 
             // grpAdvancedOpponentInfo
             // 
@@ -213,6 +217,32 @@
             this.grpAdvancedOpponentInfo.TabIndex = 13;
             this.grpAdvancedOpponentInfo.TabStop = false;
             this.grpAdvancedOpponentInfo.Text = "                                             ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(186, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "seconds.";
+            // 
+            // numOverlayClose
+            // 
+            this.numOverlayClose.Location = new System.Drawing.Point(144, 48);
+            this.numOverlayClose.Name = "numOverlayClose";
+            this.numOverlayClose.Size = new System.Drawing.Size(42, 20);
+            this.numOverlayClose.TabIndex = 29;
+            this.numOverlayClose.ValueChanged += new System.EventHandler(this.numOverlayClose_ValueChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(33, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 13);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Close the overlay after";
             // 
             // llNameHelp
             // 
@@ -299,32 +329,6 @@
             this.chkAdvancedEnabled.Text = "Advanced SC2 Settings";
             this.chkAdvancedEnabled.UseVisualStyleBackColor = false;
             this.chkAdvancedEnabled.CheckedChanged += new System.EventHandler(this.chkAdvancedEnabled_CheckedChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 13);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Close the overlay after";
-            // 
-            // numOverlayClose
-            // 
-            this.numOverlayClose.Location = new System.Drawing.Point(144, 48);
-            this.numOverlayClose.Name = "numOverlayClose";
-            this.numOverlayClose.Size = new System.Drawing.Size(42, 20);
-            this.numOverlayClose.TabIndex = 29;
-            this.numOverlayClose.ValueChanged += new System.EventHandler(this.numOverlayClose_ValueChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(186, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "seconds.";
             // 
             // frmOptions
             // 
