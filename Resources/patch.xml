@@ -1,0 +1,5 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<!-- R1CH's formatting was too simple not to steal, but I think siphoning his patch file bandwidth is a bit too far ;D -->
+<Patches>
+	<Patch Version="1.4.2" Ptr1="026a6f08" Ptr2="016c8878" Size1="8d8" Size2="4b0" />
+</Patches>

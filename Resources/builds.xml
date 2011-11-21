@@ -1,0 +1,1193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Builds>
+	<Build>
+		<Build>
+			<Name>
+				<string>Cloaked Banshee</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvX</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+12 - Barracks [1]&#xD;
+13 - Refinery [1] (Scout)&#xD;
+15 - Orbital&#xD;
+15 - Marine&#xD;
+16 - Depot [2]&#xD;
+17 - Factory&#xD;
+18 - Refinery [2]&#xD;
+#Hellion, Starport, Techlab Factory&#xD;
+#Wall ramp with Bunker + 2 Depots&#xD;
+#Switch Starport onto Techlab&#xD;
+#Cloak before banshee</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>2177d72a-f97e-4840-9c08-5fb0b3b58697</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>6rax Marine All-in</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvX</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+12 - Barracks [1] (Scout)&#xD;
+15 - Orbital&#xD;
+#Make marines&#xD;
+16 - Depot [2]&#xD;
+*16 - Stop SCV Production&#xD;
+#@750m, 5x Barracks</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>328e117a-df50-45e5-b61a-9ac4b9a97737</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>3rax Marine/SCV All-in</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvX</Matchup>
+			</Matchup>
+			<Script>
+				<string>#Rally 9th worker to bottom of ramp&#xD;
+10 - Depot [1] (Bottom Ramp)&#xD;
+11 - Barracks [1] (Bottom Ramp)&#xD;
+#Rally 12th worker to top of ramp&#xD;
+*12 - Stop SCV Production&#xD;
+12 - Barracks [2]&#xD;
+12 - Barracks [3] (With 1st rax builder)&#xD;
+#Scout with 2nd rax builder if not 2 player map&#xD;
+12 - Marine&#xD;
+13 - Marine&#xD;
+14 - Marine&#xD;
+15 - Orbital Command&#xD;
+#Constant Marines after OC&#xD;
+#Use Calldown Supply Depot from OC&#xD;
+#Clear Xel'Naga Towers with 2-3 Marines&#xD;
+#Push out at around 4:30 with Marines and SCVs</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>5e977582-c71d-4ea3-b2c3-56d56b9af78f</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Speed Reaper Expand</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvZ</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+12 - Refinery [1]&#xD;
+13 - Barracks [1] (Scout)&#xD;
+16 - Factory [1]&#xD;
+16 - Orbital Command&#xD;
+16 - Tech lab Barracks&#xD;
+16 - Reaper, then Speed&#xD;
+17 - Depot [2]&#xD;
+#Clear towers with 1 Reaper&#xD;
+#Start harras when you have 3 Reaper&#xD;
+#Expand when you can afford to</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>12041b53-3d59-45da-a5cd-d90a8a02cd53</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Gas First</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvT</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+12 - Refinery [1]&#xD;
+13 - Barracks [1] (Scout)&#xD;
+16 - Factory [1]&#xD;
+16 - Orbital Command&#xD;
+&#xD;
+*Variant 1: Fast Banshee&#xD;
+#Hellion, Starport, Tech lab Factory&#xD;
+#Switch Starport and Factory&#xD;
+#Make 1 Banshee for harassment&#xD;
+#Expand when you can afford to&#xD;
+#Switch Startport and Factory for Tank or Blueflame&#xD;
+#Take 2nd gas&#xD;
+&#xD;
+*Variant 2: Fast Blueflame&#xD;
+#Tech lab Factory, start Hellions + Blueflame&#xD;
+#Expand when you can afford to&#xD;
+#Get Starport + 2nd Gas</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>d9284bc9-db13-4a2c-a12d-ff1c21ff92ca</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>1rax no gas FE</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvX</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+12 - Barracks [1] (Scout)&#xD;
+15 - Orbital&#xD;
+15 - Marine&#xD;
+16 - Command Center&#xD;
+17 - Depot [2]&#xD;
+#Barracks x2&#xD;
+#Orbital Command&#xD;
+#Refinery x2</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>e7c9ca8d-e7d6-448f-86f6-cc0ad686a7b5</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>1rax Reaper expand</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvX</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+12 - Barracks [1] (Scout)&#xD;
+14 - Refinery&#xD;
+15 - Orbital&#xD;
+15 - Marine&#xD;
+16 - Depot [2]&#xD;
+#Tech Lab, Reaper&#xD;
+#Command Center</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>faf3f35b-417d-4743-a2e4-0bbd88b7d3fe</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>2Rax Pressure</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvP</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+12 - Barracks [1]&#xD;
+13 - Refinery (Scout)&#xD;
+15 - Orbital&#xD;
+15 - Marine&#xD;
+16 - Barracks [2]&#xD;
+#Reactor on Barracks #1&#xD;
+#Tech Lab on Barracks #2&#xD;
+#Concussive Shell&#xD;
+#Push out when 2 Marauders finished, Start Stim</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>bb68c90c-2dc1-4b21-9d3c-52de510a4023</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Tank Marine Banshee Push</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvP</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+12 - Barracks [1]&#xD;
+13 - Refinery (Scout)&#xD;
+15 - Orbital&#xD;
+15 - Marine&#xD;
+16 - Depot [2]&#xD;
+17 - Factory [1]&#xD;
+18 - Refinery [2]&#xD;
+#@4 Marines, Reactor Barracks&#xD;
+#Starport, Tech Lab Factory&#xD;
+#Lift Factory and make another Tech Lab&#xD;
+#Make Banshees, Harass&#xD;
+#Make Tanks and Marines&#xD;
+#Start Siege @ 2-3 Tanks&#xD;
+#Push out with 4 Tanks, 3 Banshees, Marines and ~10 - SCVs</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>be3516a8-dbd2-4d29-810c-390ad6d536b5</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>2Rax Pressure</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvZ</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+11 - Barracks [1]&#xD;
+12 - Barracks [2]&#xD;
+14 - Orbital (Scout)&#xD;
+#Push out with 5 Marines, 3-5 SCVs</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>20945cff-3121-4a5b-97b5-7a494c4a178a</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Reactor Hellion</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvZ</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+12 - Barracks [1]&#xD;
+13 - Refinery (Scout)&#xD;
+15 - Orbital&#xD;
+15 - Marine&#xD;
+16 - Depot [2]&#xD;
+16 - Marine&#xD;
+#Factory, Reactor on Barracks&#xD;
+#Command Center&#xD;
+#Switch Factory and Barracks, Make Hellions&#xD;
+#Tech Lab on Barracks&#xD;
+#Switch Addons, unless Roaches scouted&#xD;
+#If roaches, make Marauders and Bunker</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>e0a893ed-e4da-4ebc-8504-14bbd055170c</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Gas First Reactor Hellion</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvZ</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+12 - Refinery [1]&#xD;
+13 - Barracks (Scout)&#xD;
+16 - Factory&#xD;
+16 - Orbital&#xD;
+#Reactor Barracks&#xD;
+#Make 1 Hellion then switch Factory with Barracks</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>ac7fdbc7-aa04-448a-8541-f33926e1cd23</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Destiny Cloud Fist (111)</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvX</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Depot [1]&#xD;
+12 - Barracks&#xD;
+13 - Refinery [1]&#xD;
+15 - Orbital&#xD;
+15 - Marine [1-4]&#xD;
+16 - Depot [2]&#xD;
+16 - Refinery [2]&#xD;
+19 - Factory&#xD;
+24 - Starport</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>abba4963-757b-4e19-81e4-da4d431437a6</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>1 Gate Core</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvX</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1]&#xD;
+11 - Chrono Nexus [1]&#xD;
+13 - Gateway (Scout)&#xD;
+14 - Chrono Nexus [2]&#xD;
+15 - Assimilator&#xD;
+16 - Pylon [2]&#xD;
+17 - Core&#xD;
+18 - Zealot&#xD;
+&#xD;
+*Variations:&#xD;
+#PvT: No wall-off, fast stalker&#xD;
+#PvZ: Wall-off&#xD;
+#PvP: Wall-off if opponent 4-gating</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>e5b58568-e335-409a-b627-2c5bcf188513</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Stargate after Core</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvX</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1]&#xD;
+12 - Gateway [1] (Scout)&#xD;
+14 - Assimilator [1]&#xD;
+16 - Pylon [2]&#xD;
+18 - Core&#xD;
+18 - Assimilator [2]&#xD;
+21 - Stalker or Sentry, clear scout&#xD;
+24 - Stargate, save chrono for unit&#xD;
+24 - Pylon [3]&#xD;
+25 - Warp Gate Research&#xD;
+26 - Stalker or Sentry (opposite of last gateway unit)&#xD;
+#Drop Gateway [2] and [3] when producing 2nd Void Ray or 3rd Phoenix&#xD;
+#Or drop Nexus at 400 minerals</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>a92d38ac-fcc3-40d7-9e91-fa64bc076320</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>3 Gate Expand</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvT</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1]&#xD;
+13 - Gateway [1] (Scout)&#xD;
+15 - Assimilator [1]&#xD;
+16 - Pylon [2]&#xD;
+#18 - Optional Gas Steal&#xD;
+18 - Core&#xD;
+20 - Assimilator [2]&#xD;
+20 - Zealot&#xD;
+#Sentry or Stalker after Zealot&#xD;
+#Warp Gate Research&#xD;
+#Build Gateway [2] and [3] without cutting Probes&#xD;
+#Nexus</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>3c27f44a-9646-4282-bb32-362522633c43</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>3 Gate Robo</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvT</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1]&#xD;
+13 - Gateway [1] (Scout)&#xD;
+15 - Assimilator [1]&#xD;
+16 - Pylon [2]&#xD;
+18 - Core&#xD;
+19 - Zealot&#xD;
+22 - Pylon [3]&#xD;
+23 - Stalker&#xD;
+25 - Warp Gate Research&#xD;
+25 - Assimilator [2]&#xD;
+26 - Gateway [2]&#xD;
+27 - Sentry&#xD;
+30 - Pylon [4]&#xD;
+30 - Gateway [3]&#xD;
+31 - Robotics Facility</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>178375f2-fb5d-4de4-a1f8-40c3c0faae15</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>DT Expand</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvT</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1]&#xD;
+12 - Gateway [1] (Scout)&#xD;
+14 - Assimilator [1]&#xD;
+15 - Pylon [2]&#xD;
+16 - Zealot&#xD;
+18 - Core&#xD;
+19 - Assimilator [2]&#xD;
+21 - Warp Gate Research&#xD;
+21 - Stalker if 1rax scouted; Sentry otherwise&#xD;
+23 - Pylon [3]&#xD;
+24 - Gateway [2]&#xD;
+24 - Council after scout cleared out&#xD;
+27 - Stalker&#xD;
+29 - Dark Shrine&#xD;
+30 - Pylon [4]&#xD;
+31 - Stalker&#xD;
+33 - Pylon&#xD;
+33 - Warp in two DT next to enemy base&#xD;
+37 - Nexus&#xD;
+27 - Sentry&#xD;
+30 - Pylon [4]&#xD;
+30 - Gateway [3]&#xD;
+31 - Robotics Facility</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>d1c90f52-59c8-4fbb-8a3a-6c4a3d7789f6</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>HuK's 20 food FE</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvT</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1]&#xD;
+10 - Chrono @ Nexus [1]&#xD;
+13 - Gateway [1] (Scout)&#xD;
+13 - Chrono @ Nexus&#xD;
+14 - Assimilator [1]&#xD;
+16 - Pylon [2]&#xD;
+17 - Core&#xD;
+#Mine Gas with discretion&#xD;
+#Warp Gate when Core finishes, 100% Chrono on Core&#xD;
+20 - Nexus&#xD;
+22 - Stalker&#xD;
+*Cut Probes if being All-Inned&#xD;
+24 - Gateway [2]&#xD;
+26 - Stalker&#xD;
+#Optionally make 0-2 more probes&#xD;
+#Proxy Pylon when you can afford&#xD;
+#Warp in 3 Stalkers and poke with all 4</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>66dc14fa-f8e2-4cb2-bbfb-80f7e55c5da5</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>3 Gate Sentry Expand</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvZ</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1] (Scout)&#xD;
+10 - Chrono Nexus&#xD;
+12 - Gateway [1] (Chrono Nexus)&#xD;
+14 - Assimilator [1]&#xD;
+15 - Chrono Nexus&#xD;
+16 - Pylon [2]&#xD;
+17 - Core&#xD;
+19 - Zealot [1]&#xD;
+22 - Assimilator [2]&#xD;
+23 - Warp Gate, Pylon [3]&#xD;
+24 - Sentry, Chrono Warpgate&#xD;
+*2 more sentry, Chrono 2nd.&#xD;
+29 - Gateway [2]&#xD;
+29 - Gateway [3]&#xD;
+32 - Pylon [4] (Bottom of Ramp)&#xD;
+34 - Nexus</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>8f79cfab-e95e-4ea2-9d94-a507331cfae3</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Forge FE</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvZ</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1] (Natural Choke, Scout)&#xD;
+12 - Forge (Natual Choke)&#xD;
+14 - Nexus&#xD;
+14 - Cannons (Natual Choke)&#xD;
+14 - Gateway (Natual Choke)&#xD;
+#Finish your Wall-off with a Zealot</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>965c0aa0-2610-4cb1-bc55-c47435c74b42</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Blink Stalker Push</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvZ</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1]&#xD;
+13 - Gateway [1] (Scout)&#xD;
+15 - Assimilator [1]&#xD;
+16 - Pylon [2]&#xD;
+18 - Core&#xD;
+18 - Assimilator [2]&#xD;
+18 - Pylon [3]&#xD;
+21 - 2x Stalker (Chrono)&#xD;
+23 - Warp Gate Research&#xD;
+23 - Populate Assimilator [2]&#xD;
+27 - Gateway [2]&#xD;
+28 - Gateway [3]&#xD;
+29 - Pylon [4]&#xD;
+30 - Twilight Council&#xD;
+30 - Gateway [4]&#xD;
+*30 - Cut Probes&#xD;
+30 - Chrono @ Blink&#xD;
+30 - Warp in Stalkers&#xD;
+30 - Pylon [5]&#xD;
+*44 - Blink Complete</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>08812065-ad03-4657-bd94-253c5b86897f</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>4 Warpgate Rush</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvP</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1]&#xD;
+11 - Chrono @ Nexus (Twice)&#xD;
+13 - Gateway [1] (Scout)&#xD;
+14 - Assimilator [1]&#xD;
+16 - Pylon [2]&#xD;
+17 - Core&#xD;
+18 - Zealot&#xD;
+22 - Stalker&#xD;
+24 - Warp Gate Research (4x Chrono)&#xD;
+24 - Cut probes @ 20 (16 Mins, 3 gas, 1 scout)&#xD;
+24 - After stalker, drop 3x gateway&#xD;
+24 - Stalker&#xD;
+26 - Proxy Pylons&#xD;
+#On 4gate complete, warp 4x stalker&#xD;
+#Warp rounds of 1x stalker and 3x zealot&#xD;
+#Attack after 2nd warp in wave&#xD;
+#Zealots go first, but still clump with stalkers&#xD;
+#Proxy pylon at ramp&#xD;
+*Focus stalkers&#xD;
+*Focus units warping in&#xD;
+*Retreat and wait for more zealots if they die</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>6d3af2f3-edc2-490b-a51b-1977a761fdff</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>2 Gate Robo</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvP</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Chrono @ Nexus [1]&#xD;
+10 - Pylon [1]&#xD;
+10 - Gateway [1]&#xD;
+11 - Assimilator [1]&#xD;
+12 - Chrono @ Nexus [2]&#xD;
+15 - Core (ASAP)&#xD;
+16 - Pylon [2]&#xD;
+#Warp Gate Research (Constant Chrono) and Stalker (1x Chrono)&#xD;
+20 - Assimilator [2]&#xD;
+22 - Robotics Facility&#xD;
+*22 - Cut Probes&#xD;
+22 - Zealot, Sentry&#xD;
+24 - Pylon [3]&#xD;
+24 - Gateway [2]&#xD;
+24 - Immortal</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>c77f63f2-8148-4cf6-8fed-86ee9c602dec</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Defensive 3 Gate</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvP</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1]&#xD;
+10 - Chrono @ Nexus [1]&#xD;
+12 - Gateway (Scout)&#xD;
+13 - Chrono @ Nexus [2]&#xD;
+14 - Assimilator [1]&#xD;
+16 - Pylon [2]&#xD;
+16 - Core&#xD;
+17 - Zealot&#xD;
+18 - Chrono @ Nexus [3]&#xD;
+22 - Stalker&#xD;
+*24 - Cut Probes&#xD;
+24 - Gateway [2]&#xD;
+24 - Assimilator [2]&#xD;
+24 - Pylon [3] (Ramp)&#xD;
+24 - Sentry&#xD;
+26 - Gateway&#xD;
+26 - Probe&#xD;
+27 - Stalker&#xD;
+29 - Stalker&#xD;
+31 - Probe&#xD;
+32 - Pylon [4]&#xD;
+#32 - Optional Robo or Council</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>160f5b52-9257-4270-ba0f-b2e8b1db3979</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Hatch First Baneling Bust</string>
+			</Name>
+			<Matchup>
+				<Matchup>ZvX</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Overlord&#xD;
+15 - Hatchery&#xD;
+14 - Extractor&#xD;
+13 - Spawning Pool&#xD;
+16 - Overlord&#xD;
+#Constant Ling Production&#xD;
+#Metabolic Boost @ 100 gas&#xD;
+#Baneling Nest @ 50 gas&#xD;
+#6x Baneling @ 150 gas</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>2ba923a8-4c73-4197-9080-832a5ad60e11</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>7 Roach Rush Expand</string>
+			</Name>
+			<Matchup>
+				<Matchup>ZvX</Matchup>
+			</Matchup>
+			<Script>
+				<string>11 - Overlord (Overpool)&#xD;
+11 - Spawning Pool&#xD;
+15 - Extractor [1]&#xD;
+16 - Queen&#xD;
+18 - Roach Warren&#xD;
+17 - Overlord x2&#xD;
+17 - 7x Roach&#xD;
+34 - Hatchery&#xD;
+36 - Lair&#xD;
+36 - Extractor [2]&#xD;
+35 - Extractor [3]&#xD;
+34 - Extractor [4]</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>1fef22c3-3be5-40ef-9727-5e127503e5dd</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Hatch First vs Pool First</string>
+			</Name>
+			<Matchup>
+				<Matchup>ZvZ</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Overlord&#xD;
+15 - Hatchery&#xD;
+15 - Spawning Pool&#xD;
+18 - Extractor&#xD;
+17 - Overlord&#xD;
+17 - Roach Warren&#xD;
+16 - Zerglings x3&#xD;
+19 - Queen&#xD;
+21 - Overlord&#xD;
+21 - Roaches</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>cfaf9752-72cb-4e5a-a76e-cabca59e4355</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Speedling Baneling Expand</string>
+			</Name>
+			<Matchup>
+				<Matchup>ZvZ</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Overlord&#xD;
+15 - Extractor&#xD;
+14 - Spawning Pool&#xD;
+15 - Overlord&#xD;
+15 - Queen&#xD;
+17 - Zerglings x3&#xD;
+19 - Metabolic Boost&#xD;
+19 - Remove 2 Drone from Gas&#xD;
+19 - Zerglings x4&#xD;
+21 - Hatchery&#xD;
+#Baneling Nest @ 50 gas</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>2e9d040b-8989-44db-9d11-3ec4c5fa271f</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Hatch First vs Hatch First</string>
+			</Name>
+			<Matchup>
+				<Matchup>ZvZ</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Overlord&#xD;
+15 - Hatchery&#xD;
+16 - Extractor&#xD;
+15 - Spawning Pool&#xD;
+17 - Overlord&#xD;
+17 - Queen x2&#xD;
+21 - Zerglings x3&#xD;
+24 - Metabolic Boost&#xD;
+24 - Remove 2 Drone from Gas&#xD;
+24 - Zerglings x4&#xD;
+26 - Overlord</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>dfc71ef7-7a6e-4c70-8ab7-00c96a93723c</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>14 Pool 15 Hatch</string>
+			</Name>
+			<Matchup>
+				<Matchup>ZvP</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Overlord&#xD;
+14 - Spawning Pool&#xD;
+15 - Hatchery&#xD;
+15 - Overlord&#xD;
+15 - Queen&#xD;
+17 - Zerglings x2&#xD;
+20 - Extractor&#xD;
+21 - Queen&#xD;
+24 - Overlord</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>86c4c01b-2e3d-44e5-bfac-180ad7f62b13</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Hatch First</string>
+			</Name>
+			<Matchup>
+				<Matchup>ZvT</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Overlord&#xD;
+15 - Hatchery&#xD;
+15 - Spawning Pool&#xD;
+17 - Extractor&#xD;
+17 - Overlord&#xD;
+17 - Queen x2&#xD;
+22 - Zerglings x2&#xD;
+26 - Overlord&#xD;
+28 - Metabolic Boost&#xD;
+28 - Spine Crawler</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>20b12f45-c636-4f6b-a2ef-dfe45fc874b5</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>2 Gate Robo (2)</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvP</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Chrono @ Nexus [1]&#xD;
+10 - Pylon [1]&#xD;
+10 - Gateway [1]&#xD;
+11 - Assimilator&#xD;
+12 - Chrono @ Nexus [2]&#xD;
+15 - Core&#xD;
+16 - Pylon [2]&#xD;
+18 - Stalker&#xD;
+18 - Warpgate (cb x 3)&#xD;
+20 - Assimilator&#xD;
+22 - Robo&#xD;
+24 - Gateway [2]&#xD;
+*Cut Probes&#xD;
+24 - Pylon [3]&#xD;
+26 - Sentry&#xD;
+&#xD;
+#immortal as soon as robo done, CB once&#xD;
+#Warp 2 sentries if 4 gate / blink, otherwise stalkers&#xD;
+#Continue probes if no push&#xD;
+#Drop 3rd gate, robo bay, get 2 colossi, go fukken kill 'em</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>9d0cbfc7-737e-41d2-835f-c988a524055a</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>3 Gate Pressure FE (Naniwa)</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvT</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1]&#xD;
+11 - Gateway [1]&#xD;
+12 - Chrono @ Nexus (Twice)&#xD;
+13 - Gas (Rally worker to it)&#xD;
+@20 Gas - Remove 1 from gas&#xD;
+16 - Core (Scout)&#xD;
+17 - Pylon [2]&#xD;
+#Warp-gate when Core finishes, Chrono&#xD;
+#@50 gas, remove workers&#xD;
+20 - Cut Probes&#xD;
+#@400 minerals, expand&#xD;
+20 - Stalker [1]&#xD;
+#@300 minerals, Gateway [2] and [3]&#xD;
+#Resume mining gas&#xD;
+#Resume Probes&#xD;
+#Zealot after Stalker&#xD;
+25 - Pylon [3]&#xD;
+#Proxy Pylon&#xD;
+#On WG finish, 3x stalker, chrono gateways&#xD;
+#Warp 2 rounds of 2x zealot, 1x stalker&#xD;
+#Attack</string>
+			</Script>
+			<Notes>
+				<string>Used on Metalopolis vs ThorZaIN @ Blizzard EU 2011</string>
+			</Notes>
+			<Guid>
+				<string>9686561c-afaf-4f59-afa9-b1497a71e56c</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>anypro 7 gate 1/1 + obs</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvZ</Matchup>
+			</Matchup>
+			<Script>
+				<string>*Standard FFE&#xD;
+16 - Nexus&#xD;
+16 - Forge, Probe, Pylon&#xD;
+20 - Cannon (2 if its a tricky map for forge expand)&#xD;
+23 - Gateway, gas, gas&#xD;
+     - Gas, Core&#xD;
+     - Warpgate, Sentry&#xD;
+&#xD;
+39 - +1 attack upgrade&#xD;
+*boosts used only on Probes and a couple on Warpgate&#xD;
+     - 4th gas&#xD;
+*Warpgate upgrade half done =&gt; add 6 gates&#xD;
+Start chrono boosting +1 attack and immediately start +1 armor, which you continue to chrono boost&#xD;
+&#xD;
+Robo</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>9a9a7d1a-3310-40ab-ab00-e75db2deab5f</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>3 Gate Robo (All-In)</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvT</Matchup>
+			</Matchup>
+			<Script>
+				<string>9 - Pylon [1] (Scout)&#xD;
+11 - Chrono Nexus&#xD;
+13 - Gateway [1], Chrono Nexus&#xD;
+15 - Assimilator [1]&#xD;
+16 - Pylon [2], Chrono Nexus?&#xD;
+17 - Core&#xD;
+18 - Zealot&#xD;
+20 - Chrono Nexus&#xD;
+21 - Assimilator [2]&#xD;
+23 - Stalker, WarpGate (Chrono)&#xD;
+25 - Warp Gate Research&#xD;
+26 - Pylon [3]&#xD;
+26 - Robo&#xD;
+28 - Gateway [2] &amp; [3] (WG 50%)&#xD;
+29 - Sentry&#xD;
+31 - Pylon [4]&#xD;
+32 - Immortal (Chrono)&#xD;
+*Scout with stalker&#xD;
+36 - Proxy Pylon&#xD;
+36 - Sentry, Sentry, Zealot&#xD;
+*PYLONS&#xD;
+*Constant Immortal (Chrono)&#xD;
+*Warp in Stalkers&#xD;
+*Push from proxy @ 2 Immortal</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>c8b1c760-643b-4eb9-b2b9-da850e023410</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Baneling Bust</string>
+			</Name>
+			<Matchup>
+				<Matchup>ZvX</Matchup>
+			</Matchup>
+			<Script>
+				<string>10 - Overlord&#xD;
+11 - Spawning Pool&#xD;
+11 - Extractor&#xD;
+15 - Overlord&#xD;
+15 - Queen&#xD;
+17 - Zerglings &#xD;
+#Continue producing Zerglings and Overlords&#xD;
+#@100 Gas - Metabolic Boost&#xD;
+#@50 Gas - Baneling Nest (21 Supply)&#xD;
+#@100% Baneling Next - Morph 6 Banelings&#xD;
+#@100% Banelings - Attack</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Baneling Bust (2 Base, Kyrix Style)</string>
+			</Name>
+			<Matchup>
+				<Matchup>ZvT</Matchup>
+			</Matchup>
+			<Script>
+				<string>15 - Hatchery&#xD;
+14/15 - Spawning Pool&#xD;
+17 - Extractor (1)&#xD;
+@100% Spawning Pool - Queen (1)&#xD;
+@100% Hatchery - Queen (2)&#xD;
+@100gas - Metabolic Boost, Extractor (2)&#xD;
+@50gas - Baneling Nest&#xD;
+*Stop Drones at 38 (16 at each mineral line + 6 mining gas)&#xD;
+*Begin massing Zerglings, rally to outside opponent's base&#xD;
+*Make as many Banelings as your gas will allow </string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+			</Guid>
+		</Build>
+	</Build>
+</Builds>

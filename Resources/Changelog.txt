@@ -1,0 +1,41 @@
+2.0
+------------------
+New: Changed name to SC2 Scrapbook.
+New: Added build sharing capabilities via right-click. You can send other
+     SC2 Scrapbook users your builds by sending them the Sharecode generated
+     by the various sharing options.
+
+     SC2 Scrapbook registers the sc2bo:// protocol to handle Sharecodes.
+
+     Build Order Sharecodes are XML representations of the internal Build
+     object with GZip compression and base64 encoding.
+New: Added advanced SC2 interaction. These options directly interface with
+     the StarCraft II process.
+
+     No data is gathered from the game client except for the IDs of the players
+     currently in game. Overlay data is harvested from the Battle.net website.
+
+     Other applications such as StarInfo for JTV and SC2 XSplit Screen Switcher
+     (used by many pros) gather the same data. Although the many users of these
+     applications do not face repercussions for doing so, it is still against the
+     SC2 EULA and Blizzard can detect and ban their usage at any time if they deem
+     it necessary.
+New: Added build order selection overlay. Upon game join, the overlay will prompt
+     for race selection. After selecting your race and the race of your opponent,
+     you will either be shown a list of builds to choose from, or will be given a
+     random build if you have enabled random build selection.
+New: Added opponent info overlay. Inspired by StarInfo, this option displays an
+     overlay of your opponent's League, Rank, Points, Wins, Losses and Main Race
+     from their Battle.net web profile.
+New: Added support for web updates of the default build list.
+New: Added application update notification.
+Fix: Fixed various bugs with the build order list.
+Fix: Fixed an issue that prevented updating the same build twice.
+
+Todo: Add image support to build order overlay (Supply, Minerals, Gas, Units, etc).
+
+
+1.0
+------------------
+
+New: Initial Release
