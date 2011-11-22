@@ -70,24 +70,14 @@ namespace SC2Scrapbook
 
         private void cmdExit_Click(object sender, EventArgs e)
         {
-            if (frmBuildOverlay.Instance != null)
-                frmBuildOverlay.Instance.Close();
-            Close();
-
+            Program.HideBuildSelection();
+            
             if (chkAdvancedEnabled.Checked)
                 if (string.IsNullOrWhiteSpace(txtMySC2Name.Text))
                     chkAdvancedEnabled.Checked = false;
 
             Program.SaveConfigurationXML();
-
-            if (chkAdvancedEnabled.Checked)
-            {
-                Program.StartSC2InteractionThread();
-            }
-            else
-            {
-                Program.KillSC2InteractionThread();
-            }
+            Close();
         }
 
         private void pnlTextColour_Paint(object sender, PaintEventArgs e)
@@ -178,6 +168,11 @@ Do you want to continue?", "Advanced Goodness.", MessageBoxButtons.YesNo, Messag
                 {
                     chkIngameBOSelector.Checked = false;
                     chkOpponentInfoOverlay.Checked = false;
+                    Program.KillSC2InteractionThread();
+                }
+                else
+                {
+                    Program.StartSC2InteractionThread();
                 }
 
                 Configuration.Instance.UseAdvancedOptions = chkAdvancedEnabled.Checked;

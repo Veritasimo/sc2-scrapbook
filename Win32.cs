@@ -388,5 +388,8 @@ namespace SC2Scrapbook
         public static extern int SetScrollPos(IntPtr hWnd, int nBar,
                                        int nPos, bool bRedraw);
 
+        [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool IsWindow(IntPtr hWnd);
     }
 }

@@ -35,7 +35,6 @@ namespace SC2Scrapbook
         [STAThread]
         static void Main()
         {
-
             string sharecode = null;
             string[] args = Environment.GetCommandLineArgs();
 
@@ -79,7 +78,8 @@ namespace SC2Scrapbook
                 LoadConfigurationXML();
                 LoadBuildsXML();
 
-                StartSC2InteractionThread();
+                if (Configuration.Instance.UseAdvancedOptions)
+                    StartSC2InteractionThread();
 
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
@@ -104,7 +104,6 @@ namespace SC2Scrapbook
             }
         }
 
-
         internal static void StartSC2InteractionThread()
         {
             if (_sc2InteractionThread != null)
@@ -117,7 +116,12 @@ namespace SC2Scrapbook
         internal static void KillSC2InteractionThread()
         {
             if (_sc2InteractionThread != null)
+            {
                 _sc2InteractionThread.Abort();
+                HideBuildSelection();
+                HideOverlay();
+                HidePlayerInfo();
+            }
         }
 
         internal static void ShowPlayerInfo(Models.Player player)
@@ -474,6 +478,8 @@ namespace SC2Scrapbook
 
                     while (sc2Process == null)
                     {
+                        if (!Configuration.Instance.UseAdvancedOptions)
+                            throw new Exception();
                         System.Threading.Thread.Sleep(100);
                         Process[] processes = Process.GetProcessesByName("SC2");
 
@@ -504,8 +510,19 @@ namespace SC2Scrapbook
 
                     while (!sc2Process.HasExited)
                     {
+                        if (!Configuration.Instance.UseAdvancedOptions)
+                            throw new Exception();
                         if (Program.ActivePatch != null)
                         {
+                            if (sc2Process.MainWindowHandle == IntPtr.Zero || !Win32.IsWindow(sc2Process.MainWindowHandle))
+                            {
+                                inGame = false;
+                                Debug.WriteLine("SC2 main window gone.");
+                                HidePlayerInfo();
+                                HideBuildSelection();
+                                HideOverlay();
+                            }
+
                             Win32.RECT rct;
                             Win32.GetWindowRect(sc2Process.MainWindowHandle, out rct);
 
@@ -583,7 +600,6 @@ namespace SC2Scrapbook
                                     }
                                 }
                             }
-
                             else
                             {
                                 bool result = Win32.ReadProcessMemory(sc2Process.Handle, Program.ActivePatch.Ptr1, buffer, 256, out read);
@@ -596,7 +612,7 @@ namespace SC2Scrapbook
                                     if (buffer[0] == 0)
                                     {
                                         inGame = false;
-                                        Console.WriteLine("Now out of game.");
+                                        Debug.WriteLine("Now out of game.");
                                         HidePlayerInfo();
                                         HideBuildSelection();
                                         HideOverlay();
@@ -610,7 +626,7 @@ namespace SC2Scrapbook
                                             if (fgw == sc2Process.MainWindowHandle)
                                             {
                                                 tabbed = false;
-                                                Console.WriteLine("Tabbed in");
+                                                Debug.WriteLine("Tabbed in");
 
                                                 if (frmPlayerInfo.Instance != null)
                                                 {
@@ -624,7 +640,7 @@ namespace SC2Scrapbook
                                             {
 
                                                 tabbed = true;
-                                                Console.WriteLine("Tabbed out");
+                                                Debug.WriteLine("Tabbed out");
                                                 if (frmPlayerInfo.Instance != null)
                                                 {
                                                     frmPlayerInfo.Instance.HideWindow();
@@ -638,8 +654,15 @@ namespace SC2Scrapbook
                             }
                             
                         }
+
                         System.Threading.Thread.Sleep(500);
                     }
+
+                    inGame = false;
+                    Debug.WriteLine("Process exited");
+                    HidePlayerInfo();
+                    HideBuildSelection();
+                    HideOverlay();
                 }
 
             }
