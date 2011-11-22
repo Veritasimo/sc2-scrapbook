@@ -1,7 +1,7 @@
 2.1
 ------------------
-Fix: Fixed some issues with SC2 interaction. This may fix the
-     interface issues some people have been reporting.
+Fix: Fixed some issues with SC2 interaction.
+Fix: Fixed interface disappearing issues.
 
 2.0
 ------------------

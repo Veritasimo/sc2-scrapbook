@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SC2Scrapbook</RootNamespace>
-    <AssemblyName>SC2Scrapbook</AssemblyName>
+    <AssemblyName>SC2Scrapbook2.1</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

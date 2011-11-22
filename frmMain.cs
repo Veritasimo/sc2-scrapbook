@@ -59,10 +59,12 @@ namespace SC2Scrapbook
 
             if (!Configuration.Instance.FirstRun)
             {
-                Left = Configuration.Instance.MainLeft;
-                Top = Configuration.Instance.MainTop;
-                Height = Configuration.Instance.MainHeight;
-                Width = Configuration.Instance.MainWidth;
+                if ((Configuration.Instance.MainHeight != 0) && (Configuration.Instance.MainWidth != 0)) {
+                    Left = Configuration.Instance.MainLeft;
+                    Top = Configuration.Instance.MainTop;
+                    Height = Configuration.Instance.MainHeight;
+                    Width = Configuration.Instance.MainWidth;
+                }
             }
 
             foreach (Patch patch in Program.PatchList)
@@ -363,11 +365,6 @@ namespace SC2Scrapbook
             Program.HidePlayerInfo();
             Program.KillSC2InteractionThread();
 
-            Configuration.Instance.MainWidth = Width;
-            Configuration.Instance.MainHeight = Height;
-            Configuration.Instance.MainLeft = Left;
-            Configuration.Instance.MainTop = Top;
-
             Program.SaveConfigurationXML();
             Environment.Exit(0);
         }
@@ -613,7 +610,14 @@ namespace SC2Scrapbook
             }
             else if (WindowState == FormWindowState.Normal)
             {
-                notifyIcon.Visible = false;
+                if (Visible)
+                {
+                    notifyIcon.Visible = false;    
+                    Configuration.Instance.MainWidth = Width;
+                    Configuration.Instance.MainHeight = Height;
+                    Configuration.Instance.MainLeft = Left;
+                    Configuration.Instance.MainTop = Top;
+                }
             }
         }
 
