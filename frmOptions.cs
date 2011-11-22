@@ -26,6 +26,7 @@ namespace SC2Scrapbook
             chkAllowVsX.Checked = Configuration.Instance.AllowVsXBuilds;
             grpAdvancedOpponentInfo.Enabled = chkAdvancedEnabled.Checked;
             numOverlayClose.Value = Configuration.Instance.OpponentInfoOverlayTimeout;
+            numImageScale.Value = Configuration.Instance.OverlayImageScale;
 
         }
 
@@ -60,10 +61,9 @@ namespace SC2Scrapbook
 
         private void cmdPreview_Click(object sender, EventArgs e)
         {
-            if (frmBuildOverlay.Instance != null)
-                frmBuildOverlay.Instance.Close();
+            Program.HideOverlay();
 
-            Models.Build build = new Models.Build("Build Title", "XvX", "Normal Example Content\r\n#Italic Example Content\r\n*Bold Example Content", "");
+            Models.Build build = new Models.Build("Build Title", "TvP", "Normal Example Content\r\n#Italic Example Content\r\n*Bold Example Content\r\nContent with {minerals}{protoss}{zerg}icons\r\nContent with {protoss_unit_zealot} {terran_unit_marine} units", "");
             frmBuildOverlay overlay = new frmBuildOverlay(build);
             overlay.Show();
         }
@@ -234,6 +234,11 @@ Do you want to continue?", "Advanced Goodness.", MessageBoxButtons.YesNo, Messag
         private void numOverlayClose_ValueChanged(object sender, EventArgs e)
         {
             Configuration.Instance.OpponentInfoOverlayTimeout = (int)numOverlayClose.Value;
+        }
+
+        private void numImageScale_ValueChanged(object sender, EventArgs e)
+        {
+            Configuration.Instance.OverlayImageScale = (int)numImageScale.Value;
         }
 
     }

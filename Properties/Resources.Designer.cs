@@ -67,6 +67,1637 @@ namespace SC2Scrapbook.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap btn_building_protoss_assimilator {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_assimilator", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_cyberneticscore {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_cyberneticscore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_darkshrine {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_darkshrine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_energycrystal {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_energycrystal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_eyeofadun {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_eyeofadun", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_fleetbeacon {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_fleetbeacon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_forge {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_forge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_gateway {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_gateway", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_nexus {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_nexus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_obelisk {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_obelisk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_phasecannon {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_phasecannon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_photoncannon {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_photoncannon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_pylon {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_pylon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_roboticsfacility {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_roboticsfacility", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_roboticssupportbay {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_roboticssupportbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_stargate {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_stargate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_templararchives {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_templararchives", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_twilightcouncil {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_twilightcouncil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_protoss_warpgate {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_protoss_warpgate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_armory {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_armory", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_autoturret {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_autoturret", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_barracks {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_barracks", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_bunker {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_bunker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_commandcenter {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_commandcenter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_deepspacerelay {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_deepspacerelay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_engineeringbay {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_engineeringbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_factory {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_factory", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_fusioncore {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_fusioncore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_ghostacademy {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_ghostacademy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_merccompound {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_merccompound", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_mercenaryport {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_mercenaryport", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_missileturret {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_missileturret", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_planetaryfortress {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_planetaryfortress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_reactor {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_reactor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_refinery {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_refinery", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_sensordome {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_sensordome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_starport {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_starport", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_supplydepot {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_supplydepot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_supplydepotlowered {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_supplydepotlowered", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_surveillancestation {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_surveillancestation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_terran_techlab {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_terran_techlab", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_banelingnest {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_banelingnest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_creeptumor {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_creeptumor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_evolutionchamber {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_evolutionchamber", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_extractor {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_extractor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_greaterspire {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_greaterspire", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_hatchery {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_hatchery", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_hive {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_hive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_hydraliskden {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_hydraliskden", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_infestationpit {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_infestationpit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_infestorpit {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_infestorpit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_lair {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_lair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_lurkerden {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_lurkerden", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_nydusnetwork {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_nydusnetwork", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_nydusworm {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_nydusworm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_roachwarren {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_roachwarren", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_spawningpool {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_spawningpool", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_spinecrawler {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_spinecrawler", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_spire {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_spire", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_sporecrawler {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_sporecrawler", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_building_zerg_ultraliskcavern {
+            get {
+                object obj = ResourceManager.GetObject("btn_building_zerg_ultraliskcavern", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_archon {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_archon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_carrier {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_carrier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_colossus {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_colossus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_darktemplar {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_darktemplar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_hightemplar {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_hightemplar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_immortal {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_immortal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_interceptor {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_interceptor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_mothership {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_mothership", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_nullifier {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_nullifier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_observer {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_observer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_phaseprism {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_phaseprism", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_phaseprismstationary {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_phaseprismstationary", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_phoenix {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_phoenix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_probe {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_probe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_sentry {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_sentry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_stalker {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_stalker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_warpprism {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_warpprism", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_warpprismstationary {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_warpprismstationary", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_warpray {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_warpray", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_protoss_zealot {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_protoss_zealot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_targetingdrone {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_targetingdrone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_banshee {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_banshee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_battlecruiser {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_battlecruiser", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_cobra {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_cobra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_diamondback {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_diamondback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_dropship {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_dropship", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_firebat {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_firebat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_ghost {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_ghost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_hellion {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_hellion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_hurcules {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_hurcules", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_jackal {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_jackal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_marauder {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_marauder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_marine {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_marine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_medivac {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_medivac", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_mule {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_mule", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_nomad {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_nomad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_raven {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_raven", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_reaper {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_reaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_scv {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_scv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_siegetank {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_siegetank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_siegetanksiegemode {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_siegetanksiegemode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_targetingdrone {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_targetingdrone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_thor {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_thor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_viking {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_viking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_vikingassault {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_vikingassault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_vikingfighter {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_vikingfighter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_terran_vulture {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_terran_vulture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_baneling {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_baneling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_broodlord {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_broodlord", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_changeling {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_changeling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_corruptedmass {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_corruptedmass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_corruptor {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_corruptor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_drone {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_drone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_egg {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_egg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_hydralisk {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_hydralisk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_infestedmarine {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_infestedmarine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_infestor {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_infestor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_larva {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_larva", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_lurker {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_lurker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_mantalisk {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_mantalisk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_mutalisk {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_mutalisk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_omegalisk {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_omegalisk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_overlord {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_overlord", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_overseer {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_overseer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_queen {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_queen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_roach {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_roach", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_symbiote {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_symbiote", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_ultralisk {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_ultralisk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_unit_zerg_zergling {
+            get {
+                object obj = ResourceManager.GetObject("btn_unit_zerg_zergling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_airarmorlevel0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_airarmorlevel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_airarmorlevel1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_airarmorlevel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_airarmorlevel2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_airarmorlevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_airarmorlevel3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_airarmorlevel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_airweaponslevel0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_airweaponslevel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_airweaponslevel1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_airweaponslevel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_airweaponslevel2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_airweaponslevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_airweaponslevel3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_airweaponslevel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_extendedthermallance {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_extendedthermallance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_fluxvanes {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_fluxvanes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_graviticbooster {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_graviticbooster", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_graviticdrive {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_graviticdrive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_gravitoncatapult {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_gravitoncatapult", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_groundarmorlevel0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_groundarmorlevel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_groundarmorlevel1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_groundarmorlevel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_groundarmorlevel2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_groundarmorlevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_groundarmorlevel3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_groundarmorlevel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_groundweaponslevel0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_groundweaponslevel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_groundweaponslevel1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_groundweaponslevel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_groundweaponslevel2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_groundweaponslevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_groundweaponslevel3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_groundweaponslevel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_khaydarinamulet {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_khaydarinamulet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_shieldslevel0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_shieldslevel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_shieldslevel1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_shieldslevel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_shieldslevel2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_shieldslevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_protoss_shieldslevel3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_protoss_shieldslevel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_behemothreactor {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_behemothreactor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_buildingarmor {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_buildingarmor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_caduceusreactor {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_caduceusreactor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_cloak {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_cloak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_corvidreactor {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_corvidreactor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_durablematerials {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_durablematerials", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_hisecautotracking {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_hisecautotracking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_infantryarmorlevel0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_infantryarmorlevel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_infantryarmorlevel1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_infantryarmorlevel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_infantryarmorlevel2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_infantryarmorlevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_infantryarmorlevel3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_infantryarmorlevel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_infantryweaponslevel0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_infantryweaponslevel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_infantryweaponslevel1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_infantryweaponslevel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_infantryweaponslevel2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_infantryweaponslevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_infantryweaponslevel3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_infantryweaponslevel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_infernalpreigniter {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_infernalpreigniter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_jotunboosters {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_jotunboosters", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_mobiusreactor {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_mobiusreactor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_moebiusreactor {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_moebiusreactor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_neosteelframe {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_neosteelframe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_reapernitropacks {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_reapernitropacks", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_shipplatinglevel0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_shipplatinglevel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_shipplatinglevel1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_shipplatinglevel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_shipplatinglevel2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_shipplatinglevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_shipplatinglevel3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_shipplatinglevel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_shipweaponslevel0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_shipweaponslevel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_shipweaponslevel1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_shipweaponslevel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_shipweaponslevel2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_shipweaponslevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_shipweaponslevel3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_shipweaponslevel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_twin_linkedflamethrower {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_twin_linkedflamethrower", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_vehicleplatinglevel0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_vehicleplatinglevel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_vehicleplatinglevel1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_vehicleplatinglevel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_vehicleplatinglevel2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_vehicleplatinglevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_vehicleplatinglevel3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_vehicleplatinglevel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_vehicleweaponslevel0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_vehicleweaponslevel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_vehicleweaponslevel1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_vehicleweaponslevel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_vehicleweaponslevel2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_vehicleweaponslevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_vehicleweaponslevel3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_vehicleweaponslevel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_terran_weaponrefit {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_terran_weaponrefit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_adrenalglands {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_adrenalglands", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_airattacks_level0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_airattacks_level0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_airattacks_level1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_airattacks_level1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_airattacks_level2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_airattacks_level2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_airattacks_level3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_airattacks_level3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_anabolicsynthesis {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_anabolicsynthesis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_buildingarmor {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_buildingarmor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_centrifugalhooks {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_centrifugalhooks", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_chitinousplating {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_chitinousplating", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_enduringcorruption {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_enduringcorruption", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_flyercarapace_level0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_flyercarapace_level0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_flyercarapace_level1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_flyercarapace_level1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_flyercarapace_level2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_flyercarapace_level2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_flyercarapace_level3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_flyercarapace_level3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_glialreconstitution {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_glialreconstitution", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_groovedspines {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_groovedspines", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_groundcarapace_level0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_groundcarapace_level0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_groundcarapace_level1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_groundcarapace_level1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_groundcarapace_level2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_groundcarapace_level2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_groundcarapace_level3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_groundcarapace_level3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_meleeattacks_leve3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_meleeattacks_leve3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_meleeattacks_level0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_meleeattacks_level0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_meleeattacks_level1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_meleeattacks_level1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_meleeattacks_level2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_meleeattacks_level2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_meleeattacks_level3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_meleeattacks_level3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_metabolicboost {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_metabolicboost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_missileattacks_level0 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_missileattacks_level0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_missileattacks_level1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_missileattacks_level1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_missileattacks_level2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_missileattacks_level2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_missileattacks_level3 {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_missileattacks_level3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_muscularaugments {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_muscularaugments", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_organiccarapace {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_organiccarapace", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_pathogenglands {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_pathogenglands", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_peristalsis {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_peristalsis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_pneumatizedcarapace {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_pneumatizedcarapace", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_seismicspines {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_seismicspines", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_tunnelingclaws {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_tunnelingclaws", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_upgrade_zerg_ventralsacs {
+            get {
+                object obj = ResourceManager.GetObject("btn_upgrade_zerg_ventralsacs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
         ///&lt;Builds&gt;
@@ -79,18 +1710,16 @@ namespace SC2Scrapbook.Properties {
         ///				&lt;Matchup&gt;TvX&lt;/Matchup&gt;
         ///			&lt;/Matchup&gt;
         ///			&lt;Script&gt;
-        ///				&lt;string&gt;10 - Depot [1]&amp;#xD;
-        ///12 - Barracks [1]&amp;#xD;
-        ///13 - Refinery [1] (Scout)&amp;#xD;
-        ///15 - Orbital&amp;#xD;
-        ///15 - Marine&amp;#xD;
-        ///16 - Depot [2]&amp;#xD;
-        ///17 - Factory&amp;#xD;
-        ///18 - Refinery [2]&amp;#xD;
+        ///				&lt;string&gt;{supply}10 - Depot [1]&amp;#xD;
+        ///{supply}12 - Barracks [1]&amp;#xD;
+        ///{supply}13 - Refinery [1] (Scout)&amp;#xD;
+        ///{supply}15 - Orbital&amp;#xD;
+        ///{supply}15 - Marine&amp;#xD;
+        ///{supply}16 - Depot [2]&amp;#xD;
+        ///{supply}17 - Factory&amp;#xD;
+        ///{supply}18 - Refinery [2]&amp;#xD;
         ///#Hellion, Starport, Techlab Factory&amp;#xD;
-        ///#Wall ramp with Bunker + 2 Depots&amp;#xD;
-        ///#Switch Starport onto Techlab&amp;#xD;
-        ///#Cloak before [rest of string was truncated]&quot;;.
+        ///#Wall ramp with Bunker  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string builds {
             get {
@@ -99,18 +1728,21 @@ namespace SC2Scrapbook.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2.0
+        ///   Looks up a localized string similar to 2.1
         ///------------------
-        ///New: Changed name to SC2 Scrapbook.
-        ///New: Added build sharing capabilities via right-click. You can send other
-        ///     SC2 Scrapbook users your builds by sending them the Sharecode generated
-        ///     by the various sharing options.
+        ///Fix: Fixed some issues with SC2 interaction.
+        ///Fix: Fixed interface disappearing issues.
         ///
-        ///     SC2 Scrapbook registers the sc2bo:// protocol to handle Sharecodes.
+        ///2.0
+        ///------------------
+        ///Known Issues:
+        ///1. The overlays can causes an FPS drop on some systems. It is not majorly 
+        ///   noticable unless you are actively looking at the FPS count or have dated
+        ///   hardware. 
         ///
-        ///     Build Order Sharecodes are XML representations of the internal Build
-        ///     object with GZip compression and base64 encoding.
-        ///New: Added advanced SC2 interaction. These options [rest of string was truncated]&quot;;.
+        ///   I&apos;m not 100% sure about the cause, but I&apos;d have to guess it&apos;s to do with 
+        ///   the method used to ensure you can click through the overlays. There are
+        ///   a few solutions that I can th [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Changelog {
             get {
@@ -321,7 +1953,7 @@ namespace SC2Scrapbook.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2|SC2 Scrapbook 1.0|http://www.teamliquid.net/forum/viewmessage.php?topic_id=252809.
+        ///   Looks up a localized string similar to 3|SC2 Scrapbook 2.1|http://www.teamliquid.net/forum/viewmessage.php?topic_id=287794.
         /// </summary>
         internal static string version {
             get {

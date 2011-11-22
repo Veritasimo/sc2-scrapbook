@@ -1,3 +1,8 @@
+2.2
+------------------
+New: Added Unit, Building and Upgrade icon support.
+New: Added image scale selection to the options page (0 = no scaling).
+
 2.1
 ------------------
 Fix: Fixed some issues with SC2 interaction.

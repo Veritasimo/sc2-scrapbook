@@ -35,7 +35,6 @@
             this.grpOverlay = new System.Windows.Forms.GroupBox();
             this.txtOverlayHotkey = new System.Windows.Forms.TextBox();
             this.lblOverlayKey = new System.Windows.Forms.Label();
-            this.cmdPreview = new System.Windows.Forms.Button();
             this.pnlTextColour = new System.Windows.Forms.Panel();
             this.lblTextColour = new System.Windows.Forms.Label();
             this.pnlOutlineColour = new System.Windows.Forms.Panel();
@@ -44,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmdEditContentFont = new System.Windows.Forms.Button();
             this.cmdEditTitle = new System.Windows.Forms.Button();
+            this.cmdPreview = new System.Windows.Forms.Button();
             this.grpAdvancedOpponentInfo = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.numOverlayClose = new System.Windows.Forms.NumericUpDown();
@@ -56,10 +56,13 @@
             this.chkIngameBOSelector = new System.Windows.Forms.CheckBox();
             this.chkOpponentInfoOverlay = new System.Windows.Forms.CheckBox();
             this.chkAdvancedEnabled = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.numImageScale = new System.Windows.Forms.NumericUpDown();
             this.grpOverlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numOutlineSize)).BeginInit();
             this.grpAdvancedOpponentInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numOverlayClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numImageScale)).BeginInit();
             this.SuspendLayout();
             // 
             // cmdExit
@@ -74,9 +77,10 @@
             // 
             // grpOverlay
             // 
+            this.grpOverlay.Controls.Add(this.numImageScale);
+            this.grpOverlay.Controls.Add(this.label5);
             this.grpOverlay.Controls.Add(this.txtOverlayHotkey);
             this.grpOverlay.Controls.Add(this.lblOverlayKey);
-            this.grpOverlay.Controls.Add(this.cmdPreview);
             this.grpOverlay.Controls.Add(this.pnlTextColour);
             this.grpOverlay.Controls.Add(this.lblTextColour);
             this.grpOverlay.Controls.Add(this.pnlOutlineColour);
@@ -95,7 +99,7 @@
             // txtOverlayHotkey
             // 
             this.txtOverlayHotkey.Enabled = false;
-            this.txtOverlayHotkey.Location = new System.Drawing.Point(120, 134);
+            this.txtOverlayHotkey.Location = new System.Drawing.Point(120, 162);
             this.txtOverlayHotkey.Name = "txtOverlayHotkey";
             this.txtOverlayHotkey.Size = new System.Drawing.Size(90, 20);
             this.txtOverlayHotkey.TabIndex = 22;
@@ -105,21 +109,11 @@
             // 
             this.lblOverlayKey.AutoSize = true;
             this.lblOverlayKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOverlayKey.Location = new System.Drawing.Point(10, 137);
+            this.lblOverlayKey.Location = new System.Drawing.Point(10, 165);
             this.lblOverlayKey.Name = "lblOverlayKey";
             this.lblOverlayKey.Size = new System.Drawing.Size(80, 13);
             this.lblOverlayKey.TabIndex = 21;
             this.lblOverlayKey.Text = "Overlay Hotkey";
-            // 
-            // cmdPreview
-            // 
-            this.cmdPreview.Location = new System.Drawing.Point(113, 173);
-            this.cmdPreview.Name = "cmdPreview";
-            this.cmdPreview.Size = new System.Drawing.Size(97, 23);
-            this.cmdPreview.TabIndex = 20;
-            this.cmdPreview.Text = "Preview Overlay";
-            this.cmdPreview.UseVisualStyleBackColor = true;
-            this.cmdPreview.Click += new System.EventHandler(this.cmdPreview_Click);
             // 
             // pnlTextColour
             // 
@@ -197,6 +191,16 @@
             this.cmdEditTitle.Text = "Edit Title Font";
             this.cmdEditTitle.UseVisualStyleBackColor = true;
             this.cmdEditTitle.Click += new System.EventHandler(this.cmdEditTitle_Click);
+            // 
+            // cmdPreview
+            // 
+            this.cmdPreview.Location = new System.Drawing.Point(327, 219);
+            this.cmdPreview.Name = "cmdPreview";
+            this.cmdPreview.Size = new System.Drawing.Size(97, 23);
+            this.cmdPreview.TabIndex = 20;
+            this.cmdPreview.Text = "Preview Overlay";
+            this.cmdPreview.UseVisualStyleBackColor = true;
+            this.cmdPreview.Click += new System.EventHandler(this.cmdPreview_Click);
             // 
             // grpAdvancedOpponentInfo
             // 
@@ -330,14 +334,42 @@
             this.chkAdvancedEnabled.UseVisualStyleBackColor = false;
             this.chkAdvancedEnabled.CheckedChanged += new System.EventHandler(this.chkAdvancedEnabled_CheckedChanged);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(10, 138);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Image Scale";
+            // 
+            // numImageScale
+            // 
+            this.numImageScale.Location = new System.Drawing.Point(120, 136);
+            this.numImageScale.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.numImageScale.Name = "numImageScale";
+            this.numImageScale.Size = new System.Drawing.Size(90, 20);
+            this.numImageScale.TabIndex = 24;
+            this.numImageScale.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numImageScale.ValueChanged += new System.EventHandler(this.numImageScale_ValueChanged);
+            // 
             // frmOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 244);
+            this.ClientSize = new System.Drawing.Size(515, 267);
             this.Controls.Add(this.chkAdvancedEnabled);
             this.Controls.Add(this.grpAdvancedOpponentInfo);
             this.Controls.Add(this.grpOverlay);
+            this.Controls.Add(this.cmdPreview);
             this.Controls.Add(this.cmdExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -353,6 +385,7 @@
             this.grpAdvancedOpponentInfo.ResumeLayout(false);
             this.grpAdvancedOpponentInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numOverlayClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numImageScale)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,5 +420,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown numOverlayClose;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown numImageScale;
+        private System.Windows.Forms.Label label5;
     }
 }

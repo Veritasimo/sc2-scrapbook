@@ -32,6 +32,7 @@ namespace SC2Scrapbook
         public Color OverlayTextColour { get; set; }
         public Color OverlayTextOutlineColour { get; set; }
         public int OverlayTextOutlineSize { get; set; }
+        public int OverlayImageScale { get; set; }
 
         public bool FirstRun { get; set; }
         
@@ -119,6 +120,9 @@ namespace SC2Scrapbook
                         break;
                     case "overlaytitlesize":
                         OverlayTitleSize = (float)floatSerializer.Deserialize(reader);
+                        break;
+                    case "overlayimagescale":
+                        OverlayImageScale = (int)intSerializer.Deserialize(reader);
                         break;
                     case "useadvancedoptions":
                         UseAdvancedOptions = (bool)boolSerializer.Deserialize(reader);
@@ -217,6 +221,10 @@ namespace SC2Scrapbook
 
             writer.WriteStartElement("OverlayTextOutlineSize");
             intSerializer.Serialize(writer, OverlayTextOutlineSize);
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("OverlayImageScale");
+            intSerializer.Serialize(writer, OverlayImageScale);
             writer.WriteEndElement();
 
             writer.WriteStartElement("UseAdvancedOptions");

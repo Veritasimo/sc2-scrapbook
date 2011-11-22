@@ -232,4 +232,703 @@
   <data name="zerg_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons\zerg\time.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btn_building_protoss_assimilator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-assimilator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_cyberneticscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-cyberneticscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_darkshrine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-darkshrine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_energycrystal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-energycrystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_eyeofadun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-eyeofadun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_fleetbeacon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-fleetbeacon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_forge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-forge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_gateway" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-gateway.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_nexus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-nexus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_obelisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-obelisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_phasecannon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-phasecannon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_photoncannon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-photoncannon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_pylon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-pylon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_roboticsfacility" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-roboticsfacility.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_roboticssupportbay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-roboticssupportbay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_stargate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-stargate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_templararchives" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-templararchives.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_twilightcouncil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-twilightcouncil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_protoss_warpgate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-protoss-warpgate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_armory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-armory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_autoturret" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-autoturret.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_barracks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-barracks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_bunker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-bunker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_commandcenter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-commandcenter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_deepspacerelay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-deepspacerelay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_engineeringbay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-engineeringbay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_factory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-factory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_fusioncore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-fusioncore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_ghostacademy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-ghostacademy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_merccompound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-merccompound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_mercenaryport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-mercenaryport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_missileturret" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-missileturret.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_planetaryfortress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-planetaryfortress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_reactor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-reactor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_refinery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-refinery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_sensordome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-sensordome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_starport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-starport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_supplydepot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-supplydepot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_supplydepotlowered" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-supplydepotlowered.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_surveillancestation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-surveillancestation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_terran_techlab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-terran-techlab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_banelingnest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-banelingnest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_creeptumor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-creeptumor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_evolutionchamber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-evolutionchamber.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_extractor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-extractor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_greaterspire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-greaterspire.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_hatchery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-hatchery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_hive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-hive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_hydraliskden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-hydraliskden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_infestationpit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-infestationpit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_infestorpit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-infestorpit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_lair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-lair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_lurkerden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-lurkerden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_nydusnetwork" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-nydusnetwork.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_nydusworm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-nydusworm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_roachwarren" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-roachwarren.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_spawningpool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-spawningpool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_spinecrawler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-spinecrawler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_spire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-spire.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_sporecrawler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-sporecrawler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_building_zerg_ultraliskcavern" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-building-zerg-ultraliskcavern.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_archon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-archon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_carrier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-carrier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_colossus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-colossus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_darktemplar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-darktemplar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_hightemplar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-hightemplar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_immortal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-immortal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_interceptor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-interceptor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_mothership" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-mothership.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_nullifier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-nullifier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_observer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-observer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_phaseprism" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-phaseprism.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_phaseprismstationary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-phaseprismstationary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_phoenix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-phoenix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_probe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-probe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_sentry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-sentry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_stalker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-stalker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_warpprism" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-warpprism.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_warpprismstationary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-warpprismstationary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_warpray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-warpray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_protoss_zealot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-protoss-zealot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_targetingdrone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-targetingdrone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_banshee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-banshee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_battlecruiser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-battlecruiser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_cobra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-cobra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_diamondback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-diamondback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_dropship" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-dropship.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_firebat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-firebat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_ghost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-ghost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_hellion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-hellion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_hurcules" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-hurcules.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_jackal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-jackal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_marauder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-marauder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_marine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-marine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_medivac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-medivac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_mule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-mule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_nomad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-nomad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_raven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-raven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_reaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-reaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_scv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-scv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_siegetank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-siegetank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_siegetanksiegemode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-siegetanksiegemode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_targetingdrone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-targetingdrone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_thor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-thor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_viking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-viking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_vikingassault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-vikingassault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_vikingfighter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-vikingfighter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_terran_vulture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-terran-vulture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_baneling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-baneling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_broodlord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-broodlord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_changeling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-changeling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_corruptedmass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-corruptedmass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_corruptor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-corruptor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_drone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-drone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_egg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-egg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_hydralisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-hydralisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_infestedmarine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-infestedmarine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_infestor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-infestor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_larva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-larva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_lurker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-lurker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_mantalisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-mantalisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_mutalisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-mutalisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_omegalisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-omegalisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_overlord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-overlord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_overseer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-overseer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_queen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-queen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_roach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-roach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_symbiote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-symbiote.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_ultralisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-ultralisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_unit_zerg_zergling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-unit-zerg-zergling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_airarmorlevel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-airarmorlevel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_airarmorlevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-airarmorlevel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_airarmorlevel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-airarmorlevel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_airarmorlevel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-airarmorlevel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_airweaponslevel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-airweaponslevel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_airweaponslevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-airweaponslevel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_airweaponslevel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-airweaponslevel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_airweaponslevel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-airweaponslevel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_extendedthermallance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-extendedthermallance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_fluxvanes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-fluxvanes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_graviticbooster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-graviticbooster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_graviticdrive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-graviticdrive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_gravitoncatapult" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-gravitoncatapult.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_groundarmorlevel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-groundarmorlevel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_groundarmorlevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-groundarmorlevel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_groundarmorlevel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-groundarmorlevel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_groundarmorlevel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-groundarmorlevel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_groundweaponslevel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-groundweaponslevel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_groundweaponslevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-groundweaponslevel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_groundweaponslevel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-groundweaponslevel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_groundweaponslevel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-groundweaponslevel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_khaydarinamulet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-khaydarinamulet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_shieldslevel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-shieldslevel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_shieldslevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-shieldslevel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_shieldslevel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-shieldslevel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_protoss_shieldslevel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-protoss-shieldslevel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_behemothreactor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-behemothreactor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_buildingarmor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-buildingarmor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_caduceusreactor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-caduceusreactor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_cloak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-cloak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_corvidreactor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-corvidreactor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_durablematerials" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-durablematerials.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_hisecautotracking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-hisecautotracking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_infantryarmorlevel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-infantryarmorlevel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_infantryarmorlevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-infantryarmorlevel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_infantryarmorlevel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-infantryarmorlevel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_infantryarmorlevel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-infantryarmorlevel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_infantryweaponslevel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-infantryweaponslevel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_infantryweaponslevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-infantryweaponslevel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_infantryweaponslevel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-infantryweaponslevel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_infantryweaponslevel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-infantryweaponslevel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_infernalpreigniter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-infernalpreigniter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_jotunboosters" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-jotunboosters.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_mobiusreactor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-mobiusreactor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_moebiusreactor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-moebiusreactor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_neosteelframe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-neosteelframe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_reapernitropacks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-reapernitropacks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_shipplatinglevel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-shipplatinglevel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_shipplatinglevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-shipplatinglevel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_shipplatinglevel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-shipplatinglevel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_shipplatinglevel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-shipplatinglevel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_shipweaponslevel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-shipweaponslevel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_shipweaponslevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-shipweaponslevel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_shipweaponslevel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-shipweaponslevel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_shipweaponslevel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-shipweaponslevel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_twin_linkedflamethrower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-twin-linkedflamethrower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_vehicleplatinglevel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-vehicleplatinglevel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_vehicleplatinglevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-vehicleplatinglevel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_vehicleplatinglevel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-vehicleplatinglevel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_vehicleplatinglevel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-vehicleplatinglevel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_vehicleweaponslevel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-vehicleweaponslevel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_vehicleweaponslevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-vehicleweaponslevel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_vehicleweaponslevel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-vehicleweaponslevel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_vehicleweaponslevel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-vehicleweaponslevel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_terran_weaponrefit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-terran-weaponrefit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_adrenalglands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-adrenalglands.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_airattacks_level0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-airattacks-level0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_airattacks_level1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-airattacks-level1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_airattacks_level2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-airattacks-level2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_airattacks_level3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-airattacks-level3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_anabolicsynthesis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-anabolicsynthesis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_buildingarmor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-buildingarmor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_centrifugalhooks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-centrifugalhooks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_chitinousplating" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-chitinousplating.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_enduringcorruption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-enduringcorruption.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_flyercarapace_level0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-flyercarapace-level0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_flyercarapace_level1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-flyercarapace-level1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_flyercarapace_level2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-flyercarapace-level2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_flyercarapace_level3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-flyercarapace-level3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_glialreconstitution" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-glialreconstitution.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_groovedspines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-groovedspines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_groundcarapace_level0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-groundcarapace-level0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_groundcarapace_level1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-groundcarapace-level1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_groundcarapace_level2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-groundcarapace-level2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_groundcarapace_level3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-groundcarapace-level3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_meleeattacks_leve3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-meleeattacks-leve3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_meleeattacks_level0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-meleeattacks-level0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_meleeattacks_level1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-meleeattacks-level1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_meleeattacks_level2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-meleeattacks-level2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_meleeattacks_level3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-meleeattacks-level3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_metabolicboost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-metabolicboost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_missileattacks_level0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-missileattacks-level0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_missileattacks_level1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-missileattacks-level1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_missileattacks_level2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-missileattacks-level2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_missileattacks_level3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-missileattacks-level3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_muscularaugments" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-muscularaugments.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_organiccarapace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-organiccarapace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_pathogenglands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-pathogenglands.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_peristalsis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-peristalsis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_pneumatizedcarapace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-pneumatizedcarapace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_seismicspines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-seismicspines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_tunnelingclaws" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-tunnelingclaws.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_upgrade_zerg_ventralsacs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btn-upgrade-zerg-ventralsacs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

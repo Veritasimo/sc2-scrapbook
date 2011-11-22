@@ -120,6 +120,82 @@ namespace SC2Scrapbook
                 }
             }
             catch { }
+
+
+            foreach (ToolStripMenuItem item in zergToolStripMenuItem3.DropDownItems)
+            {
+                item.Click += new EventHandler(insertIconMenuClick);
+            }
+
+            foreach (ToolStripMenuItem item in protossToolStripMenuItem3.DropDownItems)
+            {
+                item.Click += new EventHandler(insertIconMenuClick);
+            }
+
+            foreach (ToolStripMenuItem item in terranToolStripMenuItem3.DropDownItems)
+            {
+                item.Click += new EventHandler(insertIconMenuClick);
+            }
+
+            foreach (ToolStripMenuItem item in zergToolStripMenuItem4.DropDownItems)
+            {
+                item.Click += new EventHandler(insertIconMenuClick);
+            }
+
+            foreach (ToolStripMenuItem item in protossToolStripMenuItem4.DropDownItems)
+            {
+                item.Click += new EventHandler(insertIconMenuClick);
+            }
+
+            foreach (ToolStripMenuItem item in terranToolStripMenuItem4.DropDownItems)
+            {
+                item.Click += new EventHandler(insertIconMenuClick);
+            }
+
+            foreach (ToolStripMenuItem item in zergToolStripMenuItem5.DropDownItems)
+            {
+                if (!item.HasDropDownItems)
+                {
+                    item.Click += new EventHandler(insertIconMenuClick);
+                }
+                else
+                {
+                    foreach (ToolStripMenuItem subitem in item.DropDownItems)
+                    {
+                        subitem.Click += new EventHandler(insertIconMenuClick);
+                    }
+                }
+            }
+
+            foreach (ToolStripMenuItem item in protossToolStripMenuItem5.DropDownItems)
+            {
+                if (!item.HasDropDownItems)
+                {
+                    item.Click += new EventHandler(insertIconMenuClick);
+                }
+                else
+                {
+                    foreach (ToolStripMenuItem subitem in item.DropDownItems)
+                    {
+                        subitem.Click += new EventHandler(insertIconMenuClick);
+                    }
+                }
+            }
+
+            foreach (ToolStripMenuItem item in terranToolStripMenuItem5.DropDownItems)
+            {
+                if (!item.HasDropDownItems)
+                {
+                    item.Click += new EventHandler(insertIconMenuClick);
+                }
+                else
+                {
+                    foreach (ToolStripMenuItem subitem in item.DropDownItems)
+                    {
+                        subitem.Click += new EventHandler(insertIconMenuClick);
+                    }
+                }
+            }
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -661,6 +737,11 @@ namespace SC2Scrapbook
                     }
                 }                
             }
+        }
+
+        private void vikingAssaultModEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
         
     }

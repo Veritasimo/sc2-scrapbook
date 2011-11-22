@@ -798,6 +798,7 @@ namespace SC2Scrapbook
                 Configuration.Instance.OverlayTextColour = System.Drawing.Color.FromArgb(255, 255, 255);
                 Configuration.Instance.OverlayTextOutlineColour = System.Drawing.Color.FromArgb(255, 0, 128, 192);
                 Configuration.Instance.OverlayTextOutlineSize = 1;
+                Configuration.Instance.OverlayImageScale = 2;
             }
         }
 
