@@ -694,8 +694,12 @@ namespace SC2Scrapbook
 
                 }
 
+                tempPath.AddString(line, fontFamily, (int)modifier, Configuration.Instance.OverlayContentSize, new PointF(0, 0), strformat);
+                RectangleF tsize = tempPath.GetBounds();
+                
                 path.AddString(line, fontFamily, (int)modifier, Configuration.Instance.OverlayContentSize, new PointF(x, pos), strformat);
-
+                x += tsize.X + tsize.Width + tsize.Left;
+                tempPath.Reset();
                 pos += addedHeight + 2;
                 if (x > width)
                     width = x;
