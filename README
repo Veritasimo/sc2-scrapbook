@@ -1,3 +1,8 @@
+2.1
+------------------
+Fix: Fixed some issues with SC2 interaction. This may fix the
+     interface issues some people have been reporting.
+
 2.0
 ------------------
 Known Issues:
