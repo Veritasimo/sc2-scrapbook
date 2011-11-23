@@ -33,6 +33,8 @@
             this.cmdExit = new System.Windows.Forms.Button();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.grpOverlay = new System.Windows.Forms.GroupBox();
+            this.numImageScale = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtOverlayHotkey = new System.Windows.Forms.TextBox();
             this.lblOverlayKey = new System.Windows.Forms.Label();
             this.pnlTextColour = new System.Windows.Forms.Panel();
@@ -45,6 +47,7 @@
             this.cmdEditTitle = new System.Windows.Forms.Button();
             this.cmdPreview = new System.Windows.Forms.Button();
             this.grpAdvancedOpponentInfo = new System.Windows.Forms.GroupBox();
+            this.txtMySC2Name = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.numOverlayClose = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,22 +55,19 @@
             this.chkAllowVsX = new System.Windows.Forms.CheckBox();
             this.chkUseRandomBuild = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtMySC2Name = new System.Windows.Forms.TextBox();
             this.chkIngameBOSelector = new System.Windows.Forms.CheckBox();
             this.chkOpponentInfoOverlay = new System.Windows.Forms.CheckBox();
             this.chkAdvancedEnabled = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numImageScale = new System.Windows.Forms.NumericUpDown();
             this.grpOverlay.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numImageScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numOutlineSize)).BeginInit();
             this.grpAdvancedOpponentInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numOverlayClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numImageScale)).BeginInit();
             this.SuspendLayout();
             // 
             // cmdExit
             // 
-            this.cmdExit.Location = new System.Drawing.Point(435, 219);
+            this.cmdExit.Location = new System.Drawing.Point(560, 219);
             this.cmdExit.Name = "cmdExit";
             this.cmdExit.Size = new System.Drawing.Size(75, 23);
             this.cmdExit.TabIndex = 0;
@@ -91,36 +91,64 @@
             this.grpOverlay.Controls.Add(this.cmdEditTitle);
             this.grpOverlay.Location = new System.Drawing.Point(10, 12);
             this.grpOverlay.Name = "grpOverlay";
-            this.grpOverlay.Size = new System.Drawing.Size(219, 202);
+            this.grpOverlay.Size = new System.Drawing.Size(322, 202);
             this.grpOverlay.TabIndex = 12;
             this.grpOverlay.TabStop = false;
             this.grpOverlay.Text = "Build Order Overlay";
             // 
+            // numImageScale
+            // 
+            this.numImageScale.Location = new System.Drawing.Point(180, 136);
+            this.numImageScale.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.numImageScale.Name = "numImageScale";
+            this.numImageScale.Size = new System.Drawing.Size(136, 20);
+            this.numImageScale.TabIndex = 24;
+            this.numImageScale.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numImageScale.ValueChanged += new System.EventHandler(this.numImageScale_ValueChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(10, 138);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Image Scale";
+            // 
             // txtOverlayHotkey
             // 
-            this.txtOverlayHotkey.Enabled = false;
-            this.txtOverlayHotkey.Location = new System.Drawing.Point(120, 162);
+            this.txtOverlayHotkey.Location = new System.Drawing.Point(180, 162);
             this.txtOverlayHotkey.Name = "txtOverlayHotkey";
-            this.txtOverlayHotkey.Size = new System.Drawing.Size(90, 20);
+            this.txtOverlayHotkey.ReadOnly = true;
+            this.txtOverlayHotkey.Size = new System.Drawing.Size(136, 20);
             this.txtOverlayHotkey.TabIndex = 22;
-            this.txtOverlayHotkey.TextChanged += new System.EventHandler(this.txtOverlayHotkey_TextChanged);
+            this.txtOverlayHotkey.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtOverlayHotkey_KeyDown);
+            this.txtOverlayHotkey.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtOverlayHotkey_KeyUp);
             // 
             // lblOverlayKey
             // 
             this.lblOverlayKey.AutoSize = true;
-            this.lblOverlayKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOverlayKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOverlayKey.Location = new System.Drawing.Point(10, 165);
             this.lblOverlayKey.Name = "lblOverlayKey";
-            this.lblOverlayKey.Size = new System.Drawing.Size(80, 13);
+            this.lblOverlayKey.Size = new System.Drawing.Size(116, 13);
             this.lblOverlayKey.TabIndex = 21;
-            this.lblOverlayKey.Text = "Overlay Hotkey";
+            this.lblOverlayKey.Text = "Overlay Toggle Hotkey";
             // 
             // pnlTextColour
             // 
             this.pnlTextColour.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlTextColour.Location = new System.Drawing.Point(120, 61);
+            this.pnlTextColour.Location = new System.Drawing.Point(180, 61);
             this.pnlTextColour.Name = "pnlTextColour";
-            this.pnlTextColour.Size = new System.Drawing.Size(90, 19);
+            this.pnlTextColour.Size = new System.Drawing.Size(136, 19);
             this.pnlTextColour.TabIndex = 19;
             this.pnlTextColour.Click += new System.EventHandler(this.pnlTextColour_Click);
             // 
@@ -136,9 +164,9 @@
             // pnlOutlineColour
             // 
             this.pnlOutlineColour.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlOutlineColour.Location = new System.Drawing.Point(120, 86);
+            this.pnlOutlineColour.Location = new System.Drawing.Point(180, 85);
             this.pnlOutlineColour.Name = "pnlOutlineColour";
-            this.pnlOutlineColour.Size = new System.Drawing.Size(90, 19);
+            this.pnlOutlineColour.Size = new System.Drawing.Size(136, 19);
             this.pnlOutlineColour.TabIndex = 17;
             this.pnlOutlineColour.Click += new System.EventHandler(this.pnlOutlineColour_Click);
             // 
@@ -153,14 +181,14 @@
             // 
             // numOutlineSize
             // 
-            this.numOutlineSize.Location = new System.Drawing.Point(120, 110);
+            this.numOutlineSize.Location = new System.Drawing.Point(180, 110);
             this.numOutlineSize.Maximum = new decimal(new int[] {
             8,
             0,
             0,
             0});
             this.numOutlineSize.Name = "numOutlineSize";
-            this.numOutlineSize.Size = new System.Drawing.Size(90, 20);
+            this.numOutlineSize.Size = new System.Drawing.Size(136, 20);
             this.numOutlineSize.TabIndex = 15;
             // 
             // label1
@@ -174,7 +202,7 @@
             // 
             // cmdEditContentFont
             // 
-            this.cmdEditContentFont.Location = new System.Drawing.Point(109, 24);
+            this.cmdEditContentFont.Location = new System.Drawing.Point(110, 19);
             this.cmdEditContentFont.Name = "cmdEditContentFont";
             this.cmdEditContentFont.Size = new System.Drawing.Size(101, 23);
             this.cmdEditContentFont.TabIndex = 13;
@@ -184,7 +212,7 @@
             // 
             // cmdEditTitle
             // 
-            this.cmdEditTitle.Location = new System.Drawing.Point(13, 24);
+            this.cmdEditTitle.Location = new System.Drawing.Point(14, 19);
             this.cmdEditTitle.Name = "cmdEditTitle";
             this.cmdEditTitle.Size = new System.Drawing.Size(90, 23);
             this.cmdEditTitle.TabIndex = 12;
@@ -194,7 +222,7 @@
             // 
             // cmdPreview
             // 
-            this.cmdPreview.Location = new System.Drawing.Point(327, 219);
+            this.cmdPreview.Location = new System.Drawing.Point(452, 219);
             this.cmdPreview.Name = "cmdPreview";
             this.cmdPreview.Size = new System.Drawing.Size(97, 23);
             this.cmdPreview.TabIndex = 20;
@@ -204,6 +232,7 @@
             // 
             // grpAdvancedOpponentInfo
             // 
+            this.grpAdvancedOpponentInfo.Controls.Add(this.txtMySC2Name);
             this.grpAdvancedOpponentInfo.Controls.Add(this.label4);
             this.grpAdvancedOpponentInfo.Controls.Add(this.numOverlayClose);
             this.grpAdvancedOpponentInfo.Controls.Add(this.label3);
@@ -211,16 +240,24 @@
             this.grpAdvancedOpponentInfo.Controls.Add(this.chkAllowVsX);
             this.grpAdvancedOpponentInfo.Controls.Add(this.chkUseRandomBuild);
             this.grpAdvancedOpponentInfo.Controls.Add(this.label2);
-            this.grpAdvancedOpponentInfo.Controls.Add(this.txtMySC2Name);
             this.grpAdvancedOpponentInfo.Controls.Add(this.chkIngameBOSelector);
             this.grpAdvancedOpponentInfo.Controls.Add(this.chkOpponentInfoOverlay);
             this.grpAdvancedOpponentInfo.Enabled = false;
-            this.grpAdvancedOpponentInfo.Location = new System.Drawing.Point(238, 12);
+            this.grpAdvancedOpponentInfo.Location = new System.Drawing.Point(338, 12);
             this.grpAdvancedOpponentInfo.Name = "grpAdvancedOpponentInfo";
-            this.grpAdvancedOpponentInfo.Size = new System.Drawing.Size(272, 201);
+            this.grpAdvancedOpponentInfo.Size = new System.Drawing.Size(288, 202);
             this.grpAdvancedOpponentInfo.TabIndex = 13;
             this.grpAdvancedOpponentInfo.TabStop = false;
             this.grpAdvancedOpponentInfo.Text = "                                             ";
+            // 
+            // txtMySC2Name
+            // 
+            this.txtMySC2Name.FormattingEnabled = true;
+            this.txtMySC2Name.Location = new System.Drawing.Point(93, 173);
+            this.txtMySC2Name.Name = "txtMySC2Name";
+            this.txtMySC2Name.Size = new System.Drawing.Size(100, 21);
+            this.txtMySC2Name.TabIndex = 31;
+            this.txtMySC2Name.TextChanged += new System.EventHandler(this.txtMySC2Name_TextChanged);
             // 
             // label4
             // 
@@ -292,14 +329,6 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "My SC2 Name";
             // 
-            // txtMySC2Name
-            // 
-            this.txtMySC2Name.Location = new System.Drawing.Point(93, 173);
-            this.txtMySC2Name.Name = "txtMySC2Name";
-            this.txtMySC2Name.Size = new System.Drawing.Size(100, 20);
-            this.txtMySC2Name.TabIndex = 26;
-            this.txtMySC2Name.TextChanged += new System.EventHandler(this.txtMySC2Name_TextChanged);
-            // 
             // chkIngameBOSelector
             // 
             this.chkIngameBOSelector.AutoSize = true;
@@ -326,7 +355,7 @@
             // 
             this.chkAdvancedEnabled.AutoSize = true;
             this.chkAdvancedEnabled.BackColor = System.Drawing.Color.Transparent;
-            this.chkAdvancedEnabled.Location = new System.Drawing.Point(253, 11);
+            this.chkAdvancedEnabled.Location = new System.Drawing.Point(353, 11);
             this.chkAdvancedEnabled.Name = "chkAdvancedEnabled";
             this.chkAdvancedEnabled.Size = new System.Drawing.Size(139, 17);
             this.chkAdvancedEnabled.TabIndex = 21;
@@ -334,38 +363,11 @@
             this.chkAdvancedEnabled.UseVisualStyleBackColor = false;
             this.chkAdvancedEnabled.CheckedChanged += new System.EventHandler(this.chkAdvancedEnabled_CheckedChanged);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 138);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 13);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Image Scale";
-            // 
-            // numImageScale
-            // 
-            this.numImageScale.Location = new System.Drawing.Point(120, 136);
-            this.numImageScale.Maximum = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            this.numImageScale.Name = "numImageScale";
-            this.numImageScale.Size = new System.Drawing.Size(90, 20);
-            this.numImageScale.TabIndex = 24;
-            this.numImageScale.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numImageScale.ValueChanged += new System.EventHandler(this.numImageScale_ValueChanged);
-            // 
             // frmOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 267);
+            this.ClientSize = new System.Drawing.Size(638, 247);
             this.Controls.Add(this.chkAdvancedEnabled);
             this.Controls.Add(this.grpAdvancedOpponentInfo);
             this.Controls.Add(this.grpOverlay);
@@ -381,11 +383,11 @@
             this.Load += new System.EventHandler(this.frmOverlayOptions_Load);
             this.grpOverlay.ResumeLayout(false);
             this.grpOverlay.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numImageScale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numOutlineSize)).EndInit();
             this.grpAdvancedOpponentInfo.ResumeLayout(false);
             this.grpAdvancedOpponentInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numOverlayClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numImageScale)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,7 +415,6 @@
         private System.Windows.Forms.CheckBox chkIngameBOSelector;
         private System.Windows.Forms.CheckBox chkOpponentInfoOverlay;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMySC2Name;
         private System.Windows.Forms.CheckBox chkUseRandomBuild;
         private System.Windows.Forms.CheckBox chkAllowVsX;
         private System.Windows.Forms.LinkLabel llNameHelp;
@@ -422,5 +423,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numImageScale;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox txtMySC2Name;
     }
 }

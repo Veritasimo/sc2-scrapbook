@@ -21,7 +21,40 @@ namespace SC2Scrapbook
             chkAdvancedEnabled.Checked = Configuration.Instance.UseAdvancedOptions;
             chkIngameBOSelector.Checked = Configuration.Instance.BuildSelectionOverlay;
             chkOpponentInfoOverlay.Checked = Configuration.Instance.OpponentInfoOverlay;
-            txtMySC2Name.Text = Configuration.Instance.MySC2Character;
+
+            if (!string.IsNullOrEmpty(Program.SCDirectory))
+            {
+                string[] files = System.IO.Directory.GetFiles(Program.SCDirectory, "*.lnk");
+                System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(@"(\w+)\.\d\d\d.*");
+                foreach (string file in files)
+                {
+                    System.Text.RegularExpressions.Match match = regex.Match(file);
+                    if (match.Success)
+                    {
+                        if (!txtMySC2Name.Items.Contains(match.Groups[1].Value))
+                            txtMySC2Name.Items.Add(match.Groups[1].Value);
+                    }
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(Configuration.Instance.MySC2Character))
+            {
+                foreach (string item in txtMySC2Name.Items)
+                {
+                    if (item.ToLower() == Configuration.Instance.MySC2Character.ToLower())
+                    {
+                        txtMySC2Name.SelectedItem = item;
+                        break;
+                    }
+                }
+
+                if ((txtMySC2Name.SelectedItem == null) || ((string)txtMySC2Name.SelectedItem).ToLower() != Configuration.Instance.MySC2Character.ToLower())
+                {
+                    txtMySC2Name.Items.Add(Configuration.Instance.MySC2Character);
+                    txtMySC2Name.SelectedItem = Configuration.Instance.MySC2Character;
+                }
+            }
+            txtMySC2Name.SelectedItem = Configuration.Instance.MySC2Character;
             chkUseRandomBuild.Checked = Configuration.Instance.SelectRandomBuild;
             chkAllowVsX.Checked = Configuration.Instance.AllowVsXBuilds;
             grpAdvancedOpponentInfo.Enabled = chkAdvancedEnabled.Checked;
@@ -70,12 +103,19 @@ namespace SC2Scrapbook
 
         private void cmdExit_Click(object sender, EventArgs e)
         {
-            Program.HideBuildSelection();
-            
-            if (chkAdvancedEnabled.Checked)
-                if (string.IsNullOrWhiteSpace(txtMySC2Name.Text))
-                    chkAdvancedEnabled.Checked = false;
 
+
+            if (chkAdvancedEnabled.Checked)
+            {
+                if (string.IsNullOrWhiteSpace(txtMySC2Name.Text))
+                {
+                    if (MessageBox.Show("You have enabled advanced options but have not specified a character name. Advanced options will be disabled if you continue.", "Oh, you baddie.", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) != System.Windows.Forms.DialogResult.OK)
+                        return;
+                    chkAdvancedEnabled.Checked = false;
+                }
+            }
+
+            Program.HideBuildSelection();
             Program.SaveConfigurationXML();
             Close();
         }
@@ -110,36 +150,7 @@ namespace SC2Scrapbook
             Configuration.Instance.OverlayTextOutlineSize = (int)numOutlineSize.Value;
         }
 
-        private void txtOverlayHotkey_KeyUp(object sender, KeyEventArgs e)
-        {
-            if ((e.KeyCode & Keys.ControlKey) == Keys.ControlKey)
-                return;
 
-            if ((e.KeyCode & Keys.Alt) == Keys.Alt)
-                return;
-
-            if (e.KeyCode == Keys.ShiftKey)
-                return;
-
-            
-            txtOverlayHotkey.Text = "";
-            if (e.Control)
-                txtOverlayHotkey.Text += "CTRL+";
-            if (e.Alt)
-                txtOverlayHotkey.Text += "ALT+";
-            if (e.Shift)
-                txtOverlayHotkey.Text += "SHIFT+";
-
-            txtOverlayHotkey.Text += e.KeyCode.ToString();
-            Configuration.Instance.ToggleOverlayKey = e.KeyCode;
-            Configuration.Instance.ToggleOverlayModifier = e.Modifiers;
-
-        }
-
-        private void txtOverlayHotkey_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void chkAdvancedEnabled_CheckedChanged(object sender, EventArgs e)
         {
@@ -240,6 +251,87 @@ Do you want to continue?", "Advanced Goodness.", MessageBoxButtons.YesNo, Messag
         {
             Configuration.Instance.OverlayImageScale = (int)numImageScale.Value;
         }
+
+        private void txtOverlayHotkey_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            Configuration.Instance.ToggleOverlayKey = Keys.None;
+            Configuration.Instance.ToggleOverlayModifier = Keys.None;
+
+            bool onlyModifier = false;
+            txtOverlayHotkey.Text = "";
+            //if ((e.KeyCode & Keys.ControlKey) == Keys.ControlKey)
+            if (e.KeyCode == Keys.ControlKey)
+            {
+                txtOverlayHotkey.Text += "CTRL + ";
+
+                if (e.Alt)
+                    txtOverlayHotkey.Text += "ALT + ";
+
+                if (e.Shift)
+                    txtOverlayHotkey.Text += "SHIFT + ";
+                onlyModifier = true;
+            }
+            //if ((e.KeyCode & Keys.Alt) == Keys.Alt)
+            if (e.KeyCode == Keys.Menu)
+            {
+                if (e.Control)
+                    txtOverlayHotkey.Text += "CTRL + ";
+
+                txtOverlayHotkey.Text += "ALT + ";
+
+                if (e.Shift)
+                    txtOverlayHotkey.Text += "SHIFT + ";
+                onlyModifier = true;
+            }
+
+            if (e.KeyCode == Keys.ShiftKey)
+            {
+                if (e.Control)
+                    txtOverlayHotkey.Text += "CTRL + ";
+                if (e.Alt)
+                    txtOverlayHotkey.Text += "ALT + ";
+
+                txtOverlayHotkey.Text += "SHIFT + ";
+                onlyModifier = true;
+            }
+
+            //if ((e.KeyCode & Keys.Menu) == Keys.Menu)
+            //{
+            //    txtOverlayHotkey.Text += "ALT + ";
+            //    onlyModifier = true;
+            //}
+
+
+            
+            
+
+            if (onlyModifier)
+                return;
+
+            txtOverlayHotkey.Text = "";
+            if (e.Control)
+                txtOverlayHotkey.Text += "CTRL + ";
+            if (e.Alt)
+                txtOverlayHotkey.Text += "ALT + ";
+            if (e.Shift)
+                txtOverlayHotkey.Text += "SHIFT + ";
+
+            txtOverlayHotkey.Text = string.Format("{0}{1}", txtOverlayHotkey.Text, e.KeyCode.ToString().ToUpper());
+
+
+            Configuration.Instance.ToggleOverlayKey = e.KeyCode;
+            Configuration.Instance.ToggleOverlayModifier = e.Modifiers;
+        }
+
+        private void txtOverlayHotkey_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (Configuration.Instance.ToggleOverlayKey == Keys.None)
+                txtOverlayHotkey.Text = "";
+
+            
+        }
+
 
     }
 }

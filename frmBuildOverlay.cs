@@ -15,7 +15,7 @@ namespace SC2Scrapbook
     {
         private static Dictionary<string, System.Drawing.Image> m_iconmap;
         private static Dictionary<string, System.Drawing.Image> m_buttonmap;
-
+        private int m_hotkey = 0;
         private bool m_locked;
         private Models.Build m_build;
 
@@ -524,9 +524,11 @@ namespace SC2Scrapbook
             {
                 Top = Configuration.Instance.OverlayTop;
                 Left = Configuration.Instance.OverlayLeft;
-
-                
             }
+
+            if (Configuration.Instance.ToggleOverlayKey != Keys.None)
+                if (Win32.RegisterHotKey(Handle, 1, Win32.KeysModifierToWin32Modifier(Configuration.Instance.ToggleOverlayModifier), (uint)Configuration.Instance.ToggleOverlayKey))
+                    m_hotkey = 1;
 
             Configuration.Instance.FirstRun = false;
         }
@@ -777,12 +779,47 @@ namespace SC2Scrapbook
 
         private void frmOverlay_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (m_hotkey != 0)
+            {
+                Win32.UnregisterHotKey(Handle, m_hotkey);
+            }
             Configuration.Instance.OverlayLeft = Left;
             Configuration.Instance.OverlayTop = Top;
 
             Program.SaveConfigurationXML();
         }
 
+        private void lblContent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == Win32.WM_HOTKEY)
+            {
+                if (m_hotkey != 0)
+                {
+                    if (m.WParam.ToInt32() == m_hotkey)
+                    {
+                        Visible = !Visible;
+                        TopMost = Visible;
+                    }
+                }
+            }
+            else
+            {
+                base.WndProc(ref m);
+            }
+        }
+
+        protected override bool ShowWithoutActivation
+        {
+            get
+            {
+                return true;
+            }
+        }
 
         /*protected override CreateParams CreateParams
         {

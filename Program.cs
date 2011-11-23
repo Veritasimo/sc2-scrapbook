@@ -19,6 +19,7 @@ namespace SC2Scrapbook
         internal static Models.Patch ActivePatch { get; set; }
         internal static BuildCollection BuildsDB { get; set; }
         internal static List<Models.Patch> PatchList { get; set; }
+        internal static string SCDirectory { get; set; }
         internal static string DataDirectory { get; set; }
         internal static Thread _sc2InteractionThread;
 
@@ -43,6 +44,7 @@ namespace SC2Scrapbook
 
             if (Directory.Exists(sc2Path))
             {
+                SCDirectory = sc2Path;
                 DataDirectory = string.Format("{0}{1}BuildOrderNotebook", sc2Path, Path.DirectorySeparatorChar);
                 Directory.CreateDirectory(DataDirectory);
             }

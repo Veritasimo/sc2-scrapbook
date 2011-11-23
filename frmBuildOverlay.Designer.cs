@@ -53,6 +53,7 @@
             this.lblContent.Name = "lblContent";
             this.lblContent.Size = new System.Drawing.Size(383, 280);
             this.lblContent.TabIndex = 1;
+            this.lblContent.Click += new System.EventHandler(this.lblContent_Click);
             this.lblContent.DoubleClick += new System.EventHandler(this.frmOverlay_DoubleClick);
             // 
             // frmBuildOverlay

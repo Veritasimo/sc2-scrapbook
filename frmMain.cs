@@ -743,6 +743,11 @@ namespace SC2Scrapbook
         {
 
         }
+
+        private void lvBuilds_ItemDrag(object sender, ItemDragEventArgs e)
+        {
+
+        }
         
     }
 }

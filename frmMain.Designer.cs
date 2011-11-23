@@ -212,17 +212,17 @@
             this.corvidReactorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.durableMaterialsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hiSecAutoTrackingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infernalPreIgniterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infantryWeaponsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.level0ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.level1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.level2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.level3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infantryArmorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.level0ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.level1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.level2ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.level3ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.infantryWeaponsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.level0ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.level1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.level2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.level3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infernalPreIgniterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mobiusReactorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.neosteelFrameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nitroPackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -328,6 +328,7 @@
             this.lvBuilds = new EXControls.EXListView();
             this.lvchBuild = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvchMatchup = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnCreateWallpaper = new System.Windows.Forms.Button();
             this.gbFilter.SuspendLayout();
             this.cmenuBuilds.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconSelect)).BeginInit();
@@ -617,7 +618,7 @@
             // 
             // lbUpdate
             // 
-            this.lbUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbUpdate.AutoSize = true;
             this.lbUpdate.Location = new System.Drawing.Point(436, 351);
             this.lbUpdate.Name = "lbUpdate";
@@ -671,7 +672,7 @@
             this.unitsToolStripMenuItem,
             this.upgradesToolStripMenuItem});
             this.cmIconSelect.Name = "cmIconSelect";
-            this.cmIconSelect.Size = new System.Drawing.Size(161, 176);
+            this.cmIconSelect.Size = new System.Drawing.Size(136, 154);
             // 
             // racesToolStripMenuItem
             // 
@@ -682,7 +683,7 @@
             this.randomToolStripMenuItem});
             this.racesToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.RandomIcon;
             this.racesToolStripMenuItem.Name = "racesToolStripMenuItem";
-            this.racesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.racesToolStripMenuItem.Size = new System.Drawing.Size(135, 30);
             this.racesToolStripMenuItem.Text = "Races";
             // 
             // terranToolStripMenuItem
@@ -730,7 +731,7 @@
             this.timeToolStripMenuItem});
             this.resourcesToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.terran_minerals;
             this.resourcesToolStripMenuItem.Name = "resourcesToolStripMenuItem";
-            this.resourcesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.resourcesToolStripMenuItem.Size = new System.Drawing.Size(135, 30);
             this.resourcesToolStripMenuItem.Text = "Resources";
             // 
             // mineralsToolStripMenuItem
@@ -937,7 +938,7 @@
             this.protossToolStripMenuItem3});
             this.buildingsToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.btn_building_protoss_nexus;
             this.buildingsToolStripMenuItem.Name = "buildingsToolStripMenuItem";
-            this.buildingsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.buildingsToolStripMenuItem.Size = new System.Drawing.Size(135, 30);
             this.buildingsToolStripMenuItem.Text = "Buildings";
             // 
             // terranToolStripMenuItem3
@@ -1458,7 +1459,7 @@
             this.protossToolStripMenuItem4});
             this.unitsToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.btn_unit_terran_marine;
             this.unitsToolStripMenuItem.Name = "unitsToolStripMenuItem";
-            this.unitsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.unitsToolStripMenuItem.Size = new System.Drawing.Size(135, 30);
             this.unitsToolStripMenuItem.Text = "Units";
             // 
             // terranToolStripMenuItem4
@@ -1953,7 +1954,7 @@
             this.protossToolStripMenuItem5});
             this.upgradesToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_meleeattacks_leve3;
             this.upgradesToolStripMenuItem.Name = "upgradesToolStripMenuItem";
-            this.upgradesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.upgradesToolStripMenuItem.Size = new System.Drawing.Size(135, 30);
             this.upgradesToolStripMenuItem.Text = "Upgrades";
             // 
             // terranToolStripMenuItem5
@@ -1980,7 +1981,7 @@
             this.weaponRefitToolStripMenuItem});
             this.terranToolStripMenuItem5.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryweaponslevel3;
             this.terranToolStripMenuItem5.Name = "terranToolStripMenuItem5";
-            this.terranToolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.terranToolStripMenuItem5.Size = new System.Drawing.Size(113, 22);
             this.terranToolStripMenuItem5.Text = "Terran";
             // 
             // behemothReacotToolStripMenuItem
@@ -2039,13 +2040,49 @@
             this.hiSecAutoTrackingToolStripMenuItem.Tag = "terran_upgrade_hisecautotracking";
             this.hiSecAutoTrackingToolStripMenuItem.Text = "Hi-Sec Auto Tracking";
             // 
-            // infernalPreIgniterToolStripMenuItem
+            // infantryArmorToolStripMenuItem
             // 
-            this.infernalPreIgniterToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infernalpreigniter;
-            this.infernalPreIgniterToolStripMenuItem.Name = "infernalPreIgniterToolStripMenuItem";
-            this.infernalPreIgniterToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.infernalPreIgniterToolStripMenuItem.Tag = "terran_upgrade_infernalpreigniter";
-            this.infernalPreIgniterToolStripMenuItem.Text = "Infernal Pre-Igniter";
+            this.infantryArmorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.level0ToolStripMenuItem1,
+            this.level1ToolStripMenuItem1,
+            this.level2ToolStripMenuItem1,
+            this.level3ToolStripMenuItem1});
+            this.infantryArmorToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryarmorlevel0;
+            this.infantryArmorToolStripMenuItem.Name = "infantryArmorToolStripMenuItem";
+            this.infantryArmorToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.infantryArmorToolStripMenuItem.Text = "Infantry Armor";
+            // 
+            // level0ToolStripMenuItem1
+            // 
+            this.level0ToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryarmorlevel0;
+            this.level0ToolStripMenuItem1.Name = "level0ToolStripMenuItem1";
+            this.level0ToolStripMenuItem1.Size = new System.Drawing.Size(110, 22);
+            this.level0ToolStripMenuItem1.Tag = "terran_upgrade_infantryarmorlevel0";
+            this.level0ToolStripMenuItem1.Text = "Level 0";
+            // 
+            // level1ToolStripMenuItem1
+            // 
+            this.level1ToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryarmorlevel1;
+            this.level1ToolStripMenuItem1.Name = "level1ToolStripMenuItem1";
+            this.level1ToolStripMenuItem1.Size = new System.Drawing.Size(110, 22);
+            this.level1ToolStripMenuItem1.Tag = "terran_upgrade_infantryarmorlevel1";
+            this.level1ToolStripMenuItem1.Text = "Level 1";
+            // 
+            // level2ToolStripMenuItem1
+            // 
+            this.level2ToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryarmorlevel2;
+            this.level2ToolStripMenuItem1.Name = "level2ToolStripMenuItem1";
+            this.level2ToolStripMenuItem1.Size = new System.Drawing.Size(110, 22);
+            this.level2ToolStripMenuItem1.Tag = "terran_upgrade_infantryarmorlevel2";
+            this.level2ToolStripMenuItem1.Text = "Level 2";
+            // 
+            // level3ToolStripMenuItem1
+            // 
+            this.level3ToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryarmorlevel3;
+            this.level3ToolStripMenuItem1.Name = "level3ToolStripMenuItem1";
+            this.level3ToolStripMenuItem1.Size = new System.Drawing.Size(110, 22);
+            this.level3ToolStripMenuItem1.Tag = "terran_upgrade_infantryarmorlevel3";
+            this.level3ToolStripMenuItem1.Text = "Level 3";
             // 
             // infantryWeaponsToolStripMenuItem
             // 
@@ -2063,7 +2100,7 @@
             // 
             this.level0ToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryweaponslevel0;
             this.level0ToolStripMenuItem.Name = "level0ToolStripMenuItem";
-            this.level0ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem.Tag = "terran_upgrade_infantryweaponslevel0";
             this.level0ToolStripMenuItem.Text = "Level 0";
             // 
@@ -2071,7 +2108,7 @@
             // 
             this.level1ToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryweaponslevel1;
             this.level1ToolStripMenuItem.Name = "level1ToolStripMenuItem";
-            this.level1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem.Tag = "terran_upgrade_infantryweaponslevel1";
             this.level1ToolStripMenuItem.Text = "Level 1";
             // 
@@ -2079,7 +2116,7 @@
             // 
             this.level2ToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryweaponslevel2;
             this.level2ToolStripMenuItem.Name = "level2ToolStripMenuItem";
-            this.level2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem.Tag = "terran_upgrade_infantryweaponslevel2";
             this.level2ToolStripMenuItem.Text = "Level 2";
             // 
@@ -2087,53 +2124,17 @@
             // 
             this.level3ToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryweaponslevel3;
             this.level3ToolStripMenuItem.Name = "level3ToolStripMenuItem";
-            this.level3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem.Tag = "terran_upgrade_infantryweaponslevel3";
             this.level3ToolStripMenuItem.Text = "Level 3";
             // 
-            // infantryArmorToolStripMenuItem
+            // infernalPreIgniterToolStripMenuItem
             // 
-            this.infantryArmorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.level0ToolStripMenuItem1,
-            this.level1ToolStripMenuItem1,
-            this.level2ToolStripMenuItem1,
-            this.level3ToolStripMenuItem1});
-            this.infantryArmorToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryarmorlevel0;
-            this.infantryArmorToolStripMenuItem.Name = "infantryArmorToolStripMenuItem";
-            this.infantryArmorToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.infantryArmorToolStripMenuItem.Text = "Infantry Armor";
-            // 
-            // level0ToolStripMenuItem1
-            // 
-            this.level0ToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryarmorlevel0;
-            this.level0ToolStripMenuItem1.Name = "level0ToolStripMenuItem1";
-            this.level0ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.level0ToolStripMenuItem1.Tag = "terran_upgrade_infantryarmorlevel0";
-            this.level0ToolStripMenuItem1.Text = "Level 0";
-            // 
-            // level1ToolStripMenuItem1
-            // 
-            this.level1ToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryarmorlevel1;
-            this.level1ToolStripMenuItem1.Name = "level1ToolStripMenuItem1";
-            this.level1ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.level1ToolStripMenuItem1.Tag = "terran_upgrade_infantryarmorlevel1";
-            this.level1ToolStripMenuItem1.Text = "Level 1";
-            // 
-            // level2ToolStripMenuItem1
-            // 
-            this.level2ToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryarmorlevel2;
-            this.level2ToolStripMenuItem1.Name = "level2ToolStripMenuItem1";
-            this.level2ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.level2ToolStripMenuItem1.Tag = "terran_upgrade_infantryarmorlevel2";
-            this.level2ToolStripMenuItem1.Text = "Level 2";
-            // 
-            // level3ToolStripMenuItem1
-            // 
-            this.level3ToolStripMenuItem1.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infantryarmorlevel3;
-            this.level3ToolStripMenuItem1.Name = "level3ToolStripMenuItem1";
-            this.level3ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.level3ToolStripMenuItem1.Tag = "terran_upgrade_infantryarmorlevel3";
-            this.level3ToolStripMenuItem1.Text = "Level 3";
+            this.infernalPreIgniterToolStripMenuItem.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_infernalpreigniter;
+            this.infernalPreIgniterToolStripMenuItem.Name = "infernalPreIgniterToolStripMenuItem";
+            this.infernalPreIgniterToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.infernalPreIgniterToolStripMenuItem.Tag = "terran_upgrade_infernalpreigniter";
+            this.infernalPreIgniterToolStripMenuItem.Text = "Infernal Pre-Igniter";
             // 
             // mobiusReactorToolStripMenuItem
             // 
@@ -2183,7 +2184,7 @@
             // 
             this.level0ToolStripMenuItem2.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_shipplatinglevel0;
             this.level0ToolStripMenuItem2.Name = "level0ToolStripMenuItem2";
-            this.level0ToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem2.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem2.Tag = "terran_upgrade_shipplatinglevel0";
             this.level0ToolStripMenuItem2.Text = "Level 0";
             // 
@@ -2191,7 +2192,7 @@
             // 
             this.level1ToolStripMenuItem2.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_shipplatinglevel1;
             this.level1ToolStripMenuItem2.Name = "level1ToolStripMenuItem2";
-            this.level1ToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem2.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem2.Tag = "terran_upgrade_shipplatinglevel1";
             this.level1ToolStripMenuItem2.Text = "Level 1";
             // 
@@ -2199,7 +2200,7 @@
             // 
             this.level2ToolStripMenuItem2.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_shipplatinglevel2;
             this.level2ToolStripMenuItem2.Name = "level2ToolStripMenuItem2";
-            this.level2ToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem2.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem2.Tag = "terran_upgrade_shipplatinglevel2";
             this.level2ToolStripMenuItem2.Text = "Level 2";
             // 
@@ -2207,7 +2208,7 @@
             // 
             this.level3ToolStripMenuItem2.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_shipplatinglevel3;
             this.level3ToolStripMenuItem2.Name = "level3ToolStripMenuItem2";
-            this.level3ToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem2.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem2.Tag = "terran_upgrade_shipplatinglevel3";
             this.level3ToolStripMenuItem2.Text = "Level 3";
             // 
@@ -2227,7 +2228,7 @@
             // 
             this.level0ToolStripMenuItem3.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_shipweaponslevel0;
             this.level0ToolStripMenuItem3.Name = "level0ToolStripMenuItem3";
-            this.level0ToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem3.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem3.Tag = "terran_upgrade_shipweaponslevel0";
             this.level0ToolStripMenuItem3.Text = "Level 0";
             // 
@@ -2235,7 +2236,7 @@
             // 
             this.level1ToolStripMenuItem3.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_shipweaponslevel1;
             this.level1ToolStripMenuItem3.Name = "level1ToolStripMenuItem3";
-            this.level1ToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem3.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem3.Tag = "terran_upgrade_shipweaponslevel1";
             this.level1ToolStripMenuItem3.Text = "Level 1";
             // 
@@ -2243,7 +2244,7 @@
             // 
             this.level2ToolStripMenuItem3.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_shipweaponslevel2;
             this.level2ToolStripMenuItem3.Name = "level2ToolStripMenuItem3";
-            this.level2ToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem3.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem3.Tag = "terran_upgrade_shipweaponslevel2";
             this.level2ToolStripMenuItem3.Text = "Level 2";
             // 
@@ -2251,7 +2252,7 @@
             // 
             this.level3ToolStripMenuItem3.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_shipweaponslevel3;
             this.level3ToolStripMenuItem3.Name = "level3ToolStripMenuItem3";
-            this.level3ToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem3.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem3.Tag = "terran_upgrade_shipweaponslevel3";
             this.level3ToolStripMenuItem3.Text = "Level 3";
             // 
@@ -2271,7 +2272,7 @@
             // 
             this.level0ToolStripMenuItem4.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_vehicleplatinglevel0;
             this.level0ToolStripMenuItem4.Name = "level0ToolStripMenuItem4";
-            this.level0ToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem4.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem4.Tag = "terran_upgrade_vehicleplatinglevel0";
             this.level0ToolStripMenuItem4.Text = "Level 0";
             // 
@@ -2279,7 +2280,7 @@
             // 
             this.level1ToolStripMenuItem4.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_vehicleplatinglevel1;
             this.level1ToolStripMenuItem4.Name = "level1ToolStripMenuItem4";
-            this.level1ToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem4.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem4.Tag = "terran_upgrade_vehicleplatinglevel1";
             this.level1ToolStripMenuItem4.Text = "Level 1";
             // 
@@ -2287,7 +2288,7 @@
             // 
             this.level2ToolStripMenuItem4.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_vehicleplatinglevel2;
             this.level2ToolStripMenuItem4.Name = "level2ToolStripMenuItem4";
-            this.level2ToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem4.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem4.Tag = "terran_upgrade_vehicleplatinglevel2";
             this.level2ToolStripMenuItem4.Text = "Level 2";
             // 
@@ -2295,7 +2296,7 @@
             // 
             this.level3ToolStripMenuItem4.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_vehicleplatinglevel3;
             this.level3ToolStripMenuItem4.Name = "level3ToolStripMenuItem4";
-            this.level3ToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem4.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem4.Tag = "terran_upgrade_vehicleplatinglevel3";
             this.level3ToolStripMenuItem4.Text = "Level 3";
             // 
@@ -2315,7 +2316,7 @@
             // 
             this.level0ToolStripMenuItem5.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_vehicleweaponslevel0;
             this.level0ToolStripMenuItem5.Name = "level0ToolStripMenuItem5";
-            this.level0ToolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem5.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem5.Tag = "terran_upgrade_vehicleweaponslevel0";
             this.level0ToolStripMenuItem5.Text = "Level 0";
             // 
@@ -2323,7 +2324,7 @@
             // 
             this.level1ToolStripMenuItem5.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_vehicleweaponslevel1;
             this.level1ToolStripMenuItem5.Name = "level1ToolStripMenuItem5";
-            this.level1ToolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem5.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem5.Tag = "terran_upgrade_vehicleweaponslevel1";
             this.level1ToolStripMenuItem5.Text = "Level 1";
             // 
@@ -2331,7 +2332,7 @@
             // 
             this.level2ToolStripMenuItem5.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_vehicleweaponslevel2;
             this.level2ToolStripMenuItem5.Name = "level2ToolStripMenuItem5";
-            this.level2ToolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem5.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem5.Tag = "terran_upgrade_vehicleweaponslevel2";
             this.level2ToolStripMenuItem5.Text = "Level 2";
             // 
@@ -2339,7 +2340,7 @@
             // 
             this.level3ToolStripMenuItem5.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_terran_vehicleweaponslevel3;
             this.level3ToolStripMenuItem5.Name = "level3ToolStripMenuItem5";
-            this.level3ToolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem5.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem5.Tag = "terran_upgrade_vehicleweaponslevel3";
             this.level3ToolStripMenuItem5.Text = "Level 3";
             // 
@@ -2378,7 +2379,7 @@
             this.ventralSacsToolStripMenuItem});
             this.zergToolStripMenuItem5.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_meleeattacks_level3;
             this.zergToolStripMenuItem5.Name = "zergToolStripMenuItem5";
-            this.zergToolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.zergToolStripMenuItem5.Size = new System.Drawing.Size(113, 22);
             this.zergToolStripMenuItem5.Text = "Zerg";
             // 
             // adrenalGlandsToolStripMenuItem
@@ -2405,7 +2406,7 @@
             // 
             this.level0ToolStripMenuItem11.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_airattacks_level0;
             this.level0ToolStripMenuItem11.Name = "level0ToolStripMenuItem11";
-            this.level0ToolStripMenuItem11.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem11.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem11.Tag = "zerg_upgrade_airattackslevel0";
             this.level0ToolStripMenuItem11.Text = "Level 0";
             // 
@@ -2413,7 +2414,7 @@
             // 
             this.level1ToolStripMenuItem11.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_airattacks_level1;
             this.level1ToolStripMenuItem11.Name = "level1ToolStripMenuItem11";
-            this.level1ToolStripMenuItem11.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem11.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem11.Tag = "zerg_upgrade_airattackslevel1";
             this.level1ToolStripMenuItem11.Text = "Level 1";
             // 
@@ -2421,7 +2422,7 @@
             // 
             this.level2ToolStripMenuItem11.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_airattacks_level2;
             this.level2ToolStripMenuItem11.Name = "level2ToolStripMenuItem11";
-            this.level2ToolStripMenuItem11.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem11.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem11.Tag = "zerg_upgrade_airattackslevel2";
             this.level2ToolStripMenuItem11.Text = "Level 2";
             // 
@@ -2429,7 +2430,7 @@
             // 
             this.level3ToolStripMenuItem11.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_airattacks_level3;
             this.level3ToolStripMenuItem11.Name = "level3ToolStripMenuItem11";
-            this.level3ToolStripMenuItem11.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem11.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem11.Tag = "zerg_upgrade_airattackslevel3";
             this.level3ToolStripMenuItem11.Text = "Level 3";
             // 
@@ -2489,7 +2490,7 @@
             // 
             this.level0ToolStripMenuItem12.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_flyercarapace_level0;
             this.level0ToolStripMenuItem12.Name = "level0ToolStripMenuItem12";
-            this.level0ToolStripMenuItem12.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem12.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem12.Tag = "zerg_upgrade_flyercarapacelevel0";
             this.level0ToolStripMenuItem12.Text = "Level 0";
             // 
@@ -2497,7 +2498,7 @@
             // 
             this.level1ToolStripMenuItem12.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_flyercarapace_level1;
             this.level1ToolStripMenuItem12.Name = "level1ToolStripMenuItem12";
-            this.level1ToolStripMenuItem12.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem12.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem12.Tag = "zerg_upgrade_flyercarapacelevel1";
             this.level1ToolStripMenuItem12.Text = "Level 1";
             // 
@@ -2505,7 +2506,7 @@
             // 
             this.level2ToolStripMenuItem12.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_flyercarapace_level2;
             this.level2ToolStripMenuItem12.Name = "level2ToolStripMenuItem12";
-            this.level2ToolStripMenuItem12.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem12.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem12.Tag = "zerg_upgrade_flyercarapacelevel2";
             this.level2ToolStripMenuItem12.Text = "Level 2";
             // 
@@ -2513,7 +2514,7 @@
             // 
             this.level3ToolStripMenuItem12.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_flyercarapace_level3;
             this.level3ToolStripMenuItem12.Name = "level3ToolStripMenuItem12";
-            this.level3ToolStripMenuItem12.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem12.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem12.Tag = "zerg_upgrade_flyercarapacelevel3";
             this.level3ToolStripMenuItem12.Text = "Level 3";
             // 
@@ -2549,7 +2550,7 @@
             // 
             this.level0ToolStripMenuItem15.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_groundcarapace_level0;
             this.level0ToolStripMenuItem15.Name = "level0ToolStripMenuItem15";
-            this.level0ToolStripMenuItem15.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem15.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem15.Tag = "zerg_upgrade_groundcarapacelevel0";
             this.level0ToolStripMenuItem15.Text = "Level 0";
             // 
@@ -2557,7 +2558,7 @@
             // 
             this.level1ToolStripMenuItem15.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_groundcarapace_level1;
             this.level1ToolStripMenuItem15.Name = "level1ToolStripMenuItem15";
-            this.level1ToolStripMenuItem15.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem15.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem15.Tag = "zerg_upgrade_groundcarapacelevel1";
             this.level1ToolStripMenuItem15.Text = "Level 1";
             // 
@@ -2565,7 +2566,7 @@
             // 
             this.level2ToolStripMenuItem15.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_groundcarapace_level2;
             this.level2ToolStripMenuItem15.Name = "level2ToolStripMenuItem15";
-            this.level2ToolStripMenuItem15.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem15.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem15.Tag = "zerg_upgrade_groundcarapacelevel2";
             this.level2ToolStripMenuItem15.Text = "Level 2";
             // 
@@ -2573,7 +2574,7 @@
             // 
             this.level3ToolStripMenuItem15.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_groundcarapace_level3;
             this.level3ToolStripMenuItem15.Name = "level3ToolStripMenuItem15";
-            this.level3ToolStripMenuItem15.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem15.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem15.Tag = "zerg_upgrade_groundcarapacelevel3";
             this.level3ToolStripMenuItem15.Text = "Level 3";
             // 
@@ -2593,7 +2594,7 @@
             // 
             this.level0ToolStripMenuItem13.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_meleeattacks_level0;
             this.level0ToolStripMenuItem13.Name = "level0ToolStripMenuItem13";
-            this.level0ToolStripMenuItem13.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem13.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem13.Tag = "zerg_upgrade_meleeattackslevel0";
             this.level0ToolStripMenuItem13.Text = "Level 0";
             // 
@@ -2601,7 +2602,7 @@
             // 
             this.level1ToolStripMenuItem13.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_meleeattacks_level1;
             this.level1ToolStripMenuItem13.Name = "level1ToolStripMenuItem13";
-            this.level1ToolStripMenuItem13.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem13.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem13.Tag = "zerg_upgrade_meleeattackslevel1";
             this.level1ToolStripMenuItem13.Text = "Level 1";
             // 
@@ -2609,7 +2610,7 @@
             // 
             this.level2ToolStripMenuItem13.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_meleeattacks_level2;
             this.level2ToolStripMenuItem13.Name = "level2ToolStripMenuItem13";
-            this.level2ToolStripMenuItem13.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem13.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem13.Tag = "zerg_upgrade_meleeattackslevel2";
             this.level2ToolStripMenuItem13.Text = "Level 2";
             // 
@@ -2617,7 +2618,7 @@
             // 
             this.level3ToolStripMenuItem13.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_meleeattacks_level3;
             this.level3ToolStripMenuItem13.Name = "level3ToolStripMenuItem13";
-            this.level3ToolStripMenuItem13.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem13.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem13.Tag = "zerg_upgrade_meleeattackslevel3";
             this.level3ToolStripMenuItem13.Text = "Level 3";
             // 
@@ -2645,7 +2646,7 @@
             // 
             this.level0ToolStripMenuItem14.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_missileattacks_level0;
             this.level0ToolStripMenuItem14.Name = "level0ToolStripMenuItem14";
-            this.level0ToolStripMenuItem14.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem14.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem14.Tag = "zerg_upgrade_missileattackslevel0";
             this.level0ToolStripMenuItem14.Text = "Level 0";
             // 
@@ -2653,7 +2654,7 @@
             // 
             this.level1ToolStripMenuItem14.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_missileattacks_level1;
             this.level1ToolStripMenuItem14.Name = "level1ToolStripMenuItem14";
-            this.level1ToolStripMenuItem14.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem14.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem14.Tag = "zerg_upgrade_missileattackslevel1";
             this.level1ToolStripMenuItem14.Text = "Level 1";
             // 
@@ -2661,7 +2662,7 @@
             // 
             this.level2ToolStripMenuItem14.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_missileattacks_level2;
             this.level2ToolStripMenuItem14.Name = "level2ToolStripMenuItem14";
-            this.level2ToolStripMenuItem14.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem14.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem14.Tag = "zerg_upgrade_missileattackslevel2";
             this.level2ToolStripMenuItem14.Text = "Level 2";
             // 
@@ -2669,7 +2670,7 @@
             // 
             this.level3ToolStripMenuItem14.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_zerg_missileattacks_level3;
             this.level3ToolStripMenuItem14.Name = "level3ToolStripMenuItem14";
-            this.level3ToolStripMenuItem14.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem14.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem14.Tag = "zerg_upgrade_missileattackslevel3";
             this.level3ToolStripMenuItem14.Text = "Level 3";
             // 
@@ -2753,7 +2754,7 @@
             this.shieldsToolStripMenuItem});
             this.protossToolStripMenuItem5.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_groundweaponslevel3;
             this.protossToolStripMenuItem5.Name = "protossToolStripMenuItem5";
-            this.protossToolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.protossToolStripMenuItem5.Size = new System.Drawing.Size(113, 22);
             this.protossToolStripMenuItem5.Text = "Protoss";
             // 
             // airArmorToolStripMenuItem
@@ -2772,7 +2773,7 @@
             // 
             this.level0ToolStripMenuItem9.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_airarmorlevel0;
             this.level0ToolStripMenuItem9.Name = "level0ToolStripMenuItem9";
-            this.level0ToolStripMenuItem9.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem9.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem9.Tag = "protoss_upgrade_airarmorlevel0";
             this.level0ToolStripMenuItem9.Text = "Level 0";
             // 
@@ -2780,7 +2781,7 @@
             // 
             this.level1ToolStripMenuItem9.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_airarmorlevel1;
             this.level1ToolStripMenuItem9.Name = "level1ToolStripMenuItem9";
-            this.level1ToolStripMenuItem9.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem9.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem9.Tag = "protoss_upgrade_airarmorlevel1";
             this.level1ToolStripMenuItem9.Text = "Level 1";
             // 
@@ -2788,7 +2789,7 @@
             // 
             this.level2ToolStripMenuItem9.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_airarmorlevel2;
             this.level2ToolStripMenuItem9.Name = "level2ToolStripMenuItem9";
-            this.level2ToolStripMenuItem9.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem9.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem9.Tag = "protoss_upgrade_airarmorlevel2";
             this.level2ToolStripMenuItem9.Text = "Level 2";
             // 
@@ -2796,7 +2797,7 @@
             // 
             this.level3ToolStripMenuItem9.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_airarmorlevel3;
             this.level3ToolStripMenuItem9.Name = "level3ToolStripMenuItem9";
-            this.level3ToolStripMenuItem9.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem9.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem9.Tag = "protoss_upgrade_airarmorlevel3";
             this.level3ToolStripMenuItem9.Text = "Level 3";
             // 
@@ -2816,7 +2817,7 @@
             // 
             this.level0ToolStripMenuItem10.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_airweaponslevel0;
             this.level0ToolStripMenuItem10.Name = "level0ToolStripMenuItem10";
-            this.level0ToolStripMenuItem10.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem10.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem10.Tag = "protoss_upgrade_airweaponslevel0";
             this.level0ToolStripMenuItem10.Text = "Level 0";
             // 
@@ -2824,7 +2825,7 @@
             // 
             this.level1ToolStripMenuItem10.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_airweaponslevel1;
             this.level1ToolStripMenuItem10.Name = "level1ToolStripMenuItem10";
-            this.level1ToolStripMenuItem10.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem10.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem10.Tag = "protoss_upgrade_airweaponslevel1";
             this.level1ToolStripMenuItem10.Text = "Level 1";
             // 
@@ -2832,7 +2833,7 @@
             // 
             this.level2ToolStripMenuItem10.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_airweaponslevel2;
             this.level2ToolStripMenuItem10.Name = "level2ToolStripMenuItem10";
-            this.level2ToolStripMenuItem10.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem10.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem10.Tag = "protoss_upgrade_airweaponslevel2";
             this.level2ToolStripMenuItem10.Text = "Level 2";
             // 
@@ -2840,7 +2841,7 @@
             // 
             this.level3ToolStripMenuItem10.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_airweaponslevel3;
             this.level3ToolStripMenuItem10.Name = "level3ToolStripMenuItem10";
-            this.level3ToolStripMenuItem10.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem10.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem10.Tag = "protoss_upgrade_airweaponslevel3";
             this.level3ToolStripMenuItem10.Text = "Level 3";
             // 
@@ -2900,7 +2901,7 @@
             // 
             this.level0ToolStripMenuItem8.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_groundarmorlevel0;
             this.level0ToolStripMenuItem8.Name = "level0ToolStripMenuItem8";
-            this.level0ToolStripMenuItem8.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem8.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem8.Tag = "protoss_upgrade_groundarmorlevel0";
             this.level0ToolStripMenuItem8.Text = "Level 0";
             // 
@@ -2908,7 +2909,7 @@
             // 
             this.level1ToolStripMenuItem8.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_groundarmorlevel1;
             this.level1ToolStripMenuItem8.Name = "level1ToolStripMenuItem8";
-            this.level1ToolStripMenuItem8.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem8.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem8.Tag = "protoss_upgrade_groundarmorlevel1";
             this.level1ToolStripMenuItem8.Text = "Level 1";
             // 
@@ -2916,7 +2917,7 @@
             // 
             this.level2ToolStripMenuItem8.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_groundarmorlevel2;
             this.level2ToolStripMenuItem8.Name = "level2ToolStripMenuItem8";
-            this.level2ToolStripMenuItem8.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem8.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem8.Tag = "protoss_upgrade_groundarmorlevel2";
             this.level2ToolStripMenuItem8.Text = "Level 2";
             // 
@@ -2924,7 +2925,7 @@
             // 
             this.level3ToolStripMenuItem8.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_groundarmorlevel3;
             this.level3ToolStripMenuItem8.Name = "level3ToolStripMenuItem8";
-            this.level3ToolStripMenuItem8.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem8.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem8.Tag = "protoss_upgrade_groundarmorlevel3";
             this.level3ToolStripMenuItem8.Text = "Level 3";
             // 
@@ -2944,7 +2945,7 @@
             // 
             this.level0ToolStripMenuItem7.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_groundweaponslevel0;
             this.level0ToolStripMenuItem7.Name = "level0ToolStripMenuItem7";
-            this.level0ToolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem7.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem7.Tag = "protoss_upgrade_groundweaponslevel0";
             this.level0ToolStripMenuItem7.Text = "Level 0";
             // 
@@ -2952,7 +2953,7 @@
             // 
             this.level1ToolStripMenuItem7.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_groundweaponslevel1;
             this.level1ToolStripMenuItem7.Name = "level1ToolStripMenuItem7";
-            this.level1ToolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem7.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem7.Tag = "protoss_upgrade_groundweaponslevel1";
             this.level1ToolStripMenuItem7.Text = "Level 1";
             // 
@@ -2960,7 +2961,7 @@
             // 
             this.level2ToolStripMenuItem7.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_groundweaponslevel2;
             this.level2ToolStripMenuItem7.Name = "level2ToolStripMenuItem7";
-            this.level2ToolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem7.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem7.Tag = "protoss_upgrade_groundweaponslevel2";
             this.level2ToolStripMenuItem7.Text = "Level 2";
             // 
@@ -2968,7 +2969,7 @@
             // 
             this.level3ToolStripMenuItem7.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_groundweaponslevel3;
             this.level3ToolStripMenuItem7.Name = "level3ToolStripMenuItem7";
-            this.level3ToolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem7.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem7.Tag = "protoss_upgrade_groundweaponslevel3";
             this.level3ToolStripMenuItem7.Text = "Level 3";
             // 
@@ -2995,7 +2996,7 @@
             // 
             this.level0ToolStripMenuItem6.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_shieldslevel0;
             this.level0ToolStripMenuItem6.Name = "level0ToolStripMenuItem6";
-            this.level0ToolStripMenuItem6.Size = new System.Drawing.Size(152, 22);
+            this.level0ToolStripMenuItem6.Size = new System.Drawing.Size(110, 22);
             this.level0ToolStripMenuItem6.Tag = "protoss_upgrade_shieldslevel0";
             this.level0ToolStripMenuItem6.Text = "Level 0";
             // 
@@ -3003,7 +3004,7 @@
             // 
             this.level1ToolStripMenuItem6.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_shieldslevel1;
             this.level1ToolStripMenuItem6.Name = "level1ToolStripMenuItem6";
-            this.level1ToolStripMenuItem6.Size = new System.Drawing.Size(152, 22);
+            this.level1ToolStripMenuItem6.Size = new System.Drawing.Size(110, 22);
             this.level1ToolStripMenuItem6.Tag = "protoss_upgrade_shieldslevel1";
             this.level1ToolStripMenuItem6.Text = "Level 1";
             // 
@@ -3011,7 +3012,7 @@
             // 
             this.level2ToolStripMenuItem6.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_shieldslevel2;
             this.level2ToolStripMenuItem6.Name = "level2ToolStripMenuItem6";
-            this.level2ToolStripMenuItem6.Size = new System.Drawing.Size(152, 22);
+            this.level2ToolStripMenuItem6.Size = new System.Drawing.Size(110, 22);
             this.level2ToolStripMenuItem6.Tag = "protoss_upgrade_shieldslevel2";
             this.level2ToolStripMenuItem6.Text = "Level 2";
             // 
@@ -3019,7 +3020,7 @@
             // 
             this.level3ToolStripMenuItem6.Image = global::SC2Scrapbook.Properties.Resources.btn_upgrade_protoss_shieldslevel3;
             this.level3ToolStripMenuItem6.Name = "level3ToolStripMenuItem6";
-            this.level3ToolStripMenuItem6.Size = new System.Drawing.Size(152, 22);
+            this.level3ToolStripMenuItem6.Size = new System.Drawing.Size(110, 22);
             this.level3ToolStripMenuItem6.Tag = "protoss_upgrade_shieldslevel3";
             this.level3ToolStripMenuItem6.Text = "Level 3";
             // 
@@ -3065,6 +3066,7 @@
             this.lvBuilds.UseCompatibleStateImageBehavior = false;
             this.lvBuilds.View = System.Windows.Forms.View.Details;
             this.lvBuilds.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvBuilds_ColumnClick);
+            this.lvBuilds.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.lvBuilds_ItemDrag);
             this.lvBuilds.SelectedIndexChanged += new System.EventHandler(this.lvBuilds_SelectedIndexChanged);
             this.lvBuilds.DoubleClick += new System.EventHandler(this.lvBuilds_DoubleClick);
             this.lvBuilds.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lvBuilds_MouseUp);
@@ -3079,12 +3081,22 @@
             this.lvchMatchup.Text = "Matchup";
             this.lvchMatchup.Width = 87;
             // 
+            // btnCreateWallpaper
+            // 
+            this.btnCreateWallpaper.Location = new System.Drawing.Point(434, 311);
+            this.btnCreateWallpaper.Name = "btnCreateWallpaper";
+            this.btnCreateWallpaper.Size = new System.Drawing.Size(101, 23);
+            this.btnCreateWallpaper.TabIndex = 21;
+            this.btnCreateWallpaper.Text = "Create Wallpaper";
+            this.btnCreateWallpaper.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(834, 407);
+            this.Controls.Add(this.btnCreateWallpaper);
             this.Controls.Add(this.pbIconSelect);
             this.Controls.Add(this.llChangelog);
             this.Controls.Add(this.lbUpdate);
@@ -3424,6 +3436,6 @@
         private System.Windows.Forms.ToolStripMenuItem level1ToolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem level2ToolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem level3ToolStripMenuItem6;
+        private System.Windows.Forms.Button btnCreateWallpaper;
     }
 }
-
