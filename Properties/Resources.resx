@@ -931,4 +931,10 @@
   <data name="btn_upgrade_zerg_ventralsacs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buttons\btn-upgrade-zerg-ventralsacs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="imageicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imageicon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="texticon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\texticon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

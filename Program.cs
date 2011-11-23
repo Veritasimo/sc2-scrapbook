@@ -21,6 +21,7 @@ namespace SC2Scrapbook
         internal static List<Models.Patch> PatchList { get; set; }
         internal static string SCDirectory { get; set; }
         internal static string DataDirectory { get; set; }
+        internal static bool Initialized { get; set; }
         internal static Thread _sc2InteractionThread;
 
         internal static System.Drawing.Rectangle SC2WindowRect;
@@ -52,6 +53,8 @@ namespace SC2Scrapbook
 
             if (mutex.WaitOne(TimeSpan.Zero, true))
             {
+                frmSplash.ShowSplash();
+
                 try
                 {
                     if (args.Length < 2)

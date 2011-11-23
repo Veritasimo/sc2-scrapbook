@@ -1728,21 +1728,21 @@ namespace SC2Scrapbook.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2.1
-        ///------------------
-        ///Fix: Fixed some issues with SC2 interaction.
-        ///Fix: Fixed interface disappearing issues.
+        ///   Looks up a localized string similar to 2.3
+        ///New: Added hotkey support for overlay toggling.
+        ///New: Changed the way the build overlay works in preparation for the wallpaper generator.
+        ///     This should also increase performance a little.
+        ///New: Added a character selection box to the options page.
+        ///Fix: Text is now aligned to the middle of images within the build overlay.
         ///
-        ///2.0
-        ///------------------
-        ///Known Issues:
-        ///1. The overlays can causes an FPS drop on some systems. It is not majorly 
-        ///   noticable unless you are actively looking at the FPS count or have dated
-        ///   hardware. 
         ///
-        ///   I&apos;m not 100% sure about the cause, but I&apos;d have to guess it&apos;s to do with 
-        ///   the method used to ensure you can click through the overlays. There are
-        ///   a few solutions that I can th [rest of string was truncated]&quot;;.
+        ///2.2
+        ///------------------
+        ///New: Added Unit, Building and Upgrade icon support.
+        ///New: Added image scale selection to the options page (0 = no scaling).
+        ///
+        ///2.1
+        ///------------------ [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Changelog {
             get {
@@ -1774,6 +1774,13 @@ namespace SC2Scrapbook.Properties {
         internal static System.Drawing.Bitmap grandmaster {
             get {
                 object obj = ResourceManager.GetObject("grandmaster", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap imageicon {
+            get {
+                object obj = ResourceManager.GetObject("imageicon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1952,8 +1959,15 @@ namespace SC2Scrapbook.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap texticon {
+            get {
+                object obj = ResourceManager.GetObject("texticon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         /// <summary>
-        ///   Looks up a localized string similar to 3|SC2 Scrapbook 2.1|http://www.teamliquid.net/forum/viewmessage.php?topic_id=287794.
+        ///   Looks up a localized string similar to 6|SC2 Scrapbook 2.3|http://www.teamliquid.net/forum/viewmessage.php?topic_id=287794.
         /// </summary>
         internal static string version {
             get {

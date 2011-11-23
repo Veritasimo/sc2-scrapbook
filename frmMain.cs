@@ -196,6 +196,7 @@ namespace SC2Scrapbook
                     }
                 }
             }
+            frmSplash.CloseSplash();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -268,8 +269,7 @@ namespace SC2Scrapbook
             {
                 if (item.Selected)
                 {
-                    if (frmBuildOverlay.Instance != null)
-                        frmBuildOverlay.Instance.Close();
+                    Program.HideOverlay();
 
                     frmBuildOverlay overlay = new frmBuildOverlay((Models.Build)item.Tag);
                     overlay.Show();
@@ -305,6 +305,7 @@ namespace SC2Scrapbook
 
         private void lvBuilds_MouseUp(object sender, MouseEventArgs e)
         {
+            m_dodrag = false;
             foreach (EXListViewItem item in lvBuilds.Items)
             {
                 item.BackColor = lvBuilds.BackColor;
@@ -753,14 +754,30 @@ namespace SC2Scrapbook
 
         private void btnCreateWallpaper_Click(object sender, EventArgs e)
         {
-            foreach (EXListViewItem item in lvBuilds.Items)
-            {
-                if (item.Selected)
-                {
-                    Build build = item.Tag as Build;
-                    build.GenerateImage();
-                }
+            frmSimpleWallpaperDesigner designer = new frmSimpleWallpaperDesigner();
+            designer.Show();
+        }
 
+        bool m_dodrag = false;
+        private void lvBuilds_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (m_dodrag)
+            {
+                var build = lvBuilds.SelectedItems[0].Tag as Build;
+                lvBuilds.DoDragDrop(build, DragDropEffects.Copy);
+            }
+        }
+
+
+        private void lvBuilds_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Clicks == 1)
+            {
+                m_dodrag = true;
+            }
+            else
+            {
+                m_dodrag = false;
             }
         }
         

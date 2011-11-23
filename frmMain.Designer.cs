@@ -32,9 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tmrNameChanged = new System.Windows.Forms.Timer(this.components);
             this.gbFilter = new System.Windows.Forms.GroupBox();
-            this.cbVsRace = new EXControls.EXComboBox();
             this.lblVsRace = new System.Windows.Forms.Label();
-            this.cbRace = new EXControls.EXComboBox();
             this.lblPlayerRace = new System.Windows.Forms.Label();
             this.txtBuildName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
@@ -329,6 +327,8 @@
             this.lvBuilds = new EXControls.EXListView();
             this.lvchBuild = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvchMatchup = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cbVsRace = new EXControls.EXComboBox();
+            this.cbRace = new EXControls.EXComboBox();
             this.gbFilter.SuspendLayout();
             this.cmenuBuilds.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconSelect)).BeginInit();
@@ -357,17 +357,6 @@
             this.gbFilter.TabStop = false;
             this.gbFilter.Text = "Filter";
             // 
-            // cbVsRace
-            // 
-            this.cbVsRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbVsRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbVsRace.FormattingEnabled = true;
-            this.cbVsRace.Location = new System.Drawing.Point(285, 35);
-            this.cbVsRace.Name = "cbVsRace";
-            this.cbVsRace.Size = new System.Drawing.Size(131, 21);
-            this.cbVsRace.TabIndex = 2;
-            this.cbVsRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
-            // 
             // lblVsRace
             // 
             this.lblVsRace.AutoSize = true;
@@ -376,17 +365,6 @@
             this.lblVsRace.Size = new System.Drawing.Size(18, 13);
             this.lblVsRace.TabIndex = 4;
             this.lblVsRace.Text = "vs";
-            // 
-            // cbRace
-            // 
-            this.cbRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbRace.FormattingEnabled = true;
-            this.cbRace.Location = new System.Drawing.Point(148, 35);
-            this.cbRace.Name = "cbRace";
-            this.cbRace.Size = new System.Drawing.Size(131, 21);
-            this.cbRace.TabIndex = 1;
-            this.cbRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
             // 
             // lblPlayerRace
             // 
@@ -3080,6 +3058,9 @@
             this.lvBuilds.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.lvBuilds_ItemDrag);
             this.lvBuilds.SelectedIndexChanged += new System.EventHandler(this.lvBuilds_SelectedIndexChanged);
             this.lvBuilds.DoubleClick += new System.EventHandler(this.lvBuilds_DoubleClick);
+            this.lvBuilds.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lvBuilds_DoubleClick);
+            this.lvBuilds.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lvBuilds_MouseDown);
+            this.lvBuilds.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lvBuilds_MouseMove);
             this.lvBuilds.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lvBuilds_MouseUp);
             // 
             // lvchBuild
@@ -3091,6 +3072,28 @@
             // 
             this.lvchMatchup.Text = "Matchup";
             this.lvchMatchup.Width = 87;
+            // 
+            // cbVsRace
+            // 
+            this.cbVsRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbVsRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbVsRace.FormattingEnabled = true;
+            this.cbVsRace.Location = new System.Drawing.Point(285, 35);
+            this.cbVsRace.Name = "cbVsRace";
+            this.cbVsRace.Size = new System.Drawing.Size(131, 21);
+            this.cbVsRace.TabIndex = 2;
+            this.cbVsRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
+            // 
+            // cbRace
+            // 
+            this.cbRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbRace.FormattingEnabled = true;
+            this.cbRace.Location = new System.Drawing.Point(148, 35);
+            this.cbRace.Name = "cbRace";
+            this.cbRace.Size = new System.Drawing.Size(131, 21);
+            this.cbRace.TabIndex = 1;
+            this.cbRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
             // 
             // frmMain
             // 

@@ -1,4 +1,11 @@
+2.4
+------------------
+New: Added wallpaper creator. Builds can be dragged from the build order list on to the 
+     creator window. There is also a resource viewer for adding built in resources or 
+     external images.
+
 2.3
+------------------
 New: Added hotkey support for overlay toggling.
 New: Changed the way the build overlay works in preparation for the wallpaper generator.
      This should also increase performance a little.

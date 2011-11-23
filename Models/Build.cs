@@ -507,6 +507,7 @@ namespace SC2Scrapbook.Models
             }
             else
             {
+                float width = 0;
                 // Should probably change this to measure the output beforehand
                 Image canvas = new Bitmap(1920, 1080, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
                 Graphics g = Graphics.FromImage(canvas);
@@ -524,11 +525,11 @@ namespace SC2Scrapbook.Models
 
                 path.AddString(Name, fontFamily,
                 (int)FontStyle.Regular, Configuration.Instance.OverlayTitleSize, new PointF(0, 0), strformat);
-
+                width = path.GetBounds().Width + (path.GetBounds().X * 2);
 
                 string[] lines = Script.Split(new string[] { "\r\n" }, StringSplitOptions.None);
                 Regex regex = new Regex(@"\{([a-zA-Z0-9_]+)\}");
-                float width = 0;
+                
                 for (int i = 0; i < lines.Length; i++)
                 {
                     int pass = 1;

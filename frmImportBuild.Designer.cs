@@ -100,7 +100,7 @@
             this.txtScript.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtScript.Location = new System.Drawing.Point(12, 71);
+            this.txtScript.Location = new System.Drawing.Point(15, 71);
             this.txtScript.Multiline = true;
             this.txtScript.Name = "txtScript";
             this.txtScript.ReadOnly = true;
