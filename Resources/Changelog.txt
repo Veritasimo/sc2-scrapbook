@@ -1,3 +1,11 @@
+2.3
+New: Added hotkey support for overlay toggling.
+New: Changed the way the build overlay works in preparation for the wallpaper generator.
+     This should also increase performance a little.
+New: Added a character selection box to the options page.
+Fix: Text is now aligned to the middle of images within the build overlay.
+
+
 2.2
 ------------------
 New: Added Unit, Building and Upgrade icon support.

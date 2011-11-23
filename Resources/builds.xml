@@ -1143,12 +1143,12 @@ Robo&#xD;
 				<Matchup>ZvX</Matchup>
 			</Matchup>
 			<Script>
-				<string>{supply}10 - Overlord&#xD;
-{supply}11 - Spawning Pool&#xD;
-{supply}11 - Extractor&#xD;
-{supply}15 - Overlord&#xD;
-{supply}15 - Queen&#xD;
-{supply}17 - Zerglings &#xD;
+				<string>{supply}10 - {overlord}&#xD;
+{supply}11 - {pool}&#xD;
+{supply}11 - {extractor}&#xD;
+{supply}15 - {overlord}&#xD;
+{supply}15 - {queen}&#xD;
+{supply}17 - {ling}&#xD;
 #Continue producing Zerglings and Overlords&#xD;
 #{gas}100 - Metabolic Boost&#xD;
 #{gas}50 - Baneling Nest (21 Supply)&#xD;
@@ -1188,6 +1188,55 @@ Robo&#xD;
 			</Notes>
 			<Guid>
 				<string>6adedc5e-9a35-4d1e-a9a3-7e73bacf25f0</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>Buttontest</string>
+			</Name>
+			<Matchup>
+				<Matchup>PvT</Matchup>
+			</Matchup>
+			<Script>
+				<string>{protoss_unit_zealot} lolo&#xD;
+{protoss_unit_stalker} hi</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>a7b58c09-6a5b-4968-8652-36e66ae62763</string>
+			</Guid>
+		</Build>
+	</Build>
+	<Build>
+		<Build>
+			<Name>
+				<string>ALL THE ICONS</string>
+			</Name>
+			<Matchup>
+				<Matchup>TvT</Matchup>
+			</Matchup>
+			<Script>
+				<string>Races: {terran}{zerg}{protoss}{random}&#xD;
+Resources: {minerals}{terran_gas}{zerg_gas}{protoss_gas}{terran_supply}{zerg_supply}{protoss_supply}{terran_time}{zerg_time}{protoss_time}&#xD;
+Terran Buildings: {barracks}{bunker}{cc}{engineeringbay}{factory}{fusioncore}{academy}{merccompound}{mercport}{turret}{pfort}{reactor}{refinery}{sensortower}{starport}{depot}{lowdepot}{techlab}&#xD;
+Zerg Buildings: {banelingnest}{tumor}{evochamber}{extractor}{greaterspire}{hatch}{hive}{hydraden}{infestationpit}{lair}{lurkerden}{nydusnetwork}{nydusworm}{warren}{pool}{spine}{spire}{spore}{ultraliskcavern}&#xD;
+Protoss Buildings: {assimilator}{core}{darkshrine}{energycrystal}{fleetbeacon}{forge}{gate}{nexus}{obelisk}{cannon}{pylon}{robo}{robobay}{stargate}{templararchives}{council}{warpgate}&#xD;
+Zerg units: {bling}{broodling}{broodlord}{changeling}{corruptor}{drone}{egg}{hydra}{infestedterran}{infestor}{larva}{muta}{overlord}{overseer}{queen}{roach}{ultra}{ling}&#xD;
+Protoss units: {archon}{carrier}{colossus}{dt}{templar}{immortal}{interceptor}{mothership}{obs}{phoenix}{probe}{sentry}{stalker}{warpprism}{warpprismdeployed}{zealot}&#xD;
+Terran units: {banshee}{bc}{ghost}{hellion}{marauder}{marine}{medivac}{mule}{pdd}{raven}{reaper}{scv}{siegetank}{siegedtank}{thor}{viking}{aviking}&#xD;
+Zerg upgrades: {zerg_upgrade_adrenalglands}{zerg_upgrade_airattackslevel0}{zerg_upgrade_airattackslevel1}{zerg_upgrade_airattackslevel2}{zerg_upgrade_airattackslevel3}{zerg_upgrade_anabolicsynthesis}{zerg_upgrade_buildingarmor}{zerg_upgrade_centrifugalhooks}{zerg_upgrade_chitinousplating}{zerg_upgrade_enduringcorruption}{zerg_upgrade_flyercarapacelevel0}{zerg_upgrade_flyercarapacelevel1}{zerg_upgrade_flyercarapacelevel2}{zerg_upgrade_flyercarapacelevel3}{zerg_upgrade_glialreconstitution}{zerg_upgrade_groovedspines}{zerg_upgrade_groundcarapacelevel0}{zerg_upgrade_groundcarapacelevel1}{zerg_upgrade_groundcarapacelevel2}{zerg_upgrade_groundcarapacelevel3}{zerg_upgrade_meleeattackslevel0}{zerg_upgrade_meleeattackslevel1}{zerg_upgrade_meleeattackslevel2}{zerg_upgrade_meleeattackslevel3}{zerg_upgrade_metabolicboost}{zerg_upgrade_missileattackslevel0}{zerg_upgrade_missileattackslevel1}{zerg_upgrade_missileattackslevel2}{zerg_upgrade_missileattackslevel3}{zerg_upgrade_muscularaugments}{zerg_upgrade_organiccarapace}{zerg_upgrade_pathogenglands}{zerg_upgrade_peristalsis}{zerg_upgrade_pneumatizedcarapace}{zerg_upgrade_seismicspines}{zerg_upgrade_tunnelingclaws}{zerg_upgrade_ventralsacs}&#xD;
+Protoss upgrades: {protoss_upgrade_airarmorlevel0}{protoss_upgrade_airarmorlevel1}{protoss_upgrade_airarmorlevel2}{protoss_upgrade_airarmorlevel3}{protoss_upgrade_airweaponslevel0}{protoss_upgrade_airweaponslevel1}{protoss_upgrade_airweaponslevel2}{protoss_upgrade_airweaponslevel3}{protoss_upgrade_extendedthermallance}{protoss_upgrade_fluxvanes}{protoss_upgrade_graviticbooster}{protoss_upgrade_graviticdrive}{protoss_upgrade_gravitoncatapult}{protoss_upgrade_groundarmorlevel0}{protoss_upgrade_groundarmorlevel1}{protoss_upgrade_groundarmorlevel2}{protoss_upgrade_groundarmorlevel3}{protoss_upgrade_groundweaponslevel0}{protoss_upgrade_groundweaponslevel1}{protoss_upgrade_groundweaponslevel2}{protoss_upgrade_groundweaponslevel3}{protoss_upgrade_shieldslevel0}{protoss_upgrade_shieldslevel1}{protoss_upgrade_shieldslevel2}{protoss_upgrade_shieldslevel3}&#xD;
+Terran upgrades: {terran_upgrade_behemothreactor}{terran_upgrade_buildingarmor}{terran_upgrade_caduceusreactor}{terran_upgrade_cloak}{terran_upgrade_corvidreactor}{terran_upgrade_durablematerials}{terran_upgrade_hisecautotracking}{terran_upgrade_infantryarmorlevel0}{terran_upgrade_infantryarmorlevel1}{terran_upgrade_infantryarmorlevel2}{terran_upgrade_infantryarmorlevel3}{terran_upgrade_infantryweaponslevel0}{terran_upgrade_infantryweaponslevel1}{terran_upgrade_infantryweaponslevel2}{terran_upgrade_infantryweaponslevel3}{terran_upgrade_infernalpreigniter}{terran_upgrade_moebiusreactor}{terran_upgrade_neosteelframe}{terran_upgrade_reapernitropacks}{siegedtank}{terran_upgrade_shipplatinglevel0}{terran_upgrade_shipplatinglevel1}{terran_upgrade_shipplatinglevel2}{terran_upgrade_shipplatinglevel3}{terran_upgrade_shipweaponslevel0}{terran_upgrade_shipweaponslevel1}{terran_upgrade_shipweaponslevel2}{terran_upgrade_shipweaponslevel3}{terran_upgrade_vehicleplatinglevel0}{terran_upgrade_vehicleplatinglevel1}{terran_upgrade_vehicleplatinglevel2}{terran_upgrade_vehicleplatinglevel3}{terran_upgrade_vehicleweaponslevel0}{terran_upgrade_vehicleweaponslevel1}{terran_upgrade_vehicleweaponslevel2}{terran_upgrade_vehicleweaponslevel3}{terran_upgrade_weaponrefit}</string>
+			</Script>
+			<Notes>
+				<string />
+			</Notes>
+			<Guid>
+				<string>70efc01c-89a0-45a5-9868-bb53e4161cd6</string>
 			</Guid>
 		</Build>
 	</Build>

@@ -323,12 +323,12 @@
             this.level1ToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.level2ToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.level3ToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnCreateWallpaper = new System.Windows.Forms.Button();
             this.cbPatch = new EXControls.EXComboBox();
             this.cbMatchup = new EXControls.EXComboBox();
             this.lvBuilds = new EXControls.EXListView();
             this.lvchBuild = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvchMatchup = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnCreateWallpaper = new System.Windows.Forms.Button();
             this.gbFilter.SuspendLayout();
             this.cmenuBuilds.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconSelect)).BeginInit();
@@ -423,7 +423,7 @@
             this.txtScript.Multiline = true;
             this.txtScript.Name = "txtScript";
             this.txtScript.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtScript.Size = new System.Drawing.Size(399, 98);
+            this.txtScript.Size = new System.Drawing.Size(398, 98);
             this.txtScript.TabIndex = 7;
             // 
             // lblScript
@@ -451,7 +451,7 @@
             this.txtName.Location = new System.Drawing.Point(434, 19);
             this.txtName.Name = "txtName";
             this.txtName.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtName.Size = new System.Drawing.Size(319, 20);
+            this.txtName.Size = new System.Drawing.Size(318, 20);
             this.txtName.TabIndex = 5;
             // 
             // lblNotes
@@ -472,13 +472,13 @@
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
             this.txtNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtNotes.Size = new System.Drawing.Size(399, 116);
+            this.txtNotes.Size = new System.Drawing.Size(398, 116);
             this.txtNotes.TabIndex = 8;
             // 
             // btnCreateBuild
             // 
             this.btnCreateBuild.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCreateBuild.Location = new System.Drawing.Point(756, 311);
+            this.btnCreateBuild.Location = new System.Drawing.Point(755, 311);
             this.btnCreateBuild.Name = "btnCreateBuild";
             this.btnCreateBuild.Size = new System.Drawing.Size(75, 23);
             this.btnCreateBuild.TabIndex = 10;
@@ -489,7 +489,7 @@
             // btnUpdateBuild
             // 
             this.btnUpdateBuild.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdateBuild.Location = new System.Drawing.Point(675, 311);
+            this.btnUpdateBuild.Location = new System.Drawing.Point(674, 311);
             this.btnUpdateBuild.Name = "btnUpdateBuild";
             this.btnUpdateBuild.Size = new System.Drawing.Size(75, 23);
             this.btnUpdateBuild.TabIndex = 9;
@@ -500,7 +500,7 @@
             // cmdDelete
             // 
             this.cmdDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmdDelete.Location = new System.Drawing.Point(594, 311);
+            this.cmdDelete.Location = new System.Drawing.Point(593, 311);
             this.cmdDelete.Name = "cmdDelete";
             this.cmdDelete.Size = new System.Drawing.Size(75, 23);
             this.cmdDelete.TabIndex = 8;
@@ -511,7 +511,7 @@
             // btnCloseOverlay
             // 
             this.btnCloseOverlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloseOverlay.Location = new System.Drawing.Point(439, 372);
+            this.btnCloseOverlay.Location = new System.Drawing.Point(438, 372);
             this.btnCloseOverlay.Name = "btnCloseOverlay";
             this.btnCloseOverlay.Size = new System.Drawing.Size(85, 23);
             this.btnCloseOverlay.TabIndex = 13;
@@ -522,7 +522,7 @@
             // cmdResetBuilds
             // 
             this.cmdResetBuilds.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmdResetBuilds.Location = new System.Drawing.Point(732, 372);
+            this.cmdResetBuilds.Location = new System.Drawing.Point(731, 372);
             this.cmdResetBuilds.Name = "cmdResetBuilds";
             this.cmdResetBuilds.Size = new System.Drawing.Size(99, 23);
             this.cmdResetBuilds.TabIndex = 16;
@@ -533,7 +533,7 @@
             // cmdLoadDefaults
             // 
             this.cmdLoadDefaults.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmdLoadDefaults.Location = new System.Drawing.Point(617, 372);
+            this.cmdLoadDefaults.Location = new System.Drawing.Point(616, 372);
             this.cmdLoadDefaults.Name = "cmdLoadDefaults";
             this.cmdLoadDefaults.Size = new System.Drawing.Size(109, 23);
             this.cmdLoadDefaults.TabIndex = 15;
@@ -544,7 +544,7 @@
             // cmdEditOverlay
             // 
             this.cmdEditOverlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmdEditOverlay.Location = new System.Drawing.Point(530, 372);
+            this.cmdEditOverlay.Location = new System.Drawing.Point(529, 372);
             this.cmdEditOverlay.Name = "cmdEditOverlay";
             this.cmdEditOverlay.Size = new System.Drawing.Size(81, 23);
             this.cmdEditOverlay.TabIndex = 14;
@@ -620,7 +620,7 @@
             // 
             this.lbUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbUpdate.AutoSize = true;
-            this.lbUpdate.Location = new System.Drawing.Point(436, 351);
+            this.lbUpdate.Location = new System.Drawing.Point(435, 351);
             this.lbUpdate.Name = "lbUpdate";
             this.lbUpdate.Size = new System.Drawing.Size(190, 13);
             this.lbUpdate.TabIndex = 18;
@@ -634,7 +634,7 @@
             // 
             this.llChangelog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.llChangelog.AutoSize = true;
-            this.llChangelog.Location = new System.Drawing.Point(642, 351);
+            this.llChangelog.Location = new System.Drawing.Point(641, 351);
             this.llChangelog.Name = "llChangelog";
             this.llChangelog.Size = new System.Drawing.Size(84, 13);
             this.llChangelog.TabIndex = 19;
@@ -655,7 +655,7 @@
             this.pbIconSelect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbIconSelect.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbIconSelect.Image = global::SC2Scrapbook.Properties.Resources.protoss_minerals;
-            this.pbIconSelect.Location = new System.Drawing.Point(817, 52);
+            this.pbIconSelect.Location = new System.Drawing.Point(816, 52);
             this.pbIconSelect.Name = "pbIconSelect";
             this.pbIconSelect.Size = new System.Drawing.Size(14, 14);
             this.pbIconSelect.TabIndex = 20;
@@ -3024,13 +3024,24 @@
             this.level3ToolStripMenuItem6.Tag = "protoss_upgrade_shieldslevel3";
             this.level3ToolStripMenuItem6.Text = "Level 3";
             // 
+            // btnCreateWallpaper
+            // 
+            this.btnCreateWallpaper.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCreateWallpaper.Location = new System.Drawing.Point(434, 311);
+            this.btnCreateWallpaper.Name = "btnCreateWallpaper";
+            this.btnCreateWallpaper.Size = new System.Drawing.Size(101, 23);
+            this.btnCreateWallpaper.TabIndex = 21;
+            this.btnCreateWallpaper.Text = "Create Wallpaper";
+            this.btnCreateWallpaper.UseVisualStyleBackColor = true;
+            this.btnCreateWallpaper.Click += new System.EventHandler(this.btnCreateWallpaper_Click);
+            // 
             // cbPatch
             // 
             this.cbPatch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cbPatch.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbPatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPatch.FormattingEnabled = true;
-            this.cbPatch.Location = new System.Drawing.Point(732, 348);
+            this.cbPatch.Location = new System.Drawing.Point(731, 348);
             this.cbPatch.Name = "cbPatch";
             this.cbPatch.Size = new System.Drawing.Size(99, 21);
             this.cbPatch.TabIndex = 17;
@@ -3042,7 +3053,7 @@
             this.cbMatchup.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbMatchup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMatchup.FormattingEnabled = true;
-            this.cbMatchup.Location = new System.Drawing.Point(757, 19);
+            this.cbMatchup.Location = new System.Drawing.Point(756, 19);
             this.cbMatchup.Name = "cbMatchup";
             this.cbMatchup.Size = new System.Drawing.Size(74, 21);
             this.cbMatchup.TabIndex = 6;
@@ -3081,21 +3092,12 @@
             this.lvchMatchup.Text = "Matchup";
             this.lvchMatchup.Width = 87;
             // 
-            // btnCreateWallpaper
-            // 
-            this.btnCreateWallpaper.Location = new System.Drawing.Point(434, 311);
-            this.btnCreateWallpaper.Name = "btnCreateWallpaper";
-            this.btnCreateWallpaper.Size = new System.Drawing.Size(101, 23);
-            this.btnCreateWallpaper.TabIndex = 21;
-            this.btnCreateWallpaper.Text = "Create Wallpaper";
-            this.btnCreateWallpaper.UseVisualStyleBackColor = true;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(834, 407);
+            this.ClientSize = new System.Drawing.Size(833, 407);
             this.Controls.Add(this.btnCreateWallpaper);
             this.Controls.Add(this.pbIconSelect);
             this.Controls.Add(this.llChangelog);

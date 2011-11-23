@@ -96,6 +96,7 @@ namespace SC2Scrapbook
         {
             Program.HideOverlay();
 
+            Models.Build.ClearCache();
             Models.Build build = new Models.Build("Build Title", "TvP", "Normal Example Content\r\n#Italic Example Content\r\n*Bold Example Content\r\nContent with {minerals}{protoss}{zerg}icons\r\nContent with {protoss_unit_zealot} {terran_unit_marine} units", "");
             frmBuildOverlay overlay = new frmBuildOverlay(build);
             overlay.Show();
@@ -114,6 +115,8 @@ namespace SC2Scrapbook
                     chkAdvancedEnabled.Checked = false;
                 }
             }
+
+            Models.Build.ClearCache();
 
             Program.HideBuildSelection();
             Program.SaveConfigurationXML();

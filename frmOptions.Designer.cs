@@ -54,10 +54,10 @@
             this.llNameHelp = new System.Windows.Forms.LinkLabel();
             this.chkAllowVsX = new System.Windows.Forms.CheckBox();
             this.chkUseRandomBuild = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.chkIngameBOSelector = new System.Windows.Forms.CheckBox();
             this.chkOpponentInfoOverlay = new System.Windows.Forms.CheckBox();
             this.chkAdvancedEnabled = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.grpOverlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numImageScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numOutlineSize)).BeginInit();
@@ -253,7 +253,7 @@
             // txtMySC2Name
             // 
             this.txtMySC2Name.FormattingEnabled = true;
-            this.txtMySC2Name.Location = new System.Drawing.Point(93, 173);
+            this.txtMySC2Name.Location = new System.Drawing.Point(121, 21);
             this.txtMySC2Name.Name = "txtMySC2Name";
             this.txtMySC2Name.Size = new System.Drawing.Size(100, 21);
             this.txtMySC2Name.TabIndex = 31;
@@ -262,7 +262,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(186, 50);
+            this.label4.Location = new System.Drawing.Point(184, 68);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 30;
@@ -270,7 +270,7 @@
             // 
             // numOverlayClose
             // 
-            this.numOverlayClose.Location = new System.Drawing.Point(144, 48);
+            this.numOverlayClose.Location = new System.Drawing.Point(142, 66);
             this.numOverlayClose.Name = "numOverlayClose";
             this.numOverlayClose.Size = new System.Drawing.Size(42, 20);
             this.numOverlayClose.TabIndex = 29;
@@ -279,7 +279,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 50);
+            this.label3.Location = new System.Drawing.Point(31, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 13);
             this.label3.TabIndex = 28;
@@ -288,7 +288,7 @@
             // llNameHelp
             // 
             this.llNameHelp.AutoSize = true;
-            this.llNameHelp.Location = new System.Drawing.Point(199, 176);
+            this.llNameHelp.Location = new System.Drawing.Point(227, 24);
             this.llNameHelp.Name = "llNameHelp";
             this.llNameHelp.Size = new System.Drawing.Size(13, 13);
             this.llNameHelp.TabIndex = 27;
@@ -300,7 +300,7 @@
             // 
             this.chkAllowVsX.AutoSize = true;
             this.chkAllowVsX.Enabled = false;
-            this.chkAllowVsX.Location = new System.Drawing.Point(35, 103);
+            this.chkAllowVsX.Location = new System.Drawing.Point(33, 121);
             this.chkAllowVsX.Name = "chkAllowVsX";
             this.chkAllowVsX.Size = new System.Drawing.Size(209, 17);
             this.chkAllowVsX.TabIndex = 25;
@@ -312,7 +312,7 @@
             // 
             this.chkUseRandomBuild.AutoSize = true;
             this.chkUseRandomBuild.Enabled = false;
-            this.chkUseRandomBuild.Location = new System.Drawing.Point(35, 86);
+            this.chkUseRandomBuild.Location = new System.Drawing.Point(33, 104);
             this.chkUseRandomBuild.Name = "chkUseRandomBuild";
             this.chkUseRandomBuild.Size = new System.Drawing.Size(191, 17);
             this.chkUseRandomBuild.TabIndex = 24;
@@ -320,19 +320,10 @@
             this.chkUseRandomBuild.UseVisualStyleBackColor = true;
             this.chkUseRandomBuild.CheckedChanged += new System.EventHandler(this.chkUseRandomBuild_CheckedChanged);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 176);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "My SC2 Name";
-            // 
             // chkIngameBOSelector
             // 
             this.chkIngameBOSelector.AutoSize = true;
-            this.chkIngameBOSelector.Location = new System.Drawing.Point(17, 67);
+            this.chkIngameBOSelector.Location = new System.Drawing.Point(15, 85);
             this.chkIngameBOSelector.Name = "chkIngameBOSelector";
             this.chkIngameBOSelector.Size = new System.Drawing.Size(250, 17);
             this.chkIngameBOSelector.TabIndex = 23;
@@ -343,7 +334,7 @@
             // chkOpponentInfoOverlay
             // 
             this.chkOpponentInfoOverlay.AutoSize = true;
-            this.chkOpponentInfoOverlay.Location = new System.Drawing.Point(17, 30);
+            this.chkOpponentInfoOverlay.Location = new System.Drawing.Point(15, 48);
             this.chkOpponentInfoOverlay.Name = "chkOpponentInfoOverlay";
             this.chkOpponentInfoOverlay.Size = new System.Drawing.Size(221, 17);
             this.chkOpponentInfoOverlay.TabIndex = 22;
@@ -362,6 +353,15 @@
             this.chkAdvancedEnabled.Text = "Advanced SC2 Settings";
             this.chkAdvancedEnabled.UseVisualStyleBackColor = false;
             this.chkAdvancedEnabled.CheckedChanged += new System.EventHandler(this.chkAdvancedEnabled_CheckedChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Your SC2 Character: ";
             // 
             // frmOptions
             // 
@@ -414,7 +414,6 @@
         private System.Windows.Forms.CheckBox chkAdvancedEnabled;
         private System.Windows.Forms.CheckBox chkIngameBOSelector;
         private System.Windows.Forms.CheckBox chkOpponentInfoOverlay;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox chkUseRandomBuild;
         private System.Windows.Forms.CheckBox chkAllowVsX;
         private System.Windows.Forms.LinkLabel llNameHelp;
@@ -424,5 +423,6 @@
         private System.Windows.Forms.NumericUpDown numImageScale;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox txtMySC2Name;
+        private System.Windows.Forms.Label label2;
     }
 }

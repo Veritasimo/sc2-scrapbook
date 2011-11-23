@@ -45,7 +45,7 @@ namespace SC2Scrapbook
             if (Directory.Exists(sc2Path))
             {
                 SCDirectory = sc2Path;
-                DataDirectory = string.Format("{0}{1}BuildOrderNotebook", sc2Path, Path.DirectorySeparatorChar);
+                DataDirectory = string.Format("{0}{1}Scrapbook", sc2Path, Path.DirectorySeparatorChar);
                 Directory.CreateDirectory(DataDirectory);
             }
 

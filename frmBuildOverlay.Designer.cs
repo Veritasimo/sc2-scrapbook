@@ -41,6 +41,7 @@
             this.lblFakeTitle.Name = "lblFakeTitle";
             this.lblFakeTitle.Size = new System.Drawing.Size(383, 31);
             this.lblFakeTitle.TabIndex = 0;
+            this.lblFakeTitle.Click += new System.EventHandler(this.lblFakeTitle_Click);
             this.lblFakeTitle.DoubleClick += new System.EventHandler(this.frmOverlay_DoubleClick);
             this.lblFakeTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblFakeTitle_MouseDown);
             this.lblFakeTitle.MouseUp += new System.Windows.Forms.MouseEventHandler(this.frmOverlay_MouseUp);

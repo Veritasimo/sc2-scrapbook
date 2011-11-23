@@ -380,11 +380,12 @@ namespace SC2Scrapbook
                 if (item.Selected)
                 {
                     Build build = item.Tag as Build;
+                    System.IO.File.Delete(build.CacheFile);
                     build.Name = txtName.Text;
                     build.Script = txtScript.Text;
                     build.Notes = txtNotes.Text;
                     build.Matchup = new Matchup(((EXComboBox.EXItem)cbMatchup.SelectedItem).Text);
-
+                    
 
                     Program.SaveBuildsXML();
 
@@ -417,6 +418,7 @@ namespace SC2Scrapbook
                 {
                     Build build = item.Tag as Build;
 
+                    System.IO.File.Delete(build.CacheFile);
                     Program.BuildsDB.Remove(build);
                     Program.SaveBuildsXML();
 
@@ -747,6 +749,19 @@ namespace SC2Scrapbook
         private void lvBuilds_ItemDrag(object sender, ItemDragEventArgs e)
         {
 
+        }
+
+        private void btnCreateWallpaper_Click(object sender, EventArgs e)
+        {
+            foreach (EXListViewItem item in lvBuilds.Items)
+            {
+                if (item.Selected)
+                {
+                    Build build = item.Tag as Build;
+                    build.GenerateImage();
+                }
+
+            }
         }
         
     }

@@ -47,7 +47,6 @@ namespace SC2Scrapbook
                 return m_iconmap;
             }
         }
-
         public static Dictionary<string, System.Drawing.Image> ButtonMap
         {
             get
@@ -469,6 +468,7 @@ namespace SC2Scrapbook
 
         public static frmBuildOverlay Instance { get; set; }
 
+        private Image m_overlay;
         public frmBuildOverlay(Models.Build build, bool locked = false)
         {
             if (Instance != null)
@@ -480,6 +480,9 @@ namespace SC2Scrapbook
             InitializeComponent();
             m_locked = !locked;
             m_build = build;
+            m_overlay = build.GenerateImage();
+            Width = m_overlay.Width + 6;
+            Height = m_overlay.Height;
         }
 
         public bool Locked
@@ -563,184 +566,8 @@ namespace SC2Scrapbook
         {
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
-            if (!m_locked)
-            {
-                // Left
-                e.Graphics.DrawLine(Pens.Black, new Point(0, 0), new Point(0, this.ClientRectangle.Bottom - 2));
-                e.Graphics.DrawLine(Pens.Gray, new Point(1, 1), new Point(1, this.ClientRectangle.Bottom - 2));
 
-                // Top
-                e.Graphics.DrawLine(Pens.Black, new Point(0, 0), new Point(this.ClientRectangle.Width, 0));
-                e.Graphics.DrawLine(Pens.Gray, new Point(1, 1), new Point(this.ClientRectangle.Width - 2, 1));
-
-                // Right
-                e.Graphics.DrawLine(Pens.Black, new Point(this.ClientRectangle.Right - 1, 0), new Point(this.ClientRectangle.Right - 1, this.ClientRectangle.Bottom));
-                e.Graphics.DrawLine(Pens.Gray, new Point(this.ClientRectangle.Right - 2, 1), new Point(this.ClientRectangle.Right - 2, this.ClientRectangle.Bottom - 2));
-
-                // Bottom
-                e.Graphics.DrawLine(Pens.Black, new Point(0, this.ClientRectangle.Bottom - 1), new Point(this.ClientRectangle.Width, this.ClientRectangle.Bottom - 1));
-                e.Graphics.DrawLine(Pens.Gray, new Point(1, this.ClientRectangle.Bottom - 2), new Point(this.ClientRectangle.Width - 2, this.ClientRectangle.Bottom - 2));
-            }
-
-            List<object[]> images = new List<object[]>();
-            FontFamily fontFamily = new FontFamily(Configuration.Instance.OverlayContentFont);
-            
-            FontFamily titleFontFamily = new FontFamily(Configuration.Instance.OverlayTitleFont);
-            StringFormat strformat = new StringFormat(StringFormatFlags.MeasureTrailingSpaces | StringFormatFlags.NoClip | StringFormatFlags.NoWrap);
-            float pos = Configuration.Instance.OverlayTitleSize + Configuration.Instance.OverlayContentSize;
-            lblFakeTitle.Height = (int)                Configuration.Instance.OverlayTitleSize;
-            GraphicsPath path = new GraphicsPath();
-            
-            path.AddString(m_build.Name, fontFamily,
-            (int)FontStyle.Regular, Configuration.Instance.OverlayTitleSize, new PointF(0, 0), strformat);
-            
-
-            string[] lines = m_build.Script.Split(new string[] { "\r\n" }, StringSplitOptions.None);
-            Regex regex = new Regex(@"\{([a-zA-Z0-9_]+)\}");
-            float width = 0;
-            for (int i=0; i <lines.Length;i++)
-            {
-                float x = 0;
-                string line = lines[i];
-                FontStyle modifier = FontStyle.Regular;
-
-                if (line.StartsWith("#"))
-                {
-                    line = line.Substring(1);
-                    modifier = FontStyle.Italic;
-                }
-                else if (line.StartsWith("*"))
-                {
-                    line = line.Substring(1);
-                    modifier = FontStyle.Bold;
-                }
-
-
-                GraphicsPath tempPath = new GraphicsPath();
-                
-                Match match = null;
-                float addedHeight = Configuration.Instance.OverlayContentSize;
-                while ((match = regex.Match(line)).Success)
-                {
-                    
-                    string iconCode = match.Groups[1].Value.ToLower().Trim();
-                    if (RaceVariantIcons.Contains(iconCode))
-                    {
-                        string raceVariantIcon = string.Format("{0}_{1}", Models.Matchup.StringFromRace(m_build.Matchup.PlayerRace).ToLower(), iconCode);
-                        if (IconMap.ContainsKey(raceVariantIcon))
-                            iconCode = raceVariantIcon;
-                    }
-
-
-
-                    string prefix = line.Substring(0, match.Index);
-                    line = line.Substring(match.Index + match.Length);
-
-
-                    if (!IconMap.ContainsKey(iconCode) && (!ButtonMap.ContainsKey(iconCode)))
-                    {
-                        string output = string.Format(@"{0}{{{1}}}", prefix, iconCode);
-                        tempPath.AddString(output, fontFamily, (int)modifier, Configuration.Instance.OverlayContentSize, new PointF(0, 0), strformat);
-
-                        path.AddString(output, fontFamily, (int)modifier, Configuration.Instance.OverlayContentSize, new PointF(x, pos), strformat);
-                        RectangleF size = tempPath.GetBounds();
-
-                        x += size.X + size.Width + size.Left;
-                        tempPath.Reset();
-                    }
-                    else if (IconMap.ContainsKey(iconCode))
-                    {
-                        // It refuses to measure whitespace.
-                        tempPath.AddString(prefix.Replace(' ', '|'), fontFamily, (int)modifier, Configuration.Instance.OverlayContentSize, new PointF(0, pos), strformat);
-
-                        path.AddString(prefix, fontFamily, (int)modifier, Configuration.Instance.OverlayContentSize, new PointF(x, pos), strformat);
-                        RectangleF size = tempPath.GetBounds();
-                        x += size.X + size.Width + size.Left;
-                        tempPath.Reset();
-                        Image image = IconMap[iconCode];
-
-                        if (x == 0)
-                            x = 3;
-                        float ar = (float)image.Width / (float)image.Height;
-                        int newWidth = (int)(Configuration.Instance.OverlayContentSize * ar);
-                        images.Add(new object[] { image, x, pos, (int)newWidth, Configuration.Instance.OverlayContentSize });
-                        x += newWidth;
-                        if (addedHeight < Configuration.Instance.OverlayContentSize)
-                            addedHeight = Configuration.Instance.OverlayContentSize;
-                    }
-                    else if (ButtonMap.ContainsKey(iconCode))
-                    {
-                        // It refuses to measure whitespace.
-                        tempPath.AddString(prefix.Replace(' ', '|'), fontFamily, (int)modifier, Configuration.Instance.OverlayContentSize, new PointF(0, pos), strformat);
-
-                        path.AddString(prefix, fontFamily, (int)modifier, Configuration.Instance.OverlayContentSize, new PointF(x, pos), strformat);
-                        RectangleF size = tempPath.GetBounds();
-                        x += size.X + size.Width + size.Left;
-                        tempPath.Reset();
-                        Image image = ButtonMap[iconCode];
-
-                        if (x == 0)
-                            x = 3;
-                        float ar = (float)image.Width / (float)image.Height;
-
-                        float scaledHeight = image.Height;
-                        if (Configuration.Instance.OverlayImageScale > 0)
-                            scaledHeight = Configuration.Instance.OverlayContentSize * Configuration.Instance.OverlayImageScale;
-                        if (scaledHeight > image.Height) scaledHeight = image.Height;
-                        int newWidth = (int)(scaledHeight * ar);
-                        images.Add(new object[] { image, x, pos, (int)newWidth, scaledHeight });
-                        x += newWidth;
-                        if (addedHeight < scaledHeight)
-                            addedHeight = scaledHeight;
-                    }
-
-                }
-
-                tempPath.AddString(line, fontFamily, (int)modifier, Configuration.Instance.OverlayContentSize, new PointF(0, 0), strformat);
-                RectangleF tsize = tempPath.GetBounds();
-                
-                path.AddString(line, fontFamily, (int)modifier, Configuration.Instance.OverlayContentSize, new PointF(x, pos), strformat);
-                x += tsize.X + tsize.Width + tsize.Left;
-                tempPath.Reset();
-                pos += addedHeight + 2;
-                if (x > width)
-                    width = x;
-            }
-
-            pos += Configuration.Instance.OverlayContentSize;
-
-            for (int i = 0; i < Configuration.Instance.OverlayTextOutlineSize; ++i)
-            {
-                Pen pen = new Pen(Configuration.Instance.OverlayTextOutlineColour, i + 1);
-                pen.LineJoin = LineJoin.Round;
-                e.Graphics.DrawPath(pen, path);
-                pen.Dispose();
-            }
-
-            SolidBrush brush = new SolidBrush(Configuration.Instance.OverlayTextColour);
-            e.Graphics.FillPath(brush, path);
-
-            
-            RectangleF bounds = path.GetBounds();
-            this.Height = (int)pos;
-            this.Width = (int)width + 6;
-
-            foreach (object[] image in images)
-            {
-                try
-                {
-                    e.Graphics.DrawImage(image[0] as Image, (float)image[1], (float)image[2], (int)image[3], (float)(image[4]));
-                }
-                catch (Exception ex)
-                {
-                    ex = ex;
-                }
-            }
-
-            path.Dispose();
-            fontFamily.Dispose();
-            brush.Dispose();
-            e.Graphics.Dispose();
+            e.Graphics.DrawImage(m_overlay, 0, 0);
 
             
         }
@@ -819,6 +646,11 @@ namespace SC2Scrapbook
             {
                 return true;
             }
+        }
+
+        private void lblFakeTitle_Click(object sender, EventArgs e)
+        {
+
         }
 
         /*protected override CreateParams CreateParams
