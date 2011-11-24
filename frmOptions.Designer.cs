@@ -54,10 +54,10 @@
             this.llNameHelp = new System.Windows.Forms.LinkLabel();
             this.chkAllowVsX = new System.Windows.Forms.CheckBox();
             this.chkUseRandomBuild = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.chkIngameBOSelector = new System.Windows.Forms.CheckBox();
             this.chkOpponentInfoOverlay = new System.Windows.Forms.CheckBox();
             this.chkAdvancedEnabled = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.grpOverlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numImageScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numOutlineSize)).BeginInit();
@@ -130,6 +130,7 @@
             this.txtOverlayHotkey.ReadOnly = true;
             this.txtOverlayHotkey.Size = new System.Drawing.Size(136, 20);
             this.txtOverlayHotkey.TabIndex = 22;
+            this.txtOverlayHotkey.TextChanged += new System.EventHandler(this.txtOverlayHotkey_TextChanged);
             this.txtOverlayHotkey.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtOverlayHotkey_KeyDown);
             this.txtOverlayHotkey.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtOverlayHotkey_KeyUp);
             // 
@@ -320,6 +321,15 @@
             this.chkUseRandomBuild.UseVisualStyleBackColor = true;
             this.chkUseRandomBuild.CheckedChanged += new System.EventHandler(this.chkUseRandomBuild_CheckedChanged);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Your SC2 Character: ";
+            // 
             // chkIngameBOSelector
             // 
             this.chkIngameBOSelector.AutoSize = true;
@@ -353,15 +363,6 @@
             this.chkAdvancedEnabled.Text = "Advanced SC2 Settings";
             this.chkAdvancedEnabled.UseVisualStyleBackColor = false;
             this.chkAdvancedEnabled.CheckedChanged += new System.EventHandler(this.chkAdvancedEnabled_CheckedChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Your SC2 Character: ";
             // 
             // frmOptions
             // 

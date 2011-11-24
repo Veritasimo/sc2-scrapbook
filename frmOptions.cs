@@ -61,6 +61,23 @@ namespace SC2Scrapbook
             numOverlayClose.Value = Configuration.Instance.OpponentInfoOverlayTimeout;
             numImageScale.Value = Configuration.Instance.OverlayImageScale;
 
+            txtOverlayHotkey.Text = "";
+
+            if (Configuration.Instance.ToggleOverlayKey != Keys.None)
+            {
+                if (Configuration.Instance.ToggleOverlayModifier != Keys.None)
+                {
+                    if ((Configuration.Instance.ToggleOverlayModifier & System.Windows.Forms.Keys.Control) == System.Windows.Forms.Keys.Control)
+                        txtOverlayHotkey.Text += "CTRL + ";
+                    if ((Configuration.Instance.ToggleOverlayModifier & System.Windows.Forms.Keys.Alt) == System.Windows.Forms.Keys.Alt)
+                        txtOverlayHotkey.Text += "ALT + ";
+                    if ((Configuration.Instance.ToggleOverlayModifier & System.Windows.Forms.Keys.Shift) == System.Windows.Forms.Keys.Shift)
+                        txtOverlayHotkey.Text += "SHIFT + ";
+                }
+
+                txtOverlayHotkey.Text += Configuration.Instance.ToggleOverlayKey.ToString();
+            }
+
         }
 
         private void cmdEditTitle_Click(object sender, EventArgs e)
@@ -333,6 +350,11 @@ Do you want to continue?", "Advanced Goodness.", MessageBoxButtons.YesNo, Messag
                 txtOverlayHotkey.Text = "";
 
             
+        }
+
+        private void txtOverlayHotkey_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
 

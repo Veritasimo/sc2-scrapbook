@@ -110,9 +110,9 @@
             // pnlLeagues
             // 
             this.pnlLeagues.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pnlLeagues.Location = new System.Drawing.Point(-1, 129);
+            this.pnlLeagues.Location = new System.Drawing.Point(0, 129);
             this.pnlLeagues.Name = "pnlLeagues";
-            this.pnlLeagues.Size = new System.Drawing.Size(499, 50);
+            this.pnlLeagues.Size = new System.Drawing.Size(498, 50);
             this.pnlLeagues.TabIndex = 11;
             // 
             // frmSplash

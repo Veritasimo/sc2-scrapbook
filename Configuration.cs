@@ -148,6 +148,12 @@ namespace SC2Scrapbook
                     case "seenminimizenotification":
                         SeenMinimizeNotification = (bool)boolSerializer.Deserialize(reader);
                         break;
+                    case "toggleoverlaykey":
+                        ToggleOverlayKey = (System.Windows.Forms.Keys)((int)intSerializer.Deserialize(reader));
+                        break;
+                    case "toggleoverlaymodifier":
+                        ToggleOverlayModifier = (System.Windows.Forms.Keys)((int)intSerializer.Deserialize(reader));
+                        break;
                     default:
                         reader.ReadInnerXml();
                         break;
@@ -257,6 +263,14 @@ namespace SC2Scrapbook
 
             writer.WriteStartElement("MySC2Character");
             stringSerializer.Serialize(writer, MySC2Character);
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("ToggleOverlayKey");
+            intSerializer.Serialize(writer, (int)ToggleOverlayKey);
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("ToggleOverlayModifier");
+            intSerializer.Serialize(writer, (int)ToggleOverlayModifier);
             writer.WriteEndElement();
         }
 
