@@ -1,3 +1,14 @@
+2.5
+------------------
+New: Added the ability to import sharecodes manually via an icon above the Script textbox.
+New: Added an option to remember your own race for the in-game build selection window.
+New: Added a reset button to the in-game build selection window.
+Fix: Fixed sc2bo:// protocol importing.
+Fix: The unique ID of a build will be changed when changes are made to the build.
+Fix: The position of the main window will no longer persist between sessions. This
+     should fix the issue that caused people to have to delete their config to load
+     the application.
+
 2.4.1
 ------------------
 Fix: Fixed hotkey settings not saving to the config file.
