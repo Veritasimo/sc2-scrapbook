@@ -772,8 +772,7 @@ namespace SC2Scrapbook.Models
 
         public static Build ParseBase64(string b64)
         {
-            try
-            {
+            
                 System.IO.MemoryStream ms = new System.IO.MemoryStream(Convert.FromBase64String(b64));
                 System.IO.Compression.GZipStream gz = new System.IO.Compression.GZipStream(ms, System.IO.Compression.CompressionMode.Decompress);
 
@@ -784,11 +783,7 @@ namespace SC2Scrapbook.Models
                 ms.Close();
 
                 return build;
-            }
-            catch
-            {
-                return null;
-            }
+            
         }
 
         public string SaveBase64()

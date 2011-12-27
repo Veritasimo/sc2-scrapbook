@@ -60,8 +60,6 @@ namespace SC2Scrapbook
             if (!Configuration.Instance.FirstRun)
             {
                 if ((Configuration.Instance.MainHeight != 0) && (Configuration.Instance.MainWidth != 0)) {
-                    Left = Configuration.Instance.MainLeft;
-                    Top = Configuration.Instance.MainTop;
                     Height = Configuration.Instance.MainHeight;
                     Width = Configuration.Instance.MainWidth;
                 }
@@ -196,12 +194,14 @@ namespace SC2Scrapbook
                     }
                 }
             }
-            frmSplash.CloseSplash();
+            
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            frmSplash.CloseSplash();
+            this.BringToFront();
+            this.Activate();
         }
 
         public void PopulateBuilds()
@@ -778,6 +778,15 @@ namespace SC2Scrapbook
             else
             {
                 m_dodrag = false;
+            }
+        }
+
+        private void pbImport_Click(object sender, EventArgs e)
+        {
+            frmManualSharecodeEntry import = new frmManualSharecodeEntry();
+            if (import.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                PopulateBuilds();
             }
         }
         

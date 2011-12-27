@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SC2Scrapbook</RootNamespace>
-    <AssemblyName>SC2Scrapbook 2.4.1</AssemblyName>
+    <AssemblyName>SC2Scrapbook 2.5</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -62,6 +62,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="FormAnimator.cs" />
+    <Compile Include="frmManualSharecodeEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManualSharecodeEntry.Designer.cs">
+      <DependentUpon>frmManualSharecodeEntry.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmResources.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SerializableDictionary.cs" />
     <Compile Include="Win32.cs" />
+    <EmbeddedResource Include="frmManualSharecodeEntry.resx">
+      <DependentUpon>frmManualSharecodeEntry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmResources.resx">
       <DependentUpon>frmResources.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +206,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="random.ico" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\tick.png" />
     <None Include="Resources\imageicon.gif" />
     <None Include="Resources\texticon.gif" />
     <None Include="Resources\buttons\btn-upgrade-terran-cloak.png" />

@@ -12,6 +12,7 @@ namespace SC2Scrapbook
 {
     public partial class frmIngameBuildSelection : Form
     {
+        public static Models.Matchup.Races _rememberedRace = Models.Matchup.Races.Random;
 
         public Models.Matchup.Races _myRace;
         public Models.Matchup.Races _opponentRace;
@@ -21,12 +22,22 @@ namespace SC2Scrapbook
             InitializeComponent();
         }
 
+        void Reset()
+        {
+            _rememberedRace = Models.Matchup.Races.Random;
+            pnlSelectRace.Visible = true;
+            pnlOpponentRace.Visible = false;
+            pnlBuilds.Visible = false;
+
+            lblStatus.Text = "SELECT YOUR RACE";
+        }
+
         void SelectRace(Models.Matchup.Races race) {
             _myRace = race;
             pnlSelectRace.Visible = false;
             pnlOpponentRace.Visible = true;
 
-            lblStatus.Text = "Select Opponent's Race";
+            lblStatus.Text = "SELECT OPPONENT RACE";
 
         }
 
@@ -36,7 +47,7 @@ namespace SC2Scrapbook
             pnlSelectRace.Visible = false;
             pnlOpponentRace.Visible = false;
             pnlBuilds.Visible = !Configuration.Instance.SelectRandomBuild;
-            lblStatus.Text = "Select Build Order";
+            lblStatus.Text = "SELECT BUILD ORDER";
 
             PopulateBuilds();
         }
@@ -179,6 +190,19 @@ namespace SC2Scrapbook
 
                 return p;
             }
+        }
+
+        private void frmIngameBuildSelection_Load(object sender, EventArgs e)
+        {
+            if ((Configuration.Instance.RememberRace) && (_rememberedRace != Models.Matchup.Races.Random))
+            {
+                SelectRace(_rememberedRace);
+            }
+        }
+
+        private void cmdReset_Click(object sender, EventArgs e)
+        {
+            Reset();
         }
 
     }

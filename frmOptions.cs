@@ -78,6 +78,8 @@ namespace SC2Scrapbook
                 txtOverlayHotkey.Text += Configuration.Instance.ToggleOverlayKey.ToString();
             }
 
+            chkAutoRace.Checked = Configuration.Instance.RememberRace;
+
         }
 
         private void cmdEditTitle_Click(object sender, EventArgs e)
@@ -355,6 +357,11 @@ Do you want to continue?", "Advanced Goodness.", MessageBoxButtons.YesNo, Messag
         private void txtOverlayHotkey_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void chkAutoRace_CheckedChanged(object sender, EventArgs e)
+        {
+            Configuration.Instance.RememberRace = chkAutoRace.Checked;
         }
 
 

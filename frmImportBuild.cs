@@ -11,16 +11,23 @@ namespace SC2Scrapbook
 {
     public partial class frmImportBuild : Form
     {
+        Models.Build build;
         public frmImportBuild(Models.Build build)
         {
             InitializeComponent();
 
+            this.build = build;
             txtName.Text = build.Name;
             txtScript.Text = build.Script;
             txtNotes.Text = build.Notes;
             pbRace1.Image = Models.Matchup.ImageFromRace(build.Matchup.PlayerRace);
             pbRace2.Image = Models.Matchup.ImageFromRace(build.Matchup.OpponentRace);
 
+
+        }
+
+        private void frmImportBuild_Load(object sender, EventArgs e)
+        {
             var builds = from x in Program.BuildsDB
                          where x.Guid == build.Guid
                          select x;
@@ -33,11 +40,6 @@ namespace SC2Scrapbook
                     Close();
                 }
             }
-        }
-
-        private void frmImportBuild_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void cmdImport_Click(object sender, EventArgs e)

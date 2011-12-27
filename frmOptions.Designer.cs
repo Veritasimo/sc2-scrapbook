@@ -47,6 +47,7 @@
             this.cmdEditTitle = new System.Windows.Forms.Button();
             this.cmdPreview = new System.Windows.Forms.Button();
             this.grpAdvancedOpponentInfo = new System.Windows.Forms.GroupBox();
+            this.chkAutoRace = new System.Windows.Forms.CheckBox();
             this.txtMySC2Name = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.numOverlayClose = new System.Windows.Forms.NumericUpDown();
@@ -233,6 +234,7 @@
             // 
             // grpAdvancedOpponentInfo
             // 
+            this.grpAdvancedOpponentInfo.Controls.Add(this.chkAutoRace);
             this.grpAdvancedOpponentInfo.Controls.Add(this.txtMySC2Name);
             this.grpAdvancedOpponentInfo.Controls.Add(this.label4);
             this.grpAdvancedOpponentInfo.Controls.Add(this.numOverlayClose);
@@ -250,6 +252,18 @@
             this.grpAdvancedOpponentInfo.TabIndex = 13;
             this.grpAdvancedOpponentInfo.TabStop = false;
             this.grpAdvancedOpponentInfo.Text = "                                             ";
+            // 
+            // chkAutoRace
+            // 
+            this.chkAutoRace.AutoSize = true;
+            this.chkAutoRace.Enabled = false;
+            this.chkAutoRace.Location = new System.Drawing.Point(33, 138);
+            this.chkAutoRace.Name = "chkAutoRace";
+            this.chkAutoRace.Size = new System.Drawing.Size(117, 17);
+            this.chkAutoRace.TabIndex = 32;
+            this.chkAutoRace.Text = "Remember my race";
+            this.chkAutoRace.UseVisualStyleBackColor = true;
+            this.chkAutoRace.CheckedChanged += new System.EventHandler(this.chkAutoRace_CheckedChanged);
             // 
             // txtMySC2Name
             // 
@@ -425,5 +439,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox txtMySC2Name;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox chkAutoRace;
     }
 }

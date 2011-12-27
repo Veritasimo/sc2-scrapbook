@@ -46,6 +46,7 @@
             this.lvchBuild = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvchMatchup = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnClose = new System.Windows.Forms.Button();
+            this.cmdReset = new System.Windows.Forms.Button();
             this.pnlSelectRace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMyProtoss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMyZerg)).BeginInit();
@@ -262,11 +263,23 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // cmdReset
+            // 
+            this.cmdReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdReset.Location = new System.Drawing.Point(12, 8);
+            this.cmdReset.Name = "cmdReset";
+            this.cmdReset.Size = new System.Drawing.Size(30, 23);
+            this.cmdReset.TabIndex = 5;
+            this.cmdReset.Text = "<";
+            this.cmdReset.UseVisualStyleBackColor = true;
+            this.cmdReset.Click += new System.EventHandler(this.cmdReset_Click);
+            // 
             // frmIngameBuildSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 213);
+            this.Controls.Add(this.cmdReset);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.pnlBuilds);
             this.Controls.Add(this.pnlOpponentRace);
@@ -281,6 +294,7 @@
             this.Text = "In-game BO Selection";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.SystemColors.Control;
+            this.Load += new System.EventHandler(this.frmIngameBuildSelection_Load);
             this.pnlSelectRace.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMyProtoss)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMyZerg)).EndInit();
@@ -314,5 +328,6 @@
         private EXControls.EXListView lvBuilds;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.Button cmdReset;
     }
 }

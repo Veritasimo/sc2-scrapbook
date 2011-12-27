@@ -32,7 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tmrNameChanged = new System.Windows.Forms.Timer(this.components);
             this.gbFilter = new System.Windows.Forms.GroupBox();
+            this.cbVsRace = new EXControls.EXComboBox();
             this.lblVsRace = new System.Windows.Forms.Label();
+            this.cbRace = new EXControls.EXComboBox();
             this.lblPlayerRace = new System.Windows.Forms.Label();
             this.txtBuildName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
@@ -327,12 +329,12 @@
             this.lvBuilds = new EXControls.EXListView();
             this.lvchBuild = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvchMatchup = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cbVsRace = new EXControls.EXComboBox();
-            this.cbRace = new EXControls.EXComboBox();
+            this.pbImport = new System.Windows.Forms.PictureBox();
             this.gbFilter.SuspendLayout();
             this.cmenuBuilds.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconSelect)).BeginInit();
             this.cmIconSelect.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImport)).BeginInit();
             this.SuspendLayout();
             // 
             // tmrNameChanged
@@ -357,6 +359,17 @@
             this.gbFilter.TabStop = false;
             this.gbFilter.Text = "Filter";
             // 
+            // cbVsRace
+            // 
+            this.cbVsRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbVsRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbVsRace.FormattingEnabled = true;
+            this.cbVsRace.Location = new System.Drawing.Point(285, 35);
+            this.cbVsRace.Name = "cbVsRace";
+            this.cbVsRace.Size = new System.Drawing.Size(131, 21);
+            this.cbVsRace.TabIndex = 2;
+            this.cbVsRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
+            // 
             // lblVsRace
             // 
             this.lblVsRace.AutoSize = true;
@@ -365,6 +378,17 @@
             this.lblVsRace.Size = new System.Drawing.Size(18, 13);
             this.lblVsRace.TabIndex = 4;
             this.lblVsRace.Text = "vs";
+            // 
+            // cbRace
+            // 
+            this.cbRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbRace.FormattingEnabled = true;
+            this.cbRace.Location = new System.Drawing.Point(148, 35);
+            this.cbRace.Name = "cbRace";
+            this.cbRace.Size = new System.Drawing.Size(131, 21);
+            this.cbRace.TabIndex = 1;
+            this.cbRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
             // 
             // lblPlayerRace
             // 
@@ -3073,27 +3097,19 @@
             this.lvchMatchup.Text = "Matchup";
             this.lvchMatchup.Width = 87;
             // 
-            // cbVsRace
+            // pbImport
             // 
-            this.cbVsRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbVsRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbVsRace.FormattingEnabled = true;
-            this.cbVsRace.Location = new System.Drawing.Point(285, 35);
-            this.cbVsRace.Name = "cbVsRace";
-            this.cbVsRace.Size = new System.Drawing.Size(131, 21);
-            this.cbVsRace.TabIndex = 2;
-            this.cbVsRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
-            // 
-            // cbRace
-            // 
-            this.cbRace.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbRace.FormattingEnabled = true;
-            this.cbRace.Location = new System.Drawing.Point(148, 35);
-            this.cbRace.Name = "cbRace";
-            this.cbRace.Size = new System.Drawing.Size(131, 21);
-            this.cbRace.TabIndex = 1;
-            this.cbRace.SelectedIndexChanged += new System.EventHandler(this.comboFilterItemChanged);
+            this.pbImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbImport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbImport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbImport.Image = ((System.Drawing.Image)(resources.GetObject("pbImport.Image")));
+            this.pbImport.Location = new System.Drawing.Point(796, 52);
+            this.pbImport.Name = "pbImport";
+            this.pbImport.Size = new System.Drawing.Size(14, 14);
+            this.pbImport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbImport.TabIndex = 22;
+            this.pbImport.TabStop = false;
+            this.pbImport.Click += new System.EventHandler(this.pbImport_Click);
             // 
             // frmMain
             // 
@@ -3101,6 +3117,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(833, 407);
+            this.Controls.Add(this.pbImport);
             this.Controls.Add(this.btnCreateWallpaper);
             this.Controls.Add(this.pbIconSelect);
             this.Controls.Add(this.llChangelog);
@@ -3124,8 +3141,9 @@
             this.Controls.Add(this.lvBuilds);
             this.Controls.Add(this.gbFilter);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(849, 445);
             this.Name = "frmMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SC2 Scrapbook";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
@@ -3136,6 +3154,7 @@
             this.cmenuBuilds.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbIconSelect)).EndInit();
             this.cmIconSelect.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbImport)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3442,5 +3461,6 @@
         private System.Windows.Forms.ToolStripMenuItem level2ToolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem level3ToolStripMenuItem6;
         private System.Windows.Forms.Button btnCreateWallpaper;
+        private System.Windows.Forms.PictureBox pbImport;
     }
 }

@@ -42,6 +42,7 @@ namespace SC2Scrapbook
         public bool BuildSelectionOverlay { get; set; }
         public bool SelectRandomBuild { get; set; }
         public bool AllowVsXBuilds { get; set; }
+        public bool RememberRace { get; set; }
 
         public string MySC2Character { get; set; }
 
@@ -141,6 +142,9 @@ namespace SC2Scrapbook
                         break;
                     case "allowvsxbuilds":
                         AllowVsXBuilds = (bool)boolSerializer.Deserialize(reader);
+                        break;
+                    case "rememberrace":
+                        RememberRace = (bool)boolSerializer.Deserialize(reader);
                         break;
                     case "opponentinfooverlaytimeout":
                         OpponentInfoOverlayTimeout = (int)intSerializer.Deserialize(reader);
@@ -259,6 +263,10 @@ namespace SC2Scrapbook
 
             writer.WriteStartElement("AllowVsXBuilds");
             boolSerializer.Serialize(writer, AllowVsXBuilds);
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("RememberRace");
+            boolSerializer.Serialize(writer, RememberRace);
             writer.WriteEndElement();
 
             writer.WriteStartElement("MySC2Character");
