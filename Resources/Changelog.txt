@@ -1,3 +1,7 @@
+2.5.1
+------------------
+Fix: Fixed the Remember Race option in the configuration window.
+
 2.5
 ------------------
 New: Added the ability to import sharecodes manually via an icon above the Script textbox.
