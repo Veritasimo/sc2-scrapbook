@@ -231,11 +231,14 @@ Do you want to continue?", "Advanced Goodness.", MessageBoxButtons.YesNo, Messag
                 chkUseRandomBuild.Enabled = false;
                 chkAllowVsX.Checked = false;
                 chkAllowVsX.Enabled = false;
+                chkAutoRace.Enabled = false;
+                chkAutoRace.Checked = false;
             }
             else
             {
                 chkUseRandomBuild.Enabled = true;
                 chkAllowVsX.Enabled = true;
+                chkAutoRace.Enabled = true;
             }
         }
 
