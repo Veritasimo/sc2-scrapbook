@@ -39,6 +39,8 @@ namespace SC2Scrapbook
 
             lblStatus.Text = "SELECT OPPONENT RACE";
 
+            if (Configuration.Instance.RememberRace)
+                _rememberedRace = race;
         }
 
         void SelectOpponentRace(Models.Matchup.Races race)

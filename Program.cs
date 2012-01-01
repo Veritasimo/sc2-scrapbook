@@ -174,8 +174,16 @@ namespace SC2Scrapbook
                     IngameBuildSelectionForm.Dispose();
 
                 IngameBuildSelectionForm = new frmIngameBuildSelection();
+
+#if DEBUG
+                IngameBuildSelectionForm.Top = 0;
+                IngameBuildSelectionForm.Left = 0;
+                
+#else
                 IngameBuildSelectionForm.Top = SC2WindowRect.Top + (SC2WindowRect.Height - IngameBuildSelectionForm.Height - 20);
                 IngameBuildSelectionForm.Left = SC2WindowRect.Left + ((SC2WindowRect.Width / 2) - IngameBuildSelectionForm.Width / 2);
+                
+#endif
                 IngameBuildSelectionForm.Show();
                 
             }

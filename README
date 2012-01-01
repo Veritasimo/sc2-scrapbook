@@ -1,3 +1,7 @@
+2.5.2
+------------------
+Fix: Fixed the in-game build selector not actually remembering your race.
+
 2.5.1
 ------------------
 Fix: Fixed the Remember Race option in the configuration window.

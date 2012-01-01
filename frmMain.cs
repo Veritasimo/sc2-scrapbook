@@ -194,6 +194,11 @@ namespace SC2Scrapbook
                     }
                 }
             }
+
+#if DEBUG
+            button1.Visible = true;
+            button1.Enabled = true;
+#endif
             
         }
 
@@ -489,24 +494,9 @@ namespace SC2Scrapbook
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Program.ShowBuildSelection();
-
-
-            IntPtr dc = Win32.GetDC(IntPtr.Zero);
-
-            double vrefresh = Win32.GetDeviceCaps(dc, (int)Win32.DeviceCap.VREFRESH);
-            int sleep = (int)Math.Floor(500 / vrefresh);
-            Graphics g = Graphics.FromHdc(dc);
-
-            while (true)
-            {
-                // Doesn't work. There's still flicker.
-                g.DrawString("Hello", new Font("Arial", 50, FontStyle.Bold, GraphicsUnit.Pixel), new SolidBrush(Color.Red), 50, 50);
-                System.Threading.Thread.Sleep(sleep);
-            }
-
-
-            //Win32.ReleaseDC(IntPtr.Zero, dc);
+            Program.HideBuildSelection();
+            Program.ShowBuildSelection();
+            
         }
 
         private void lvBuilds_Move(object sender, EventArgs e)
