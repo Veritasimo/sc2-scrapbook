@@ -110,6 +110,11 @@ namespace SC2Scrapbook
                 {
                     var pb = sender as PictureBox;
                     pnlReceptical.Controls.Remove(pb);
+                    if (pb.Image != null)
+                    {
+                        pb.Image.Dispose();
+                        pb.Image = null;
+                    }
                     pb.Hide();
                     pb.Dispose();
                 }
@@ -309,6 +314,11 @@ namespace SC2Scrapbook
                     if (control.Tag != null)
                     {
                         var build = control.Tag as Models.Build;
+                        {
+                            if (pb.Image != null)
+                                pb.Image.Dispose();
+                            pb.Image = null;
+                        }
                         pb.Image = build.GenerateImage();
                         pb.Width = pb.Image.Width;
                         pb.Height = pb.Image.Height;

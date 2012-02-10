@@ -610,6 +610,11 @@ namespace SC2Scrapbook
             {
                 Win32.UnregisterHotKey(Handle, m_hotkey);
             }
+            if (m_overlay != null)
+            {
+                m_overlay.Dispose();
+                m_overlay = null;
+            }
             Configuration.Instance.OverlayLeft = Left;
             Configuration.Instance.OverlayTop = Top;
 

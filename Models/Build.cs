@@ -503,7 +503,11 @@ namespace SC2Scrapbook.Models
         {
             if (System.IO.File.Exists(CacheFile))
             {
-                return Image.FromFile(CacheFile);
+                FileStream stream = new FileStream(CacheFile, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+                Image image = Image.FromStream(stream);
+                stream.Dispose();
+                return image;
+                
             }
             else
             {
@@ -726,7 +730,10 @@ namespace SC2Scrapbook.Models
                 g.DrawImage(canvas, 0, 0, new Rectangle(0, 0, (int)width, (int)pos), GraphicsUnit.Pixel);
                 g.Dispose();
 
-                ret.Save(CacheFile, System.Drawing.Imaging.ImageFormat.Png);
+                FileStream stream = new FileStream(CacheFile, FileMode.Create, FileAccess.Write, FileShare.ReadWrite);
+                ret.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                
+                stream.Close();
 
                 return ret;
             }
