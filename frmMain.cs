@@ -94,7 +94,7 @@ namespace SC2Scrapbook
             try
             {
                 System.Net.WebClient c = new System.Net.WebClient();
-                string update = c.DownloadString("http://veritasimo.cjb.net/version.txt");
+                string update = c.DownloadString("https://bitbucket.org/Veritasimo/sc2-scrapbook/downloads/version.txt");
                 if (!string.IsNullOrEmpty(update))
                 {
                     string[] thisVersion = Properties.Resources.version.Split('|');

@@ -696,7 +696,7 @@ namespace SC2Scrapbook
             
             try
             {
-                client.DownloadFile("http://www.veritasimo.cjb.net/builds.xml", string.Format("{0}{1}{2}", DataDirectory, Path.DirectorySeparatorChar, "builds.xml"));
+                client.DownloadFile("https://bitbucket.org/Veritasimo/sc2-scrapbook/downloads/builds.xml", string.Format("{0}{1}{2}", DataDirectory, Path.DirectorySeparatorChar, "builds.xml"));
                 if (!File.ReadAllText(string.Format("{0}{1}{2}", DataDirectory, Path.DirectorySeparatorChar, "builds.xml")).StartsWith("<?xml"))
                 {
                     throw new XmlException();
@@ -723,7 +723,7 @@ namespace SC2Scrapbook
 
             try
             {
-                document.Load("http://www.veritasimo.cjb.net/patch.xml");
+                document.Load("https://bitbucket.org/Veritasimo/sc2-scrapbook/downloads/patch.xml");
             }
             catch
             {

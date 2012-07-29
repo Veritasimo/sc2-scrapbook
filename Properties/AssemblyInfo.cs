@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("SC2 Scrapbook")]
 [assembly: AssemblyDescription("Manages your StarCraft II builds and provides helpful overlays.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("SCReddit/L_Veritas")]
+[assembly: AssemblyCompany("Veritasimo")]
 [assembly: AssemblyProduct("SC2 Scrapbook")]
-[assembly: AssemblyCopyright("Copyright © L_Veritas 2011")]
+[assembly: AssemblyCopyright("Copyright © Veritas 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("2.5.*")]
-[assembly: AssemblyFileVersion("2.5.1.0")]
+[assembly: AssemblyFileVersion("2.5.4.0")]
