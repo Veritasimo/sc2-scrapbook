@@ -36,7 +36,7 @@ namespace SC2Scrapbook
         /// </summary>
         [STAThread]
         static void Main()
-        {
+        {  
             string sharecode = null;
             string[] args = Environment.GetCommandLineArgs();
 
@@ -298,13 +298,15 @@ namespace SC2Scrapbook
             if (string.IsNullOrEmpty(url))
                 return null;
 
+
             try
             {
                 System.Net.WebClient client = new System.Net.WebClient();
                 string data = client.DownloadString(url);
 
-                int initPos = data.IndexOf(@"<div class=""ladder"" data-tooltip=""#best-team-1"">");
-                int boundary = data.IndexOf(@"<div class=""ladder"" data-tooltip=""#best-team-2"">");
+                int initPos = data.IndexOf(@"<h3 class=""title-globe"">");
+                int boundary = -1;
+
                 int pos = initPos;
                 int pos2 = -1;
 
@@ -312,131 +314,24 @@ namespace SC2Scrapbook
                 if (pos == -1)
                     return null;
 
-
-                string league = "none";
-                pos = data.IndexOf(@"<span class=""badge badge-", pos);
-                if ((pos == -1) || pos > boundary)
-                    league = "none";
-                else
-                {
-
-                    pos += 25;
-                    pos2 = data.IndexOf(@" badge", pos);
-                    league = data.Substring(pos, pos2 - pos);
-                }
-                
-                int rank = 100;
-
-                pos = data.IndexOf("<strong>Rank:</strong> ", initPos);
-                if ((pos == -1) || pos > boundary)
-                    rank = 0;
-                else {
-
-                    pos += 23;
-                    pos2 = data.IndexOf('\n', pos);
-
-                    if (!int.TryParse(data.Substring(pos, pos2 - pos).Trim('\r'), out rank))
-                        rank = 0;
-                }
-
                 string race = "";
-                pos = data.IndexOf(@"<a href=""ladder/"" class=""race-", initPos);
+                pos = data.IndexOf(@"<div class=""module-body snapshot-", initPos);
                 if (pos == -1)
                     race = "random";
                 else
                 {
-                    pos += 30;
+                    pos += 33;
                     pos2 = data.IndexOf(@"""", pos);
 
                     race = data.Substring(pos, pos2 - pos);
                 }
-
-                int wins = -1;
-                int losses = -1;
-                int points = -1;
-
-                if (rank > 0)
-                {
-                    pos = data.IndexOf(@"<a href=""", initPos);
-
-                    if (pos > -1)
-                    {
-                        pos += 9;
-                        if (pos < boundary)
-                        {
-                            pos2 = data.IndexOf(@""">", pos);
-
-                            string ladderPath = data.Substring(pos, pos2 - pos);
-                            Uri uri = new Uri(url);
-                            uri = new Uri(string.Format("http://{0}{1}", uri.Host, ladderPath));
-
-                            try
-                            {
-                                string ladderData = client.DownloadString(uri);
-
-                                pos = ladderData.IndexOf(@"id=""current-rank"">");
-                                if (pos > -1)
-                                {
-                                    int ladderBoundary = ladderData.IndexOf("</tr>", pos);
-                                    if (ladderBoundary > -1)
-                                    {
-                                        pos = ladderData.IndexOf(@"<td class=""align-center"">", pos);
-                                        if (pos > -1 && pos < ladderBoundary)
-                                        {
-                                            pos += 25;
-                                            pos2 = ladderData.IndexOf("</td>", pos);
-
-                                            if (!int.TryParse(ladderData.Substring(pos, pos2 - pos), out points))
-                                            {
-                                                points = -1;
-                                            }
-
-                                            pos = ladderData.IndexOf(@"<td class=""align-center"">", pos2);
-
-                                            if (pos > -1 && pos < ladderBoundary)
-                                            {
-                                                pos += 25;
-                                                pos2 = ladderData.IndexOf("</td>", pos);
-
-                                                if (!int.TryParse(ladderData.Substring(pos, pos2 - pos), out wins))
-                                                {
-                                                    wins = -1;
-                                                }
-
-                                                pos = ladderData.IndexOf(@"<td class=""align-center"">", pos2);
-
-                                                if (pos > -1 && pos < ladderBoundary)
-                                                {
-                                                    pos += 25;
-                                                    pos2 = ladderData.IndexOf("</td>", pos);
-
-                                                    if (!int.TryParse(ladderData.Substring(pos, pos2 - pos), out losses))
-                                                    {
-                                                        losses = -1;
-                                                    }
-                                                }
-                                            }
-                                        }
-
-
-                                    }
-
-
-                                }
-                            }
-                            catch { }
-                        }
-                    }
-                }
-                
-
 
 
                 Models.Player.PortraitData portrait = null;
 
                 pos = data.IndexOf(@"<span class=""icon-frame """);
 
-                
+
                 if (pos > -1)
                 {
                     pos = data.IndexOf(@"style=""", pos);
@@ -473,6 +368,134 @@ namespace SC2Scrapbook
 
                     }
                 }
+
+                url = string.Format("{0}ladder/leagues", url);
+                data = client.DownloadString(url);
+
+                string league = "none";
+                int rank = 0;
+                int wins = -1;
+                int losses = -1;
+                int points = -1;
+
+                if (data.Contains("<title>1v1"))
+                {
+
+                    try
+                    {
+                        pos = data.IndexOf(@"<span class=""badge badge-", pos);
+                        if ((pos == -1) || pos > boundary)
+                            league = "none";
+                        else
+                        {
+
+                            pos += 25;
+                            pos2 = data.IndexOf(@" badge", pos);
+                            league = data.Substring(pos, pos2 - pos);
+                        }
+
+
+                        initPos = data.IndexOf("id=\"current-rank");
+                        boundary = data.IndexOf("<tr", initPos);
+
+                        pos = data.IndexOf("<td", initPos);
+                        pos = data.IndexOf("<td", pos + 3);
+                        pos = data.IndexOf(">", pos);
+                        
+                        if ((pos == -1))
+                            rank = 0;
+                        else
+                        {
+
+                            pos += 1;
+                            pos2 = data.IndexOf('<', pos);
+                            
+                            if (!int.TryParse(Regex.Replace(data.Substring(pos, pos2 - pos).Trim('\r'), @"\D", "", RegexOptions.IgnoreCase), out rank))
+                                rank = 0;
+                        }
+
+
+
+
+
+                        if (rank > 0)
+                        {
+                            pos = data.IndexOf(@"<a href=""", initPos);
+
+                            if (pos > -1)
+                            {
+                                pos += 9;
+                                if (pos < boundary)
+                                {
+                                    pos2 = data.IndexOf(@""">", pos);
+
+                                    string ladderPath = data.Substring(pos, pos2 - pos);
+                                    Uri uri = new Uri(url);
+                                    uri = new Uri(string.Format("http://{0}{1}", uri.Host, ladderPath));
+
+                                    try
+                                    {
+                                        string ladderData = data;
+
+                                        pos = ladderData.IndexOf(@"id=""current-rank"">");
+                                        if (pos > -1)
+                                        {
+                                            int ladderBoundary = ladderData.IndexOf("</tr>", pos);
+                                            if (ladderBoundary > -1)
+                                            {
+                                                pos = ladderData.IndexOf(@"<td class=""align-center"">", pos);
+                                                if (pos > -1 && pos < ladderBoundary)
+                                                {
+                                                    pos += 25;
+                                                    pos2 = ladderData.IndexOf("</td>", pos);
+
+                                                    if (!int.TryParse(ladderData.Substring(pos, pos2 - pos), out points))
+                                                    {
+                                                        points = -1;
+                                                    }
+
+                                                    pos = ladderData.IndexOf(@"<td class=""align-center"">", pos2);
+
+                                                    if (pos > -1 && pos < ladderBoundary)
+                                                    {
+                                                        pos += 25;
+                                                        pos2 = ladderData.IndexOf("</td>", pos);
+
+                                                        if (!int.TryParse(ladderData.Substring(pos, pos2 - pos), out wins))
+                                                        {
+                                                            wins = -1;
+                                                        }
+
+                                                        pos = ladderData.IndexOf(@"<td class=""align-center"">", pos2);
+
+                                                        if (pos > -1 && pos < ladderBoundary)
+                                                        {
+                                                            pos += 25;
+                                                            pos2 = ladderData.IndexOf("</td>", pos);
+
+                                                            if (!int.TryParse(ladderData.Substring(pos, pos2 - pos), out losses))
+                                                            {
+                                                                losses = -1;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+
+                                            }
+
+
+                                        }
+                                    }
+                                    catch { }
+                                }
+                            }
+                        }
+                    }
+                    catch { }
+                }
+                
+                
 
                 return new Models.Player(name, race, league, rank, points, wins, losses, portrait);
 
@@ -723,7 +746,10 @@ namespace SC2Scrapbook
 
             try
             {
-                document.Load("https://bitbucket.org/Veritasimo/sc2-scrapbook/downloads/patch.xml");
+                System.Net.WebClient c = new System.Net.WebClient();
+                c.CachePolicy = new System.Net.Cache.RequestCachePolicy(System.Net.Cache.RequestCacheLevel.NoCacheNoStore);
+                string data = c.DownloadString("https://bitbucket.org/Veritasimo/sc2-scrapbook/downloads/patch.xml");
+                document.LoadXml(data);
             }
             catch
             {

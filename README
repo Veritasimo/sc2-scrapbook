@@ -1,3 +1,8 @@
+2.5.5
+------------------
+Fix: The Battle.net web crawler now works with the 1.5 updates.
+Fix: Stopped the auto-updaters using cached results.
+
 2.5.4
 ------------------
 Fix: Using a new auto-update site.

@@ -94,6 +94,7 @@ namespace SC2Scrapbook
             try
             {
                 System.Net.WebClient c = new System.Net.WebClient();
+                c.CachePolicy = new System.Net.Cache.RequestCachePolicy(System.Net.Cache.RequestCacheLevel.NoCacheNoStore);
                 string update = c.DownloadString("https://bitbucket.org/Veritasimo/sc2-scrapbook/downloads/version.txt");
                 if (!string.IsNullOrEmpty(update))
                 {
@@ -494,8 +495,7 @@ namespace SC2Scrapbook
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Program.HideBuildSelection();
-            Program.ShowBuildSelection();
+            
             
         }
 
