@@ -758,7 +758,7 @@ namespace SC2Scrapbook.Models
 
         public Build()
         {
-
+            Guid = System.Guid.NewGuid().ToString();
         }
 
         public Build(string name, string matchup, string script, string notes)
@@ -790,7 +790,73 @@ namespace SC2Scrapbook.Models
                 ms.Close();
 
                 return build;
-            
+        }
+
+        public static Build ParseSALT(SALT salt)
+        {
+            var build = new Build();
+            build.Name = salt.Title;
+            build.Notes = salt.Description;
+            build.Matchup = new Matchup("PvX");
+
+            StringBuilder script = new StringBuilder();
+
+            SALT.BuildStep previous = null;
+            int similar = 0;
+
+            for (int i = 0; i < salt.Steps.Count; i++)
+            {
+                var last = i == salt.Steps.Count - 1;
+                var item = salt.Steps[i];
+                var step = salt.Steps[i];
+
+                if (previous == null && !last)
+                {
+                    previous = item;
+                    continue;
+                }
+
+                if (((step.Minute == previous.Minute && step.Second == previous.Second) || step.Supply == previous.Supply) && step.Type == previous.Type && step.Code == previous.Code)
+                {
+                    similar++;
+                    if (!last)
+                    {
+                        continue;
+                    }
+                } else
+                {
+                    item = previous;
+                }
+
+                if (item.Supply > 0)
+                {
+                    script.Append("{supply}");
+                    script.Append(item.Supply);
+                    script.Append(" ");
+                }
+
+                if (item.Minute >= 0 || item.Second > 0)
+                {
+                    script.Append("{time}");
+                    script.AppendFormat("{0}:{1:00} ", item.Minute, item.Second);
+                }
+
+                script.Append("- ");
+                script.Append(item.Name);
+                if (similar > 0)
+                {
+                    script.AppendFormat(" x{0}", similar + 1);
+                }
+                
+                script.AppendLine();
+
+                previous = step;
+                similar = 0;
+            }
+
+            build.Script = script.ToString();
+            build.Notes = string.Format("Author: {0}\n\n{1}", salt.Author, salt.Description);
+            return build;
         }
 
         public string SaveBase64()

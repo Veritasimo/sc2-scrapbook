@@ -135,6 +135,7 @@
     <Compile Include="Models\Matchup.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SALT.cs" />
     <Compile Include="SerializableDictionary.cs" />
     <Compile Include="Win32.cs" />
     <EmbeddedResource Include="frmManualSharecodeEntry.resx">

@@ -31,10 +31,25 @@ namespace SC2Scrapbook
 
             try
             {
+                Models.Build build = null;
+
                 string data = txtShareCode.Text;
                 if (data.StartsWith("sc2bo://"))
                     data = data.Substring(8);
-                var build = Models.Build.ParseBase64(data);
+
+                try
+                {
+                    build = Models.Build.ParseSALT(new SALT(data));
+                } catch (Exception)
+                {
+
+                }
+                
+                if (build == null) {
+
+                    build = Models.Build.ParseBase64(data);
+                }
+
                 if (build != null)
                 {
                     pbStatus.Image = Properties.Resources.tick;
@@ -60,10 +75,24 @@ namespace SC2Scrapbook
         {
             try
             {
+                Models.Build build = null;
+
                 string data = txtShareCode.Text;
                 if (data.StartsWith("sc2bo://"))
                     data = data.Substring(8);
-                var build = Models.Build.ParseBase64(data);
+
+                try
+                {
+                    build = Models.Build.ParseSALT(new SALT(data));
+                }
+                catch (Exception)
+                {
+
+                }
+                if (build == null)
+                {
+                    build = Models.Build.ParseBase64(data);
+                }
 
                 frmImportBuild import = new frmImportBuild(build);
                 if (import.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -80,7 +109,6 @@ namespace SC2Scrapbook
             catch (Exception ex)
             {
                 MessageBox.Show(string.Format("Failed to import build:\r\n\r\n{0}", ex.ToString()), "Import Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
             }
         }
     }

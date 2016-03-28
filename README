@@ -1,3 +1,41 @@
+SC2 Scrapbook
+=============
+
+What is it?
+-----------
+
+It helps organize your SC2 builds, and gives you a cool overlay to boot.
+
+What do I need to run it?
+-------------------------
+- Windows (sorry Mac users)
+- .NET Framework 4.0
+
+
+Any more useful stuff?
+----------------------
+
+Build orders:
+http://lotv.spawningtool.com/build/
+
+
+TL thread:
+http://www.teamliquid.net/forum/starcraft-2/287794-utility-sc2-scrapbook-build-order-notebook-v2
+
+
+Source code:
+https://bitbucket.org/Veritasimo/sc2-scrapbook
+https://github.com/Veritasimo/sc2-scrapbook
+
+
+
+Changelog
+=========
+
+2.6
+------------------
+New: You can import SALT builds from spawningtool.com
+
 2.5.5
 ------------------
 Fix: The Battle.net web crawler now works with the 1.5 updates.
