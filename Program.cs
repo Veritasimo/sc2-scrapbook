@@ -508,6 +508,8 @@ namespace SC2Scrapbook
             try
             {
 
+                var processNames = new string[] { "SC2_X64", "SC2" };
+
                 while (true)
                 {
                     Process sc2Process = null;
@@ -517,18 +519,28 @@ namespace SC2Scrapbook
                         if (!Configuration.Instance.UseAdvancedOptions)
                             throw new Exception();
                         System.Threading.Thread.Sleep(100);
-                        Process[] processes = Process.GetProcessesByName("SC2");
 
-                        foreach (Process p in processes)
+                        foreach (var name in processNames)
                         {
-                            if (!p.HasExited)
+                            Process[] processes = Process.GetProcessesByName(name);
+
+                            foreach (Process p in processes)
                             {
-                                if (p.MainWindowTitle == "StarCraft II")
+                                if (!p.HasExited)
                                 {
-                                    sc2Process = p;
+                                    if (p.MainWindowTitle == "StarCraft II")
+                                    {
+                                        sc2Process = p;
+                                    }
                                 }
                             }
+
+                            if (sc2Process != null)
+                            {
+                                break;
+                            }
                         }
+
                     }
 
 

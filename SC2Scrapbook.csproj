@@ -461,7 +461,9 @@
     <None Include="Resources\icons\protoss\gas.gif" />
     <None Include="Resources\Changelog.txt" />
     <None Include="Resources\version.txt" />
-    <None Include="Resources\patch.xml" />
+    <None Include="Resources\patch.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Resources\builds.xml" />
     <None Include="Resources\snapshot-zerg.png" />
     <None Include="Resources\snapshot-terran.png" />
