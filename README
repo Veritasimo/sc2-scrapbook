@@ -35,6 +35,8 @@ Changelog
 2.6
 ------------------
 New: You can import SALT builds from spawningtool.com
+New: The default builds have been updated for LotV (shamelessly stolen from spawningtool.com)
+Fix: In-game detection has been updated for Patch 3.1.4
 
 2.5.5
 ------------------

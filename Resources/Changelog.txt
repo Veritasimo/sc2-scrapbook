@@ -1,3 +1,9 @@
+2.6.0
+------------------
+New: You can import SALT encoded build strings. Grab some from spawningtool.com and try it out!
+New: The default builds have been updated for LotV (shamelessly stolen from spawningtool.com)
+Fix: In-game detection has been updated for Patch 3.1.4
+
 2.5.5
 ------------------
 Fix: The Battle.net web crawler now works with the 1.5 updates.
